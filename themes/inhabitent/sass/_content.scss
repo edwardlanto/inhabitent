@@ -47,3 +47,33 @@
 .bypostauthor {
 	display: block;
 }
+
+.entry-header{
+	position:relative;
+	z-index:-999;
+}
+
+.entry-title{
+	position:absolute;
+	z-index:999;
+	top:0;
+	background-color:#248a83;
+	font-size: 2.1rem;
+	padding: .75rem 1.5rem;
+	max-width: 50%;
+	
+}
+
+.entry-title a{
+	color:white;
+}
+
+.entry-meta{
+	position:absolute;
+	right:28.3%;
+	bottom:7px;
+	background-color:#248a83;
+	color:white;
+	padding: 1.00005rem 1.5rem;
+	text-transform:uppercase;
+}

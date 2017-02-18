@@ -6,6 +6,7 @@
 
 a {
 	color: $color__link;
+	text-decoration:none;
 
 	&:visited {
 		color: $color__link-visited;
@@ -101,6 +102,48 @@ a {
 	display: block;
 }
 
+// #masthead{
+// 	display:flex;
+// 	
+// 	
+// 	position:fixed;
+// 	width:100%;
+
+// }
+.site-branding{
+	width:100%;
+	position:fixed;
+	background-color: hsla(0,0%,100%,.85);
+	border-bottom: 1px solid #e1e1e1;
+	z-index:5;
+	top:0;
+}
+.nav-item{
+	display:inline;
+	text-decoration:none;
+}
+
+.nav-item a{
+	color:#248a83;
+}
+
+.fa-search{
+	z-index:20;
+	height:5px;
+
+}
+
+.nav-bar{
+	float:right;
+	width: 355px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo{
+	width:50px;
+}
+
 @media screen and (min-width: 768px) {
 	.menu-toggle {
 		display: none;
@@ -129,4 +172,7 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+
+
 }
+

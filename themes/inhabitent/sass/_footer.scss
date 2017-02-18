@@ -1,0 +1,29 @@
+.site-footer{
+    height:345px;
+    width:100%;
+    background-image:url("../../images/dark-wood.png");
+    background-size:cover;
+    display:flex;
+    position:absolute;
+    // bottom:0;
+}
+
+.contact-footer{
+    color:#d99054;
+
+}
+
+.white-contact-text{
+    display:block;
+    color:white;
+}
+
+.business-footer{
+    color:#d99054;
+    line-height:1.75rem;
+
+}
+
+.date-footer{
+    color:white;
+}

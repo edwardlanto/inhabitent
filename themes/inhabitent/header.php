@@ -21,15 +21,34 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
+				<!--<img src ="<?php echo get_template_directory_uri();?>/images/logo-tent.svg" class ="header-logo"/>-->
+				<!--<ul class ="nav-bar">
+					<li class = "nav-item"><a href="#">Shop</a></li>
+					<li class = "nav-item"><a href="#">Journal</a></li>
+					<li class = "nav-item"><a href="#">About</a></li>
+					<li class = "nav-item"><a href="#">Find Us</a></li>
+				</ul>-->
 				<div class="site-branding">
+					<img src ="<?php echo get_template_directory_uri();?>/images/logo-tent.svg" class ="header-logo"/>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					<ul class ="nav-bar">
+						<li class = "nav-item"><a href="#">Shop</a></li>
+						<li class = "nav-item"><a href="#">Journal</a></li>
+						<li class = "nav-item"><a href="#">About</a></li>
+						<li class = "nav-item"><a href="#">Find Us</a></li>
+						<li><i class="fa fa-search" aria-hidden="true"></i></li>
+					</ul>
+					
+					
 				</div><!-- .site-branding -->
+				
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				<!--<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
+				</nav> #site-navigation -->
 			</header><!-- #masthead -->
+			<p class="site-description"><?php bloginfo( 'description' ); ?></p> 
+				<!--moved site description from header-->
 
 			<div id="content" class="site-content">
