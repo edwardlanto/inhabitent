@@ -10,8 +10,8 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				 <div class="footer-blocks">
-                    <div class="contact">
-                        <h3 class="orange-footer-text">Contact Info</h3>
+                    <div class="orange-footer-text">
+                        <h3>Contact Info</h3>
                         <p>
                             <i class="fa fa-envelope icon" aria-hidden="true"></i>
                             <a href="mailto:info@inhabitent.com">info@inhabitent.com</a>

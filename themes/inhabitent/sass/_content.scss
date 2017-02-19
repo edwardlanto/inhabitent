@@ -58,11 +58,12 @@
 	position:relative;
 	z-index:-999;
 	margin-left:75px;
-	width:760.59px;
+	width:100%;
+
 }
 
 .content-area{
-	border-right: 1px solid #e1e1e1
+	// border-right: 1px solid #e1e1e1
 }
 
 .entry-title a{
@@ -89,7 +90,7 @@
 	width:464px;
 	margin-left:297px;
 	bottom:7px;
-	background-color:#248a83;
+	background-color:$background-entry-color;
 	color:white;
 	padding: 1.00005rem 1.5rem;
 	text-transform:uppercase;
@@ -117,6 +118,7 @@
 
 #secondary{
 	width:100%;
+	border-left: 1px solid #e1e1e1
 
 }
 
@@ -143,11 +145,12 @@
 	font-weight:bold;
 }
 
-.widget-title{
+.widget-title {
 	color:#2f1339;
 	font-size:1.5rem;
 	text-align:center;
 	text-transform:uppercase;
+	font-family:"novcento",sans-serif;
 }
 
 .widget ul{
@@ -170,4 +173,42 @@
 .widget-text-container{
 	display: flex;
     align-items: center;
+}
+
+// -------about------
+
+.post-33 header{
+	width:100vw;
+	margin-left:0;
+	display:flex;
+	justify-content:center;
+	height:100vh;
+	align-items:center;
+}
+#post-33{
+	color:white;
+	font-size:3rem;
+	font-family:"novcento",sans-serif;
+	text-transform:uppercase;
+	z-index:999;
+	position:absolute;
+	// text-align:center;
+}
+
+.about-container{
+	width:100%;
+	height:auto
+}
+
+.content-area-about{
+
+	background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url("../../images/about-hero.jpg") no-repeat center bottom;
+    background-size: cover, cover;
+	height:100vh;
+	z-index:-999;
+	position:relative;
+}
+
+.page-template-about-php .site-header .site-content{
+	display:inline-flex;
 }

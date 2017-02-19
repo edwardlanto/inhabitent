@@ -17,19 +17,25 @@ div.footer-blocks{
 .white-contact-text{
     display:block;
     color:white;
-    font-family:"merriweather";
+    font-family:$font__main;
 }
 
-.orange-footer-text{
+.orange-footer-text h3{
     color:#d99054;
     line-height:1.75rem;
     text-transform:uppercase;
+    font-family:$font__accent;
 
+}
+
+.orange-footer-text p a{
+    color:white;
+    font-family:$font__main;
 }
 
 .orange-footer-text p{
     color:white;
-    font-family:"merriweather",serif;
+    font-family:$font__main;
 }
 
 .contact a{
