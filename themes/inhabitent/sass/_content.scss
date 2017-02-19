@@ -48,9 +48,12 @@
 	display: block;
 }
 
+// --------------My Edits------------
+
 .entry-header{
 	position:relative;
 	z-index:-999;
+	margin-left:50px;
 }
 
 .entry-title{
@@ -60,7 +63,7 @@
 	background-color:#248a83;
 	font-size: 2.1rem;
 	padding: .75rem 1.5rem;
-	max-width: 50%;
+	max-width:616px;
 	
 }
 
@@ -70,7 +73,8 @@
 
 .entry-meta{
 	position:absolute;
-	right:28.3%;
+	width:464px;
+	margin-left:176px;
 	bottom:7px;
 	background-color:#248a83;
 	color:white;
