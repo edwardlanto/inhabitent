@@ -50,13 +50,22 @@
 
 // --------------My Edits------------
 
+
+.site-content{
+	display:flex;
+}
 .entry-header{
 	position:relative;
 	z-index:-999;
-	margin-left:50px;
+	margin-left:75px;
+	width:760.59px;
 }
 
-.entry-title{
+.content-area{
+	border-right: 1px solid #e1e1e1
+}
+
+.entry-title a{
 	position:absolute;
 	z-index:999;
 	top:0;
@@ -71,13 +80,89 @@
 	color:white;
 }
 
+.entry-header img{
+	width:760.59px;
+}
+
 .entry-meta{
 	position:absolute;
 	width:464px;
-	margin-left:176px;
+	margin-left:297px;
 	bottom:7px;
 	background-color:#248a83;
 	color:white;
 	padding: 1.00005rem 1.5rem;
 	text-transform:uppercase;
+}
+
+.entry-content{
+	margin-left:75px;
+	width: 770px;
+}
+
+.entry-content p{
+	color:#404040;
+	font-family:"merriweather",serif;
+	font-size:16px;
+}
+
+
+// --------------Sidebar----------
+
+
+#secondary{
+	width:100%;
+
+}
+
+.textwidget{
+	margin: 0 auto;
+    width: 202px;
+	font-family:"merriweather",serif;
+}
+
+.textwidget a{
+	color:#248a83;
+	font-family:"merriweather",serif;
+	font-size:1rem;
+}
+
+
+.widget-text{
+	font-family:"merriweather", serif;
+	font-size:1rem;
+
+}
+
+.sidebar-day{
+	font-weight:bold;
+}
+
+.widget-title{
+	color:#2f1339;
+	font-size:1.5rem;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.widget ul{
+	list-style-type:none;
+	font-family:"merriweather", sans-serif;
+
+}
+
+
+.widget ul a{
+	color:#248a83;
+	line-height:2;
+
+}
+
+#phone-id{
+	color:#404040;
+}
+
+.widget-text-container{
+	display: flex;
+    align-items: center;
 }

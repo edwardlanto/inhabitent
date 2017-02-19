@@ -9,7 +9,9 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	return;
 }
 ?>
-
 <div id="secondary" class="widget-area" role="complementary">
+	<!--<h2 class ="widget-title">Contact Info</h2>
+	<p class="contact-meta">-->
+		<!--<i class="fa fa-phone icon" id="phone-id" aria-hidden="true"></i>-->
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </div><!-- #secondary -->
