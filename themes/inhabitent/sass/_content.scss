@@ -62,9 +62,6 @@
 
 }
 
-.content-area{
-	// border-right: 1px solid #e1e1e1
-}
 
 .entry-title a{
 	position:absolute;
@@ -103,7 +100,7 @@
 
 .entry-content p{
 	color:#404040;
-	font-family:"merriweather",serif;
+	font-family:$font__main;
 	font-size:16px;
 }
 
@@ -125,18 +122,18 @@
 .textwidget{
 	margin: 0 auto;
     width: 202px;
-	font-family:"merriweather",serif;
+	font-family:$font__main;
 }
 
 .textwidget a{
-	color:#248a83;
-	font-family:"merriweather",serif;
+	color:$background-entry-color;
+	font-family:$font__main;
 	font-size:1rem;
 }
 
 
 .widget-text{
-	font-family:"merriweather", serif;
+	font-family:$font__main;
 	font-size:1rem;
 
 }
@@ -155,19 +152,19 @@
 
 .widget ul{
 	list-style-type:none;
-	font-family:"merriweather", sans-serif;
+	font-family:$font__main;
 
 }
 
 
 .widget ul a{
-	color:#248a83;
+	color:$background-entry-color;
 	line-height:2;
 
 }
 
 #phone-id{
-	color:#404040;
+	color:$color__text-main;
 }
 
 .widget-text-container{
@@ -188,16 +185,15 @@
 #post-33{
 	color:white;
 	font-size:3rem;
-	font-family:"novcento",sans-serif;
+	font-family:$font__accent;
 	text-transform:uppercase;
 	z-index:999;
 	position:absolute;
-	// text-align:center;
 }
 
 .about-container{
 	width:100%;
-	height:auto
+	height:auto;
 }
 
 .content-area-about{
@@ -209,6 +205,39 @@
 	position:relative;
 }
 
-.page-template-about-php .site-header .site-content{
-	display:inline-flex;
+// .page-template-about-php .site-header .site-content{
+// 	display:inline-flex;
+// }
+
+
+// ------Find Us-----
+
+.find-us-heading{
+	color: #2f1339;
+	font-size:2.1rem;
+	font-family:$font__accent;
 }
+
+.find-us-p{
+	line-height:1.75rem;
+}
+
+.required{
+	color:#d99054;
+}
+
+#submit-button{
+	background-color:#248a83;
+	border: none;
+    border-radius: 0;
+	color:#fff;
+	box-shadow:none;
+	font-family:$font__accent;
+	text-shadow:none;
+	text-transform:uppercase;
+	padding: .75rem 1.5rem;
+	font-size:14.4px;
+}
+
+
+// [submit "Send"]

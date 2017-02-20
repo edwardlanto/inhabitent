@@ -620,6 +620,9 @@ div.footer-blocks {
 .contact {
   margin-left: 1rem; }
 
+.site-footer {
+  display: block; }
+
 .white-contact-text {
   display: block;
   color: white;
@@ -820,7 +823,7 @@ div.footer-blocks {
 
 .entry-content p {
   color: #404040;
-  font-family: "merriweather",serif;
+  font-family: "merriweather", serif;
   font-size: 16px; }
 
 .entry-content h2 {
@@ -834,11 +837,11 @@ div.footer-blocks {
 .textwidget {
   margin: 0 auto;
   width: 202px;
-  font-family: "merriweather",serif; }
+  font-family: "merriweather", serif; }
 
 .textwidget a {
   color: #248a83;
-  font-family: "merriweather",serif;
+  font-family: "merriweather", serif;
   font-size: 1rem; }
 
 .widget-text {
@@ -857,7 +860,7 @@ div.footer-blocks {
 
 .widget ul {
   list-style-type: none;
-  font-family: "merriweather", sans-serif; }
+  font-family: "merriweather", serif; }
 
 .widget ul a {
   color: #248a83;
@@ -886,7 +889,7 @@ div.footer-blocks {
 #post-33 {
   color: white;
   font-size: 3rem;
-  font-family: "novcento",sans-serif;
+  font-family: "novcento", sans-serif;
   text-transform: uppercase;
   z-index: 999;
   position: absolute; }
@@ -902,9 +905,28 @@ div.footer-blocks {
   z-index: -999;
   position: relative; }
 
-.page-template-about-php .site-header .site-content {
-  display: -ms-inline-flexbox;
-  display: inline-flex; }
+.find-us-heading {
+  color: #2f1339;
+  font-size: 2.1rem;
+  font-family: "novcento", sans-serif; }
+
+.find-us-p {
+  line-height: 1.75rem; }
+
+.required {
+  color: #d99054; }
+
+#submit-button {
+  background-color: #248a83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  box-shadow: none;
+  font-family: "novcento", sans-serif;
+  text-shadow: none;
+  text-transform: uppercase;
+  padding: .75rem 1.5rem;
+  font-size: 14.4px; }
 
 /*--------------------------------------------------------------
 # Media
