@@ -25,9 +25,13 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 	//Changes from page of Logo and updated urldecode
 function custom_loginlogo() {
 echo '<style type="text/css">
-h1 a {background-image: url('.get_bloginfo('template_directory').'/images/front-inhabitent-logo.svg)!important;background-size:contain !important;
-width:300px !important; padding-right:
+#login h1 a {
+	background-image: url('.get_bloginfo('template_directory').'/images/front-inhabitent-logo.svg)!important;background-size:contain !important;
+width:300px !important;
 }
+#login .button.button-primary{
+	background-color:#248A83;s
+	}
 
 </style>';
 }
@@ -39,6 +43,6 @@ function my_login_logo_url() {
 add_filter( 'login_headerurl', 'my_login_logo_url' );
 
 function my_login_logo_url_title() {
-    return 'Your Site Name and Info';
+    return 'Inhabitent';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
