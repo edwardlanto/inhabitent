@@ -306,9 +306,9 @@
 
 
 .adventures-pic-container{
-	width:1120px;
-	height:100%;
-	border:1px solid black;
+	width:1120px;;
+	height:540px;
+	// border:1px solid black;
 	margin:0 auto;
 	overflow-x:hidden;
 	overflow-y:hidden;
@@ -319,6 +319,7 @@
 .canoe-container{
 	width:50%;
 	height:100%;
+	position:absolute;
 }
 .canoe-large-pic{
 	background:url("../../images/canoe-girl.jpg")no-repeat,center;
@@ -326,17 +327,18 @@
 	height: 100vh;
     width: 126%;
     transform: translatex(-163px);
-	position:relative;	
+	position:relative;
 
 	
 }
 
 .beach-container{
-	width:51.6%;
+	width:100%;
 	height:100%;
 	position:absolute;
 	top: 0;
-    right: 0;
+    left: 100%;
+
 }
 
 
@@ -345,14 +347,15 @@
 	background-size:cover;
 	height: 50%;
     width: 100%;
+	border-bottom: 20px solid white;
 
 }
 
 .mountain-container{
-	width:25%;
+	width:50%;
 	height:100%;
 	position:absolute;
-	right:0;
+	left:100%;
 	top:50%;
 
 }
@@ -362,17 +365,19 @@
 	background-size:cover;
 	width:100%;
 	height:50%;
+	border-right:10px solid white;
 
 }
 
 
 
 .star-container{
-	width:25%;
-	height:100%;
-	position:absolute;
-	top: 50%;
-    right: 26.7%;
+	width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 150%;
+
 }
 
 .star-small-pic{
@@ -380,6 +385,7 @@
 	background-size:cover;
 	width:100%;
 	height:50%;
+	border-right:10px solid white;
 
 }
 
