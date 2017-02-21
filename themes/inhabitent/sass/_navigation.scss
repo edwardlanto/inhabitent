@@ -139,12 +139,14 @@ a {
 
 .nav-bar{
 	float:right;
-	
 	list-style-type: none;
-	
 	align-items:center;
 	margin-right:40px;
 	margin-top:7px;
+}
+
+#primary-menu{
+	margin-right:100px;
 }
 
 .header-logo{
@@ -169,6 +171,7 @@ a {
 
 .site-navigation{
 	width:100%;
+	overflow-x:hidden;
 }
 
 @media screen and (min-width: 768px) {

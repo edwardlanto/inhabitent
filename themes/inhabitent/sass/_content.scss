@@ -261,7 +261,7 @@
 	font-size:14.4px;
 }
 
-// -------Front-Page-------
+// ---------------------------------Front-Page------------------------
 
 .front-hero-image{
 	height:100vh;
@@ -270,9 +270,118 @@
 	background-size:cover,cover;
 	display:flex;
 	justify-content:center;
+	align-items:center;
 	
 }
 
+.front-logo-image{
+	background-image:url("../../images/home-front-logo.svg");
+	background-size:contain;
+	height:275px;
+	width:275px;
+}
+
+.home-content-heading{
+	font-size: 38.4px;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3.75rem;
+    text-align: center;
+	font-family:$font__accent;
+	color:#2f1339;
+}
+
+// --------------Front Page Adventure----------
+
+
+.page-template-front-page{
+	overflow-x:hidden;
+
+}
+.adventure-wrapper{
+	width:100%;
+	overflow-x:hidden;
+	
+}
+
+
+.adventures-pic-container{
+	width:1120px;
+	height:100%;
+	border:1px solid black;
+	margin:0 auto;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	position:relative;
+}
+
+
+.canoe-container{
+	width:50%;
+	height:100%;
+}
+.canoe-large-pic{
+	background:url("../../images/canoe-girl.jpg")no-repeat,center;
+	background-size:cover;
+	height: 100vh;
+    width: 126%;
+    transform: translatex(-163px);
+	position:relative;	
+
+	
+}
+
+.beach-container{
+	width:51.6%;
+	height:100%;
+	position:absolute;
+	top: 0;
+    right: 0;
+}
+
+
+.beach-medium-pic{
+	background:url("../../images/beach.jpg");
+	background-size:cover;
+	height: 50%;
+    width: 100%;
+
+}
+
+.mountain-container{
+	width:25%;
+	height:100%;
+	position:absolute;
+	right:0;
+	top:50%;
+
+}
+
+.mountain-small-pic{
+	background:url("../../images/mountain.jpg");
+	background-size:cover;
+	width:100%;
+	height:50%;
+
+}
+
+
+
+.star-container{
+	width:25%;
+	height:100%;
+	position:absolute;
+	top: 50%;
+    right: 26.7%;
+}
+
+.star-small-pic{
+	background:url("../../images/night-sky.jpg");
+	background-size:cover;
+	width:100%;
+	height:50%;
+
+}
 
 
 

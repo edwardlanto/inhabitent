@@ -10,10 +10,8 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+
 		<main id="main" class="site-main" role="main">
-			<div class = "front-hero-image">
-				<img src ="<?php echo get_template_directory_uri();?>/images/home-front-logo.svg" class ="home-front-logo"/>
-			</div>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
