@@ -20,3 +20,25 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+
+	//Changes from page of Logo and updated urldecode
+function custom_loginlogo() {
+echo '<style type="text/css">
+h1 a {background-image: url('.get_bloginfo('template_directory').'/images/front-inhabitent-logo.svg)!important;background-size:contain !important;
+width:300px !important; padding-right:
+}
+
+</style>';
+}
+add_action('login_head', 'custom_loginlogo');
+
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Your Site Name and Info';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );

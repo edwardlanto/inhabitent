@@ -67,7 +67,7 @@
 	position:absolute;
 	z-index:999;
 	top:0;
-	background-color:#248a83;
+	background-color:$background-entry-color;
 	font-size: 2.1rem;
 	padding: .75rem 1.5rem;
 	max-width:616px;
@@ -93,7 +93,7 @@
 	text-transform:uppercase;
 }
 
-.entry-content{
+.blog .entry-content{
 	margin-left:75px;
 	width: 770px;
 }
@@ -108,6 +108,16 @@
 	font-size:2.1rem;
 	text-transform:uppercase;
 }
+// -----HOME---------
+
+#front-hero-image{
+	background-image:url(../../images/home-hero.jpg) no-repeat top;
+    background-size: cover,cover;
+	height:100vh;
+	width:100%;
+	
+}
+
 
 
 // --------------Sidebar----------
@@ -115,7 +125,8 @@
 
 #secondary{
 	width:100%;
-	border-left: 1px solid #e1e1e1
+	border-left: 1px solid #e1e1e1;
+	padding-top:50px;
 
 }
 
@@ -126,7 +137,7 @@
 }
 
 .textwidget a{
-	color:$background-entry-color;
+	color:#248a83;
 	font-family:$font__main;
 	font-size:1rem;
 }
@@ -147,7 +158,7 @@
 	font-size:1.5rem;
 	text-align:center;
 	text-transform:uppercase;
-	font-family:"novcento",sans-serif;
+	font-family:$font__accent;
 }
 
 .widget ul{
@@ -158,7 +169,7 @@
 
 
 .widget ul a{
-	color:$background-entry-color;
+	color:#248a83;
 	line-height:2;
 
 }
@@ -172,42 +183,53 @@
     align-items: center;
 }
 
+.textwidget i{
+	padding-right:6px;
+}
+
 // -------about------
 
-.post-33 header{
-	width:100vw;
-	margin-left:0;
-	display:flex;
-	justify-content:center;
-	height:100vh;
-	align-items:center;
-}
-#post-33{
-	color:white;
+.page-template-about h1{
+	position:absolute;
+	color:#fff;
+	bottom:18rem;
 	font-size:3rem;
 	font-family:$font__accent;
 	text-transform:uppercase;
-	z-index:999;
-	position:absolute;
+	margin-left:37%;
 }
 
-.about-container{
-	width:100%;
-	height:auto;
+.page-template-about header h1{
+	width:140px;
 }
 
-.content-area-about{
+.about-hero-image{
 
 	background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url("../../images/about-hero.jpg") no-repeat center bottom;
     background-size: cover, cover;
 	height:100vh;
 	z-index:-999;
 	position:relative;
+	min-width:100vw;
 }
 
-// .page-template-about-php .site-header .site-content{
-// 	display:inline-flex;
-// }
+.about-content-header{
+	color: #2f1339;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+	font-family:$font__accent;
+	text-align:center;
+}
+
+.about-para{
+	text-align: left;
+    width: 740px;
+    margin: 0 auto;
+	line-height:1.75rem;
+	margin-bottom:20px;
+}
+
 
 
 // ------Find Us-----
@@ -239,5 +261,18 @@
 	font-size:14.4px;
 }
 
+// -------Front-Page-------
 
-// [submit "Send"]
+.front-hero-image{
+	height:100vh;
+	width:100vw;
+	background:linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696, url("../../images/home-hero.jpg") no-repeat top bottom;
+	background-size:cover,cover;
+	display:flex;
+	justify-content:center;
+	
+}
+
+
+
+

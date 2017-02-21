@@ -1,3 +1,13 @@
+.front-hero-image{
+	background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
+    background-size: cover,cover;
+	height:100vh;
+	width:100%;
+	
+}
+
+
+
 div.footer-blocks{
     display: flex;
     justify-content: space-between;
@@ -13,10 +23,6 @@ div.footer-blocks{
     margin-left:1rem;
 }
 
-.site-footer{
-    display:block;
-
-}
 
 .white-contact-text{
     display:block;
@@ -44,7 +50,7 @@ div.footer-blocks{
 
 .contact a{
     color:white;
-    font-family:"merriweather";
+    font-family:$font__main;
     }
 
 .date-footer{
@@ -76,7 +82,7 @@ div.footer-blocks{
 
 .site-info-container p{
     color:white;
-    font-family:"novcento",sans-serif;
+    font-family:$font__accent;
     text-transform:uppercase;
     font-weight:lighter;
     font-size:14px;
