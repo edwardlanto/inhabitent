@@ -518,6 +518,13 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
+.menu li a {
+  color: red;
+  font-family: "novcento", sans-serif;
+  text-transform: uppercase;
+  color: #248a83;
+  font-size: 1rem; }
+
 .site-branding {
   width: 100%;
   position: fixed;
@@ -538,11 +545,8 @@ a {
       justify-content: space-between; }
 
 .page_item a {
-  color: #248a83;
   font-family: "merriweather", serif;
-  text-transform: uppercase;
-  margin-left: 17px;
-  font-size: 1rem; }
+  text-transform: uppercase; }
 
 .fa-search {
   z-index: 20;
@@ -789,7 +793,7 @@ div.footer-blocks {
 .bypostauthor {
   display: block; }
 
-.site-content {
+.blog #page .site-content {
   display: -ms-flexbox;
   display: flex; }
 
@@ -992,6 +996,25 @@ div.footer-blocks {
   overflow-y: hidden;
   position: relative; }
 
+.adventure-pic {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.adventure-text a {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 400; }
+
+.mountain-small-pic h3 a {
+  font-size: 1.6rem; }
+
+.star-small-pic h3 a {
+  font-size: 1.6rem; }
+
 .canoe-container {
   width: 50%;
   height: 100%;
@@ -1046,6 +1069,13 @@ div.footer-blocks {
   width: 100%;
   height: 50%;
   border-left: 10px solid white; }
+
+.page-template-find-us .hfeed .site-content {
+  display: -ms-flexbox;
+  display: flex; }
+
+.page-template-find-us .hfeed .site-content .post-30 {
+  width: 840px; }
 
 /*--------------------------------------------------------------
 # Media

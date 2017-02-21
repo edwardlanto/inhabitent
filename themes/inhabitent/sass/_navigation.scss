@@ -102,6 +102,15 @@ a {
 	display: block;
 }
 
+
+.menu li a{
+	color:red;
+	font-family:$font__accent;
+	text-transform:uppercase;
+	color:#248a83;
+	font-size:1rem;
+}
+
 .site-branding{
 	width:100%;
 	position:fixed;
@@ -123,11 +132,10 @@ a {
 }
 
 .page_item a{
-	color:#248a83;
+	
 	font-family:$font__main;
 	text-transform:uppercase;
-	margin-left:17px;
-	font-size:1rem;
+	
 }
 
 .fa-search{
