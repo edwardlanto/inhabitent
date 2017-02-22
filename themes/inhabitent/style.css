@@ -462,6 +462,41 @@ textarea {
   font-family: "merriweather",serif;
   width: 378px; }
 
+.page-template-about h1 {
+  position: absolute;
+  color: #fff;
+  bottom: 18rem;
+  font-size: 3rem;
+  font-family: "novcento", sans-serif;
+  text-transform: uppercase;
+  margin-left: 37%; }
+
+.page-template-about header h1 {
+  width: 140px; }
+
+.about-hero-image {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/about-hero.jpg") no-repeat center bottom;
+  background-size: cover, cover;
+  height: 100vh;
+  z-index: -999;
+  position: relative;
+  min-width: 100vw; }
+
+.about-content-header {
+  color: #2f1339;
+  font-size: 33.6px;
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+  font-family: "novcento", sans-serif;
+  text-align: center; }
+
+.page-template-about .hfeed .site-content .site-main p {
+  text-align: left;
+  width: 740px;
+  margin: 0 auto;
+  line-height: 1.75rem;
+  margin-bottom: 20px; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -546,9 +581,7 @@ a {
   width: 100%;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.85);
-  border-bottom: 1px solid #e1e1e1;
-  z-index: 5;
-  top: 32px; }
+  z-index: 5; }
 
 .nav-item {
   display: inline-block;
@@ -595,9 +628,8 @@ a {
   height: 50px;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.85);
-  border-bottom: 1px solid #e1e1e1;
+  top: 0;
   z-index: 5;
-  top: 32px;
   -ms-flex-align: center;
       align-items: center; }
 
@@ -839,11 +871,12 @@ div.footer-blocks {
   position: absolute;
   width: 464px;
   margin-left: 297px;
-  bottom: 7px;
+  bottom: 6px;
   background-color: #248a83;
-  color: white;
-  padding: 1.00005rem 1.5rem;
-  text-transform: uppercase; }
+  color: #fff;
+  padding: 0.4rem;
+  text-transform: uppercase;
+  font-family: "novcento", sans-serif; }
 
 .blog .entry-content {
   margin-left: 75px;
@@ -912,41 +945,6 @@ div.footer-blocks {
 
 .textwidget i {
   padding-right: 6px; }
-
-.page-template-about h1 {
-  position: absolute;
-  color: #fff;
-  bottom: 18rem;
-  font-size: 3rem;
-  font-family: "novcento", sans-serif;
-  text-transform: uppercase;
-  margin-left: 37%; }
-
-.page-template-about header h1 {
-  width: 140px; }
-
-.about-hero-image {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/about-hero.jpg") no-repeat center bottom;
-  background-size: cover, cover;
-  height: 100vh;
-  z-index: -999;
-  position: relative;
-  min-width: 100vw; }
-
-.about-content-header {
-  color: #2f1339;
-  font-size: 33.6px;
-  font-size: 2.1rem;
-  margin-bottom: 1.5rem;
-  font-family: "novcento", sans-serif;
-  text-align: center; }
-
-.page-template-about .hfeed .site-content .site-main p {
-  text-align: left;
-  width: 740px;
-  margin: 0 auto;
-  line-height: 1.75rem;
-  margin-bottom: 20px; }
 
 .find-us-heading {
   color: #2f1339;
@@ -1152,22 +1150,57 @@ div.footer-blocks {
   width: 375px;
   height: 250px; }
 
-.shop-archive-image img {
-  height: 250px; }
+.shop-stuff-section {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 1.2rem; }
 
-.shop-item-container {
+.block-wrapper {
+  width: 272px;
+  height: 263px;
+  border: 1px solid #e1e1e1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-top-width: 5px; }
+
+.block-wrapper img {
+  height: 70px;
+  width: 70px; }
+
+.shop-items-container {
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-
-.shop-item-title {
-  z-index: 999; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 1rem; }
 
 .product-container {
-  width: 250px; }
+  display: inline-block;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 1.5rem; }
+
+.shop-image-container {
+  height: 370px; }
+
+.shop-archive-image {
+  background-color: #e1e1e1; }
+
+.shop-archive-image img {
+  height: 240px;
+  width: 255px; }
+
+.home-blog-title a {
+  font-size: 16px;
+  color: #404040;
+  font-family: "merriweather", serif; }
 
 /*--------------------------------------------------------------
 # Media

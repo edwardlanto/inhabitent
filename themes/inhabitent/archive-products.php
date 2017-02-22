@@ -20,11 +20,14 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<div class ="shop-item-container">
+			<div class ="shop-items-container">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class = "product-container">
-					<div class = "shop-archive-image"><?php the_post_thumbnail( 'medium' ); ?></div>
-					<div class = "shop-item-title"><p class ="home-blog-title"><a><?php the_title(); ?></a></p></div>
+
+						<div class = "shop-archive-image">
+							<?php the_post_thumbnail( 'medium' ); ?>
+						</div>
+						<div class = "shop-item-title"><p class ="home-blog-title"><a><?php the_title(); ?></a></p></div>
 				</div>
 			<?php endwhile; ?>
 			</div>

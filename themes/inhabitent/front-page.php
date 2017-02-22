@@ -17,7 +17,20 @@ get_header(); ?>
 </div>
 
 <h2 class = "home-content-heading">Shop Stuff</h2>
-<section></section>
+<section class = "shop-stuff-section">
+  <div class = "block-wrapper">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/do.svg"/>
+  </div>
+  <div class = "block-wrapper">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/eat.svg"/>
+  </div>
+  <div class = "block-wrapper">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/sleep.svg"/></div>
+  <div class = "block-wrapper">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/wear.svg"/>
+  </div>
+
+</section>
 <h2 class = "home-content-heading">Inhabitent Journal</h2>
 
 
@@ -31,10 +44,10 @@ foreach( $myposts as $post ) :
   setup_postdata($post); ?>
 
   <div class = "home-blog-post-container">
-	  <div class = "home-blog-post"><?php the_post_thumbnail( 'large' ); ?></div>
-    <div><p class ="home-blog-text"><?php red_starter_posted_on(); ?></p></div>
-    <div><h3 class ="home-blog-title"><a><?php the_title(); ?></a></h3></div>
-    <a href="" id ="read-entry-home">Read Entry  -></a>
+	    <div class = "home-blog-post"><?php the_post_thumbnail( 'large' ); ?></div>
+      <div><p class ="home-blog-text"><?php red_starter_posted_on(); ?></p></div>
+      <div><h3 class ="home-blog-title"><a><?php the_title(); ?></a></h3></div>
+      <a href="" id ="read-entry-home">Read Entry  -></a>
   </div>
 
 <?php endforeach; 

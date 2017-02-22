@@ -86,11 +86,12 @@
 	position:absolute;
 	width:464px;
 	margin-left:297px;
-	bottom:7px;
+	bottom:6px;
 	background-color:$background-entry-color;
-	color:white;
-	padding: 1.00005rem 1.5rem;
+	color:#fff;
+	padding: 0.4rem;
 	text-transform:uppercase;
+	font-family:$font__accent;
 }
 
 .blog .entry-content{
@@ -187,48 +188,7 @@
 	padding-right:6px;
 }
 
-// -------about------
 
-.page-template-about h1{
-	position:absolute;
-	color:#fff;
-	bottom:18rem;
-	font-size:3rem;
-	font-family:$font__accent;
-	text-transform:uppercase;
-	margin-left:37%;
-}
-
-.page-template-about header h1{
-	width:140px;
-}
-
-.about-hero-image{
-
-	background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url("../../images/about-hero.jpg") no-repeat center bottom;
-    background-size: cover, cover;
-	height:100vh;
-	z-index:-999;
-	position:relative;
-	min-width:100vw;
-}
-
-.about-content-header{
-	color: #2f1339;
-    font-size: 33.6px;
-    font-size: 2.1rem;
-    margin-bottom: 1.5rem;
-	font-family:$font__accent;
-	text-align:center;
-}
-
-.page-template-about .hfeed .site-content .site-main p{
-	text-align: left;
-    width: 740px;
-    margin: 0 auto;
-	line-height:1.75rem;
-	margin-bottom:20px;
-}
 
 
 
@@ -485,26 +445,92 @@
 	height:250px;
 }
 
+// -----Shop Stuff----
 
-// -----Shop-----
-
-.shop-archive-image img{
-	height:250px;
-
-	
+.shop-stuff-section{
+	width:100%;
+	display:flex;
+	justify-content:space-around;
+	padding:0 1.2rem;
 }
 
-.shop-item-container{
+.block-wrapper{
+	width:272px;
+	height:263px;
+	border: 1px solid #e1e1e1;
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+	border-top-width: 5px;
+
 }
 
-.shop-item-title{
-	// position:absolute;
-	z-index:999;
+.block-wrapper img{
+	height:70px;
+	width:70px;
+	
+
+}
+
+
+// ---------------Shop----------
+
+.shop-items-container{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	padding:0 1rem;
 }
 
 .product-container{
-	width:250px
+	display:inline-block;
+	border: 1px solid #e1e1e1;
+	margin-bottom:1.5rem;
+	
 }
+
+.shop-image-container{
+	height:370px;
+	
+}
+
+.shop-archive-image{
+	background-color: #e1e1e1;
+
+}
+
+.shop-archive-image img{
+	height: 240px;
+    width: 255px;
+}
+
+.home-blog-title a{
+	font-size:16px;
+	color:#404040;
+	font-family:$font__main;
+
+
+}
+
+
+
+
+// .shop-archive-image img{
+// 	height:250px;
+
+	
+// }
+
+// .shop-item-container{
+// 	display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+// }
+
+// .shop-item-title{
+// 	z-index:999;
+// }
+
+// .product-container{
+// 	width:250px
+// }
