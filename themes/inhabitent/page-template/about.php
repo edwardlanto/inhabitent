@@ -12,16 +12,18 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		
 		<main id="main" class="site-main" role="main">
-			<div class = "about-hero-image"></div>
+			<div class = "about-hero-image">
+				<h1 class= "about-text">About</h1>
+			</div>
 			
 			
-		
-			<?php while ( have_posts() ) : the_post(); ?>
-			
+		<h2 class ="about-content-header">Our Story</h2>
+		<?php echo CFS()->get( 'about_our_story' ); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+		<h2 class ="about-content-header">Our Team</h2>
+		<?php echo CFS()->get( 'about_our_team' ); ?>
 
-			<?php endwhile; // End of the loop. ?>
+
 	
 			
 

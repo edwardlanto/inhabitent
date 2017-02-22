@@ -19,7 +19,33 @@ get_header(); ?>
 <h2 class = "home-content-heading">Shop Stuff</h2>
 <section></section>
 <h2 class = "home-content-heading">Inhabitent Journal</h2>
-<section></section>
+
+
+<!--Blog Post Loop-->
+<div class = "inhabitents-front-post">
+<?php
+global $post;
+$args = array( 'numberposts' => 3, 'order' => 'DESC', 'orderby' => 'date');
+$myposts = get_posts( $args );
+foreach( $myposts as $post ) :
+  setup_postdata($post); ?>
+
+  <div class = "home-blog-post-container">
+	  <div class = "home-blog-post"><?php the_post_thumbnail( 'large' ); ?></div>
+    <div><p class ="home-blog-text"><?php red_starter_posted_on(); ?></p></div>
+    <div><h3 class ="home-blog-title"><a><?php the_title(); ?></a></h3></div>
+    <a href="" id ="read-entry-home">Read Entry  -></a>
+  </div>
+
+<?php endforeach; 
+wp_reset_postdata(); ?>
+
+
+</div>
+
+
+
+<!--Latest Adventures-->
 <h2 class = "home-content-heading">Latest Adventures</h2>
 <section class = "adventure-wrapper">
   <div class = "adventures-pic-container">

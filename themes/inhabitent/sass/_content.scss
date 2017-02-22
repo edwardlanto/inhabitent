@@ -222,7 +222,7 @@
 	text-align:center;
 }
 
-.about-para{
+.page-template-about .hfeed .site-content .site-main p{
 	text-align: left;
     width: 740px;
     margin: 0 auto;
@@ -416,6 +416,58 @@
 
 .page-template-find-us .hfeed .site-content .post-30{
 	width:840px;
+}
+
+// ------Home Blog Posts------
+.inhabitents-front-post{
+	display:flex;
+	justify-content:space-around;
+}
+
+
+.home-blog-text{
+	font-size:12px;
+	margin:0;
+	margin-top:3px;
+	margin-left:20px;
+}
+
+.home-blog-post-container{
+	width:375px;
+	display:inline-block;
+	margin-right:0;
+	border: 1px solid #e1e1e1;
+	height:414px;
+	
+}
+
+.home-blog-title{
+	margin-top:0;
+	font-size:1.8rem;
+	font-family:$font__accent;
+	margin-right:5px;
+	margin-bottom:5px;
+	margin-left:20px;
+}
+
+.home-blog-title a{
+	color:#248a83;
+}
+#read-entry-home{
+	border: 1px solid #000;
+	font-family:$font__accent;
+	text-transform:uppercase;
+	padding: 10px 10px;
+	color:#000;
+	margin-left:20px;
+}
+
+#read-entry-home a{
+	color:#000;
+}
+.home-blog-post{
+	width:375px;
+	height:250px;
 }
 
 
