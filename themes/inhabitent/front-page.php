@@ -52,7 +52,7 @@ wp_reset_postdata(); ?>
      <div class = "canoe-container">
    
          <div class = "canoe-large-pic adventure-pic">
-			 <h3 class ="adventure-text"><a>Getting Back to Nature in a Canoe</a></h3>
+			 <h3 class ="adventure-text canoe-text"><a>Getting Back to Nature in a Canoe</a></h3>
      </div>
      <div class ="beach-container">
           <div class = "beach-medium-pic adventure-pic">

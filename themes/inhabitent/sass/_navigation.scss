@@ -102,13 +102,35 @@ a {
 	display: block;
 }
 
+// ---------Header---------
 
 .menu li a{
-	color:red;
 	font-family:$font__accent;
 	text-transform:uppercase;
 	color:#248a83;
 	font-size:1rem;
+}
+
+.header-logo{
+	background-image:url("../../images/logo-tent.svg");
+	background-repeat:no-repeat;
+	background-size:contain;
+	height:50px;
+	width:50px;
+	z-index:999;
+	margin-left: 20px;
+    margin-top: 20px;
+	
+
+}
+
+.home .header-logo{
+	background-image:url("../../images/logo-tent-white.svg");
+	background-repeat:no-repeat;
+	background-size:contain;
+	height:50px;
+	width:50px;
+	z-index:999;
 }
 
 .site-branding{
@@ -155,14 +177,11 @@ a {
 
 #primary-menu{
 	margin-right:100px;
+	display: flex;
+    width: 390px;
+    justify-content: space-around;
 }
 
-.header-logo{
-	width:50px;
-	margin-left:40px;
-	margin-top:7px;
-	
-}
 
 .main-navigation{
 	width: 100%;

@@ -519,11 +519,28 @@ a {
   display: block; }
 
 .menu li a {
-  color: red;
   font-family: "novcento", sans-serif;
   text-transform: uppercase;
   color: #248a83;
   font-size: 1rem; }
+
+.header-logo {
+  background-image: url("../../images/logo-tent.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  z-index: 999;
+  margin-left: 20px;
+  margin-top: 20px; }
+
+.home .header-logo {
+  background-image: url("../../images/logo-tent-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  z-index: 999; }
 
 .site-branding {
   width: 100%;
@@ -562,12 +579,12 @@ a {
   margin-top: 7px; }
 
 #primary-menu {
-  margin-right: 100px; }
-
-.header-logo {
-  width: 50px;
-  margin-left: 40px;
-  margin-top: 7px; }
+  margin-right: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  width: 390px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .main-navigation {
   width: 100%;
@@ -954,6 +971,14 @@ div.footer-blocks {
   padding: .75rem 1.5rem;
   font-size: 14.4px; }
 
+.home header #site-navigation {
+  background-color: transparent;
+  border: none;
+  position: absolute; }
+
+.home #primary-menu li a {
+  color: white; }
+
 .front-hero-image {
   height: 100vh;
   width: 100vw;
@@ -1014,6 +1039,11 @@ div.footer-blocks {
 
 .star-small-pic h3 a {
   font-size: 1.6rem; }
+
+.canoe-text a {
+  width: 346px;
+  position: absolute;
+  top: 0; }
 
 .canoe-container {
   width: 50%;
@@ -1121,6 +1151,23 @@ div.footer-blocks {
 .home-blog-post {
   width: 375px;
   height: 250px; }
+
+.shop-archive-image img {
+  height: 250px; }
+
+.shop-item-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.shop-item-title {
+  z-index: 999; }
+
+.product-container {
+  width: 250px; }
 
 /*--------------------------------------------------------------
 # Media

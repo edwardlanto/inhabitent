@@ -46,3 +46,12 @@ function my_login_logo_url_title() {
     return 'Inhabitent';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+// ----Change Title-----
+function product_archive_title($title) {
+	if(is_post_type_archive('products')) {
+		$title = 'Shop Stuff';
+	}
+	return $title;
+}
+add_filter('get_the_archive_title', 'product_archive_title');
