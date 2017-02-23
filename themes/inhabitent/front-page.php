@@ -17,20 +17,19 @@ get_header(); ?>
 </div>
 
 <h2 class = "home-content-heading">Shop Stuff</h2>
-<section class = "shop-stuff-section">
-  <div class = "block-wrapper">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/do.svg"/>
-  </div>
-  <div class = "block-wrapper">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/eat.svg"/>
-  </div>
-  <div class = "block-wrapper">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/sleep.svg"/></div>
-  <div class = "block-wrapper">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/wear.svg"/>
-  </div>
+<?php $terms = get_terms( array(
+  'taxonomy'=>'product_type',
+  'hide_empty'=>'false',
+));
+foreach($terms as $term){
+  $name = $term->name.' ';
+  $slug = $term->slug;
+  echo '<p class = "type-name">' . $name . '</p>';
+  echo '<img src="<?php get_template_directory_uri(); ?>/images/' . $slug . '.svg"' . '/>';
 
-</section>
+}
+?>
+
 <h2 class = "home-content-heading">Inhabitent Journal</h2>
 
 
