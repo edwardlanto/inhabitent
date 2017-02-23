@@ -12,23 +12,30 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 
 		<main id="main" class="site-main" role="main">
-			<div class = "front-hero-image">
+		<div class = "front-hero-image">
   <div class = "front-logo-image"></div>
 </div>
 
 <h2 class = "home-content-heading">Shop Stuff</h2>
 <?php $terms = get_terms( array(
   'taxonomy'=>'product_type',
-  'hide_empty'=>'false',
+  'orderby'=>'name',
+  'hide_empty'=>'false'
 ));
-foreach($terms as $term){
-  $name = $term->name.' ';
-  $slug = $term->slug;
-  echo '<p class = "type-name">' . $name . '</p>';
-  echo '<img src="<?php get_template_directory_uri(); ?>/images/' . $slug . '.svg"' . '/>';
+?><div class ="block-wrapper-container"><?php
+foreach($terms as $term):
+$url = get_term_link($term ->slug. 'product_type');
 
-}
-?>
+  ?>
+
+  <div class "block-wrapper">
+    <img src="<?php echo get_template_directory_uri();?>/images/product-type-icon/<?php echo $term->slug; ?>.svg" class = "shop-image">
+    <?php echo $term->description ?>
+  </div>
+
+<?php endforeach; ?>
+</div>
+
 
 <h2 class = "home-content-heading">Inhabitent Journal</h2>
 
@@ -36,7 +43,6 @@ foreach($terms as $term){
 <!--Blog Post Loop-->
 <div class = "inhabitents-front-post">
 <?php
-global $post;
 $args = array( 'numberposts' => 3, 'order' => 'DESC', 'orderby' => 'date');
 $myposts = get_posts( $args );
 foreach( $myposts as $post ) :

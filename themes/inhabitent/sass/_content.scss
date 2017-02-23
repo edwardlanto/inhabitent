@@ -318,17 +318,18 @@
 	padding:0 1.2rem;
 }
 
-.block-wrapper{
-	width:272px;
-	height:263px;
-	border: 1px solid #e1e1e1;
+.block-wrapper-container{
 	display: flex;
-    justify-content: center;
-	border-top-width: 5px;
+    width: 1120px;
+    margin: 0 auto
+}
+
+.block-wrapper{
+	flex:0 1 23.5%;
 
 }
 
-.block-wrapper img{
+.shop-image{
 	height:70px;
 	width:70px;
 	
