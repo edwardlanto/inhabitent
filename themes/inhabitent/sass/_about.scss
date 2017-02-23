@@ -1,28 +1,33 @@
 // -------about------
 
-.page-template-about h1{
+.page-template-about .about-text{
 	position:absolute;
 	color:#fff;
-	bottom:18rem;
-	font-size:3rem;
+	font-size:45px;
 	font-family:$font__accent;
 	text-transform:uppercase;
-	margin-left:37%;
 }
 
-.page-template-about header h1{
-	width:140px;
+
+.about-background-container{
+	width:1280px;
+	height:587px;
+	
 }
 
-.about-hero-image{
+.about-background{
 
-	background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url("../../images/about-hero.jpg") no-repeat center bottom;
-    background-size: cover, cover;
-	height:100vh;
-	z-index:-999;
-	position:relative;
-	min-width:100vw;
+	height: 100%;
+    // position: relative;
+    max-width: 100vw;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding-bottom:3rem;
+    
 }
+
+
 
 .about-content-header{
 	color: #2f1339;

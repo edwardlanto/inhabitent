@@ -55,3 +55,34 @@ function product_archive_title($title) {
 	return $title;
 }
 add_filter('get_the_archive_title', 'product_archive_title');
+
+function my_styles_method() {
+	wp_enqueue_style(
+		'custom-style',
+		get_template_directory_uri() . '/build/css/style.min.css'
+	);
+        $background =  CFS()->get('about_header_image');
+        $custom_css = "
+                .about-background{
+                        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url($background);
+						background-size:cover,cover;
+						background-position: bottom center;}";
+                
+        wp_add_inline_style( 'custom-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'my_styles_method' );
+
+// ------pre_get_post-------
+
+add_action( 'pre_get_posts', 'organize' );
+
+function organize($query){
+
+    if ( $query->is_main_query() && is_post_type_archive('products')){
+		$query->set('orderby', 'title');
+        $query->set('order', 'ASC');
+		$query->set('posts_per_page','20');
+    }
+	
+}
+?>

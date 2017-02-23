@@ -104,11 +104,20 @@ a {
 
 // ---------Header---------
 
-.menu li a{
+.menu {
+	li a{
 	font-family:$font__accent;
 	text-transform:uppercase;
-	color:#248a83;
+	color:$background-entry-color;
 	font-size:1rem;
+	font-weight:300;
+	}
+}
+.menu {
+	li a:hover{
+		color: #2f1339;
+
+	}
 }
 
 .header-logo{
@@ -124,13 +133,15 @@ a {
 
 }
 
-.home .header-logo{
+.home {
+	.header-logo{
 	background-image:url("../../images/logo-tent-white.svg");
 	background-repeat:no-repeat;
 	background-size:contain;
 	height:50px;
 	width:50px;
 	z-index:999;
+	}
 }
 
 .site-branding{
@@ -161,7 +172,7 @@ a {
 .fa-search{
 	z-index:20;
 	height:5px;
-	color:#248a83;
+	color:$background-entry-color;
 
 }
 
@@ -188,7 +199,7 @@ a {
     height: 50px;
 	position:fixed;
 	background-color: hsla(0,0%,100%,.85);
-	top:0;
+	top:32px;
 	z-index:5;
 	align-items:center;
 }

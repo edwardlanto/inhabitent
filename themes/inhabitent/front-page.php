@@ -69,18 +69,18 @@ wp_reset_postdata(); ?>
      </div>
      <div class ="beach-container">
           <div class = "beach-medium-pic adventure-pic">
-			  <h3 class ="adventure-text"><a>A Night with Friends at the Beach</a></h3>
+			  <h3 class ="adventure-text"><a class = "beach-text">A Night with Friends at the Beach</a></h3>
 		  </div>
      </div>
      <div class ="mountain-container">
 
          <div class ="mountain-small-pic adventure-pic">
-			 <h3 class ="adventure-text"><a>Taking in the View at Big Mountain</a></h3>
+			 <h3 class ="adventure-text mountain-text"><a>Taking in the View at Big Mountain</a></h3>
 		 </div>
      </div>
      <div class ="star-container">
          <div class ="star-small-pic adventure-pic">
-			 <h3 class ="adventure-text"><a>Star-Gazing at the Night Sky</a></h3>
+			 <h3 class ="adventure-text star-text"><a>Star-Gazing at the Night Sky</a></h3>
 		 </div>
      </div>
 

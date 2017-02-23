@@ -53,6 +53,11 @@
 
 .blog #page .site-content{
 	display:flex;
+	
+}
+
+.site-content{
+	padding-top:50px;
 }
 .entry-header{
 	position:relative;
@@ -94,9 +99,11 @@
 	font-family:$font__accent;
 }
 
-.blog .entry-content{
+.blog {
+	.entry-content{
 	margin-left:75px;
 	width: 770px;
+	}
 }
 
 .entry-content p{
@@ -221,167 +228,7 @@
 	font-size:14.4px;
 }
 
-// ---------------------------------Front-Page------------------------
 
-.home header #site-navigation{
-	background-color:transparent;
-	border:none;
-	position:absolute;
-}
-
-.home #primary-menu li a{
-	color:white;
-}
-.front-hero-image{
-	height:100vh;
-	width:100vw;
-	background:linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696, url("../../images/home-hero.jpg") no-repeat top bottom;
-	background-size:cover,cover;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	
-}
-
-.front-logo-image{
-	background-image:url("../../images/home-front-logo.svg");
-	background-size:contain;
-	height:275px;
-	width:275px;
-}
-
-.home-content-heading{
-	font-size: 38.4px;
-    font-size: 2.4rem;
-    font-weight: 400;
-    margin-bottom: 3.75rem;
-    text-align: center;
-	font-family:$font__accent;
-	color:#2f1339;
-}
-
-// --------------Front Page Adventure----------
-
-
-.page-template-front-page{
-	overflow-x:hidden;
-
-}
-.adventure-wrapper{
-	width:100%;
-	overflow-x:hidden;
-	
-}
-
-
-.adventures-pic-container{
-	width:1120px;;
-	height:540px;
-	margin:0 auto;
-	overflow-x:hidden;
-	overflow-y:hidden;
-	position:relative;
-}
-
-.adventure-pic{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-}
-
-.adventure-text a{
-	color:#fff;
-	font-size:2.4rem;
-	font-weight:400;
-}
-
-.mountain-small-pic h3 a{
-	font-size:1.6rem;
-}
-
-.star-small-pic h3 a{
-	font-size:1.6rem;
-}
-
-.canoe-text a{
-	width: 346px;
-    position: absolute;
-    top: 0;
-}
-
-.canoe-container{
-	width:50%;
-	height:100%;
-	position:absolute;
-}
-.canoe-large-pic{
-	background:url("../../images/canoe-girl.jpg")no-repeat,center;
-	background-size:cover;
-	height: 100vh;
-    width: 126%;
-    transform: translatex(-163px);
-	position:relative;
-
-	
-}
-
-.beach-container{
-	width:100%;
-	height:100%;
-	position:absolute;
-	top: 0;
-    left: 100%;
-
-}
-
-
-.beach-medium-pic{
-	background:url("../../images/beach.jpg");
-	background-size:cover;
-	height: 50%;
-    width: 100%;
-	border-bottom: 20px solid white;
-
-}
-
-.mountain-container{
-	width:50%;
-	height:100%;
-	position:absolute;
-	left:100%;
-	top:50%;
-
-
-}
-
-.mountain-small-pic{
-	background:url("../../images/mountain.jpg");
-	background-size:cover;
-	width:100%;
-	height:50%;
-	border-right:10px solid white;
-
-}
-
-
-
-.star-container{
-	width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 150%;
-
-}
-
-.star-small-pic{
-	background:url("../../images/night-sky.jpg");
-	background-size:cover;
-	width:100%;
-	height:50%;
-	border-left:10px solid white;
-
-}
 
 // ------Find us-----
 
@@ -394,6 +241,17 @@
 }
 
 // ------Home Blog Posts------
+
+.archive {
+	.page-title{
+		text-align:center;
+		font-family:$font__accent;
+		font-size: 35.4px;
+    	font-weight: bold;
+    	text-transform: uppercase;
+	}
+}
+
 .inhabitents-front-post{
 	display:flex;
 	justify-content:space-around;
@@ -427,6 +285,8 @@
 
 .home-blog-title a{
 	color:#248a83;
+	width: 270px;
+	font-size:23px;
 }
 #read-entry-home{
 	border: 1px solid #000;
@@ -437,9 +297,13 @@
 	margin-left:20px;
 }
 
-#read-entry-home a{
+#read-entry-home {
 	color:#000;
+	position:relative;
+    top: 20px;
+    right: 3px;
 }
+
 .home-blog-post{
 	width:375px;
 	height:250px;
@@ -485,52 +349,40 @@
 .product-container{
 	display:inline-block;
 	border: 1px solid #e1e1e1;
-	margin-bottom:1.5rem;
+	height:288px;
 	
 }
+	
 
-.shop-image-container{
-	height:370px;
-	
-}
+
 
 .shop-archive-image{
 	background-color: #e1e1e1;
+	margin:0;
 
 }
 
 .shop-archive-image img{
 	height: 240px;
-    width: 255px;
+    width: 284px;
 }
 
-.home-blog-title a{
+.price-text{
+	font-size:16px;
+	color:#404040;
+	font-family:$font__main;
+}
+
+.product-title{
 	font-size:16px;
 	color:#404040;
 	font-family:$font__main;
 
+}
 
+.home-blog-title{
+	display: flex;
+    justify-content: space-between;
 }
 
 
-
-
-// .shop-archive-image img{
-// 	height:250px;
-
-	
-// }
-
-// .shop-item-container{
-// 	display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-// }
-
-// .shop-item-title{
-// 	z-index:999;
-// }
-
-// .product-container{
-// 	width:250px
-// }
