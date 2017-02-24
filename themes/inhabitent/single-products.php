@@ -6,19 +6,17 @@
 */
 
 get_header(); ?>
-this is a single page
-<div class="container-single">
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
-
+        <p class = "product-price"><?php echo CFS()->get('price');?></p>
+        
         <?php while ( have_posts() ) : the_post(); ?>
-            <div class = "text-data-single-page">
+
             <?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-            <!--<?php the_post_navigation(); ?>-->
-            </div>
-        <div class ="social-icons-container">
+            <?php the_post_navigation(); ?>
+            <div class ="social-icons-container">
             <button class ="facebook-button" type="button" value ="Like">
                 <i class="fa fa-facebook" aria-hidden="true">
                     <span class = "button-text">Like</span>
@@ -34,21 +32,18 @@ this is a single page
                     <span class = "button-text">Pin</span>
                 </i>
             </button>
-        </div>
-        <!--<button href="#" id="close-comments">Close Comments</button>-->
-         
+            
             <?php
+                // If comments are open or we have at least one comment, load up the comment template.
                 if ( comments_open() || get_comments_number() ) :
-                
                     comments_template();
                 endif;
             ?>
-            <p>Want to join the discussion? Feel free to contribute!</p>
+
         <?php endwhile; // End of the loop. ?>
+        
 
         </main><!-- #main -->
     </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
-</div>
 <?php get_footer(); ?>

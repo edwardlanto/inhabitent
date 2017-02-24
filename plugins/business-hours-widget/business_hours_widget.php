@@ -51,7 +51,7 @@ class Business_Hours_Widget extends WP_Widget {
 
 		parent::__construct(
 			$this->get_widget_slug(),
-			'Business Hours Widget',
+			'Business Hours',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
 				'description' => 'A widget for adding inhabitent business hours.'
@@ -146,7 +146,7 @@ class Business_Hours_Widget extends WP_Widget {
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
-				'title' => 'Business Hours Widget',
+				'title' => 'Business',
 				'monday_friday' => '',
 				'saturday' => '',
 				'sunday' => ''

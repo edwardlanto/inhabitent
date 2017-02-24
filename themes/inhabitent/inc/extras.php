@@ -48,27 +48,25 @@ function my_login_logo_url_title() {
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 // ----Change Title-----
-function product_archive_title($title) {
+function modify_title($title) {
 	if(is_post_type_archive('products')) {
 		$title = 'Shop Stuff';
 	}
 	return $title;
 }
-add_filter('get_the_archive_title', 'product_archive_title');
+add_filter('get_the_archive_title', 'modify_title');
 
 function my_styles_method() {
-	wp_enqueue_style(
-		'custom-style',
-		get_template_directory_uri() . '/build/css/style.min.css'
-	);
-        $background =  CFS()->get('about_header_image');
-        $custom_css = "
-                .about-background{
-                        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url($background);
-						background-size:cover,cover;
-						background-position: bottom center;}";
-                
-        wp_add_inline_style( 'custom-style', $custom_css );
+   
+   if(!is_page_template( 'about.php' )){
+       return;
+   }
+   $url = CFS()->get('about_header_image');
+   $custom_css = "
+   .about_background{
+       background-image:linear-gradient( to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url( {$url});
+   }";
+   wp_add_inline_style( 'red-starter-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'my_styles_method' );
 

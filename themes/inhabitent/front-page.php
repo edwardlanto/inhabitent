@@ -17,47 +17,50 @@ get_header(); ?>
 </div>
 
 <h2 class = "home-content-heading">Shop Stuff</h2>
+
+
 <?php $terms = get_terms( array(
   'taxonomy'=>'product_type',
   'orderby'=>'name',
   'hide_empty'=>'false'
 ));
-?><div class ="block-wrapper-container"><?php
-foreach($terms as $term):
-$url = get_term_link($term ->slug. 'product_type');
-
+?>
+<div class ="block-wrapper-container">
+  <?php
+    foreach($terms as $term):
+    $url = get_term_link($term ->slug. 'product_type');
   ?>
-
-  <div class "block-wrapper">
-    <img src="<?php echo get_template_directory_uri();?>/images/product-type-icon/<?php echo $term->slug; ?>.svg" class = "shop-image">
-    <?php echo $term->description ?>
-  </div>
+    <div class = "block-wrapper">
+      <div class ="logo-container">
+        <img src="<?php echo get_template_directory_uri();?>/images/product-type-icon/<?php echo $term->slug; ?>.svg" class = "shop-image">
+      </div>
+    <div class ="logo-description">
+      <?php echo $term->description ?>
+    </div>
+    <div class = "more-button-container">
+      <a href ="<?php $url ?>" class = "more-button"><?php echo $term->name . " Stuff";?></a>
+    </div>
+</div><!--block-wrapper-->
 
 <?php endforeach; ?>
-</div>
-
-
-<h2 class = "home-content-heading">Inhabitent Journal</h2>
-
-
+</div><!--block-wrapper-container-->
+  <h2 class = "home-content-heading">Inhabitent Journal</h2>
 <!--Blog Post Loop-->
 <div class = "inhabitents-front-post">
 <?php
-$args = array( 'numberposts' => 3, 'order' => 'DESC', 'orderby' => 'date');
-$myposts = get_posts( $args );
-foreach( $myposts as $post ) :
-  setup_postdata($post); ?>
-
+  $args = array( 'numberposts' => 3, 'order' => 'DESC', 'orderby' => 'date');
+  $myposts = get_posts( $args );
+  foreach( $myposts as $post ) :
+    setup_postdata($post); ?>
   <div class = "home-blog-post-container">
 	    <div class = "home-blog-post"><?php the_post_thumbnail( 'large' ); ?></div>
-      <div><p class ="home-blog-text"><?php red_starter_posted_on(); ?></p></div>
+      <div><p class ="home-blog-text"><?php red_starter_posted_on(); ?>/<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p></div>
       <div><h3 class ="home-blog-title"><a><?php the_title(); ?></a></h3></div>
       <a href="" id ="read-entry-home">Read Entry  -></a>
   </div>
 
 <?php endforeach; 
 wp_reset_postdata(); ?>
-
 
 </div>
 
@@ -99,7 +102,7 @@ wp_reset_postdata(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+			
 
 			<?php endwhile; // End of the loop. ?>
 

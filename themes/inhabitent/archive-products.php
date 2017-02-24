@@ -4,12 +4,11 @@
  *
  * @package RED_Starter_Theme
  */
-
 get_header(); ?>
 <div class = "primary-secondary-container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+			
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -19,12 +18,34 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
+
+			<?php
+		$terms = get_terms( array(
+  		'taxonomy'=>'product_type',
+  		'orderby'=>'name',
+  		'hide_empty'=>'false'
+		)); ?>
+		<?php
+    	foreach($terms as $term):
+   		$url = get_term_link($term ->slug. 'product_type');
+  ?>
+
+
+   
+ 
+
+      <a href ="<?php $url ?>"><?php echo $term->name;?></a>
+	  <?php endforeach; ?>
+
+
+
 			<?php /* Start the Loop */ ?>
 			<div class ="shop-items-container">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class = "product-container">
 						<div class = "shop-archive-image">
-							<?php the_post_thumbnail( 'medium' ); ?>
+							
+							<a href ="<?php the_permalink();?>"><?php the_post_thumbnail( 'medium' ); ?></a>
 						</div>
 						<div class = "shop-item-title">
 							<p class ="home-blog-title">

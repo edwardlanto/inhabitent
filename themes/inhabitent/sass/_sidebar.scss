@@ -1,0 +1,78 @@
+// --------------Sidebar----------
+
+
+#secondary{
+	width:100%;
+	border-left: 1px solid #e1e1e1;
+	padding-top:50px;
+
+}
+
+.textwidget{
+	margin: 0 auto;
+    width: 202px;
+	font-family:$font__main;
+}
+
+.textwidget a{
+	color:#248a83;
+	font-family:$font__main;
+	font-size:1rem;
+}
+
+
+.widget-text{
+	font-family:$font__main;
+	font-size:1rem;
+
+}
+
+.sidebar-day{
+	font-weight:bold;
+}
+
+.widget-title {
+	color:#2f1339;
+	font-size:1.5rem;
+	text-align:center;
+	text-transform:uppercase;
+	font-family:$font__accent;
+}
+
+.widget ul{
+	list-style-type:none;
+	font-family:$font__main;
+
+}
+
+
+.widget ul a{
+	color:#248a83;
+	line-height:2;
+
+}
+
+#phone-id{
+	color:$color__text-main;
+}
+
+.widget-text-container{
+	display: flex;
+    align-items: center;
+}
+
+.textwidget i{
+	padding-right:6px;
+}
+
+.widget p{
+	margin: 0 auto;
+    width: 202px;
+    font-family:$font__main;
+	margin-bottom:1rem;
+}
+
+.textwidget div{
+	margin-bottom:1rem;
+}
+
