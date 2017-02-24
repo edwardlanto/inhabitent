@@ -4,11 +4,12 @@
  *
  * @package RED_Starter_Theme
  */
+
 get_header(); ?>
 <div class = "primary-secondary-container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -18,31 +19,24 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-
-<?php
-    	foreach($terms as $term):
-   		$url = get_term_link($term->slug. 'product_type');
-  ?>
-
-
-   
- 
-
-      <a href ="<?php $url ?>"><?php echo $term->name;?></a>
-	  <?php endforeach; ?>
-
-
-
 			<?php /* Start the Loop */ ?>
 			<div class ="shop-items-container">
 			<?php while ( have_posts() ) : the_post(); ?>
-						<div class = "shop-archive-image">
-							
-							<a href ="<?php the_permalink();?>"><?php the_post_thumbnail( 'medium' ); ?></a>
-						</div>
-						
-			<?php endwhile; ?>
 
+		<div class = "product-container">
+						<div class = "shop-archive-image">
+							<a href ="<?php the_permalink();?>"><?php the_post_thumbnail( 'medium' ); ?></a>
+						</div><!--shop-archive-image-->
+						<div class = "shop-item-title">
+							<p class ="home-blog-title">
+							<span class = "product-title"><?php the_title(); ?></span>
+							<span class = "price-text"><?php echo CFS()->get('price');?></span>
+							</p>
+						</div><!--shop-archive-title-->
+				</div><!--product-container-->
+
+			<?php endwhile; ?>
+			</div><!--shop-items-container-->
 
 			<?php the_posts_navigation(); ?>
 

@@ -8,34 +8,29 @@ get_header(); ?>
 <div class = "primary-secondary-container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			
-		<?php if ( have_posts() ) : ?>
-
+			<?php if ( have_posts() ) : ?>
 			<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
-
 			<?php
-		$terms = get_terms( array(
-  		'taxonomy'=>'product_type',
-  		'orderby'=>'name',
-  		'hide_empty'=>'false'
-		)); ?>
-		<?php
-    	foreach($terms as $term):
-   		$url = get_term_link($term->slug. 'product_type');
-  ?>
-
-
-   
- 
-
-      <a href ="<?php $url ?>"><?php echo $term->name;?></a>
-	  <?php endforeach; ?>
+			$terms = get_terms( array(
+  			'taxonomy'=>'product_type',
+  			'orderby'=>'name',
+  			'hide_empty'=>'false'
+			)); 
+			?>
+			<?php
+    			foreach($terms as $term):
+   				$url = get_term_link($term,'product_type');
+		
+  			?>
+			<a href ="<?php echo $url?>"><?php echo $term->name;?></a>
+			
+		
+			<?php endforeach; ?>
 
 
 
@@ -44,19 +39,17 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class = "product-container">
 						<div class = "shop-archive-image">
-							
 							<a href ="<?php the_permalink();?>"><?php the_post_thumbnail( 'medium' ); ?></a>
-						</div>
+						</div><!--shop-archive-image-->
 						<div class = "shop-item-title">
 							<p class ="home-blog-title">
 							<span class = "product-title"><?php the_title(); ?></span>
 							<span class = "price-text"><?php echo CFS()->get('price');?></span>
 							</p>
-						</div>
-				</div>
+						</div><!--shop-archive-title-->
+				</div><!--product-container-->
 			<?php endwhile; ?>
-			</div>
-
+			</div><!--shop-items-container-->
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>

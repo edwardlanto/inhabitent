@@ -1455,6 +1455,9 @@ div.footer-blocks {
 .single article {
   width: 1120px; }
 
+.tax-product_type .taxonomy-description p {
+  text-align: center; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
