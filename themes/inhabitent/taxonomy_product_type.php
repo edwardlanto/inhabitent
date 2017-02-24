@@ -19,13 +19,7 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 
-			<?php
-		$terms = get_terms( array(
-  		'taxonomy'=>'product_type',
-  		'orderby'=>'name',
-  		'hide_empty'=>'false'
-		)); ?>
-		<?php
+<?php
     	foreach($terms as $term):
    		$url = get_term_link($term->slug. 'product_type');
   ?>
@@ -42,20 +36,13 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<div class ="shop-items-container">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<div class = "product-container">
 						<div class = "shop-archive-image">
 							
 							<a href ="<?php the_permalink();?>"><?php the_post_thumbnail( 'medium' ); ?></a>
 						</div>
-						<div class = "shop-item-title">
-							<p class ="home-blog-title">
-							<span class = "product-title"><?php the_title(); ?></span>
-							<span class = "price-text"><?php echo CFS()->get('price');?></span>
-							</p>
-						</div>
-				</div>
+						
 			<?php endwhile; ?>
-			</div>
+
 
 			<?php the_posts_navigation(); ?>
 

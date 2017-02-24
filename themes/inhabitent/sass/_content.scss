@@ -511,7 +511,6 @@
 		}
 	}
 }
-
 .widget-title{
 	text-align:left;
 }
@@ -531,6 +530,8 @@
 		width:500px;
 	}
 }
+
+
 
 
 // -------Single Products-------
@@ -574,6 +575,7 @@
     top: 129px;
 	font-size:28.7px;
 	font-family:$font__accent;
+	width:40px;
 }
 
 .post-type-archive-products{
@@ -588,7 +590,7 @@
 	.entry-content{
 		p{
 			width:537px;
-			transform: translate(-68px, -269px);
+			transform: translate(75px,-269px);
 			line-height:1.75;
 		}
 	}
@@ -599,5 +601,25 @@
 	display: flex;
     justify-content: flex-end;
 
+	}
+}
+
+.single{
+	.site-main{
+		.social-icons-container{
+			width:400px;
+		}		
+	}
+}
+
+.single{
+	.nav-previous, .nav-next{
+	display:none;
+	}
+}
+
+.single{
+	article{
+		width:1120px;
 	}
 }

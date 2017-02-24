@@ -1429,14 +1429,15 @@ div.footer-blocks {
   left: 655px;
   top: 129px;
   font-size: 28.7px;
-  font-family: "novcento", sans-serif; }
+  font-family: "novcento", sans-serif;
+  width: 40px; }
 
 .post-type-archive-products .site-main a {
   color: #248a83; }
 
 .single-products .entry-content p {
   width: 537px;
-  transform: translate(-68px, -269px);
+  transform: translate(75px, -269px);
   line-height: 1.75; }
 
 .single-products .entry-content {
@@ -1444,6 +1445,15 @@ div.footer-blocks {
   display: flex;
   -ms-flex-pack: end;
       justify-content: flex-end; }
+
+.single .site-main .social-icons-container {
+  width: 400px; }
+
+.single .nav-previous, .single .nav-next {
+  display: none; }
+
+.single article {
+  width: 1120px; }
 
 /*--------------------------------------------------------------
 # Media
