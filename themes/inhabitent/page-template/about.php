@@ -14,7 +14,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class = "about-background-container">
 				<div class = "about-background">
-					<!--<?php my_styles_method(); ?>		-->
+					<?php my_styles_method(); ?>		
 				</div> 
 			</div>
 					

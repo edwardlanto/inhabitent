@@ -30,8 +30,13 @@
 					</a>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<span class="header-search">
+                        <?php get_search_form(); ?>
+                    </span>  
+				</nav>
+				
 			</header><!-- #masthead -->
 			<!--<p class="site-description"><?php bloginfo( 'description' ); ?></p> site description0-->
 				<!--moved site description from header-->
-
+			
 			<div id="content" class="site-content">

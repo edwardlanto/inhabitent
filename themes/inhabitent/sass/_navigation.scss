@@ -185,7 +185,6 @@ a {
 }
 
 #primary-menu{
-	margin-right:100px;
 	display: flex;
     width: 390px;
     justify-content: space-around;
@@ -202,6 +201,7 @@ a {
 	top:32px;
 	z-index:5;
 	align-items:center;
+	border-bottom: 1px solid #e1e1e1;
 }
 
 .site-navigation{

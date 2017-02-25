@@ -47,7 +47,7 @@ function my_login_logo_url_title() {
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
-// ----Change Title-----
+// ----Change Title Archive-----
 function modify_title($title) {
 	if(is_post_type_archive('products')) {
 		$title = 'Shop Stuff';
@@ -55,6 +55,49 @@ function modify_title($title) {
 	return $title;
 }
 add_filter('get_the_archive_title', 'modify_title');
+
+// ---Change Wear Title function----
+
+function modify_wear($wear) {
+	if(has_term('wear', 'product_type')) {
+		$wear = 'Wear';
+	}
+	return $wear;
+}
+add_filter('get_the_archive_title', 'modify_wear');
+
+// --Change eat title function--
+
+
+function modify_eat($eat) {
+	if(has_term('eat', 'product_type')) {
+		$eat = 'Eat';
+	}
+	return $eat;
+}
+add_filter('get_the_archive_title', 'modify_eat');
+
+// ----Change do title function---
+
+function modify_do($do) {
+	if(has_term('do', 'product_type')) {
+		$do = 'Do';
+	}
+	return $do;
+}
+add_filter('get_the_archive_title', 'modify_do');
+
+// --Change sleep title function---
+
+function modify_sleep($sleep) {
+	if(has_term('sleep', 'product_type') && is_tax( 'product_type','sleep')) {
+		$sleep = 'Sleep';
+	}
+	return $sleep;
+}
+add_filter('get_the_archive_title', 'modify_sleep');
+
+
 
 function my_styles_method() {
    

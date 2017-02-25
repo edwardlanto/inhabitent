@@ -1,5 +1,14 @@
 // ---------------------------------Front-Page------------------------
 
+//----------Page Aligner---------------
+
+.page-container{
+	max-width:1120px;
+	margin:0 auto;
+
+}
+
+//------Heading and hero----------
 .home header #site-navigation{
 	background-color:transparent;
 	border:none;
@@ -30,12 +39,102 @@
 .home-content-heading{
 	font-size: 38px;
     font-weight: 400;
-    margin-bottom: 3.75rem;
+    margin-bottom: 3rem;
     text-align: center;
 	font-family:$font__accent;
 	color:#2f1339;
 	text-transform:uppercase;
 	font-weight:400;
+}
+
+
+
+.archive {
+	.page-title{
+		text-align:center;
+		font-family:$font__accent;
+		font-size: 38.4px;
+    	font-weight: bold;
+    	text-transform: uppercase;
+	}
+}
+
+.inhabitents-front-post{
+	display:flex;
+	justify-content:space-around;
+}
+
+//---------Journal Home Dynamic Entries-------------
+
+
+.home-blog-text{
+	font-size:12px;
+	margin:0;
+	margin-top:3px;
+	margin-left:20px;
+}
+
+.home-blog-post img{
+	width:354px;
+	height:250px;
+	border-bottom:5px solid #e1e1e1;
+}
+
+.home-blog-post-container{
+
+	display:inline-block;
+	margin-right:0;
+	border: 1px solid #e1e1e1;
+	height:414px;
+	
+}
+
+.home-blog-title{
+	margin-top:0;
+	font-size:1.8rem;
+	font-family:$font__accent;
+	margin-right:5px;
+	margin-bottom:5px;
+	margin-left:20px;
+}
+
+.home-blog-title a{
+	color:#248a83;
+	width: 270px;
+	font-size:23px;
+}
+#read-entry-home{
+	border: 1px solid #000;
+	font-family:$font__accent;
+	text-transform:uppercase;
+	padding: 10px 10px;
+	color:#000;
+	margin-left:20px;
+		&:hover{
+			background-color:#248a83;
+			color:white;
+			border-color:#248a83;
+		}
+}
+
+#read-entry-home {
+	color:#000;
+	position:relative;
+    top: 20px;
+    right: 3px;
+	font-size:14px;
+	font-family:$font__accent;
+}
+
+
+.home-read-button{
+	color:white;
+	
+	
+}
+
+.home-content-heading{
+	margin-top:2.5rem;
 }
 
 // --------------Front Page Adventure----------
@@ -112,6 +211,7 @@
 	position:absolute;
 	left:100%;
 	top:50%;
+	
 
 
 }
@@ -186,6 +286,17 @@
     position: relative;
     bottom: 57px;
 
+}
+
+.home-read-button-container{
+	width:132px;
+	height:42px;
+	border:1px solid white;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	position:absolute;
+	
 }
 
 

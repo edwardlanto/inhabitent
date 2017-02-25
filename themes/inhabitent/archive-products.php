@@ -22,15 +22,15 @@ get_header(); ?>
   			'hide_empty'=>'false'
 			)); 
 			?>
-			<?php
-    			foreach($terms as $term):
-   				$url = get_term_link($term,'product_type');
-		
-  			?>
-			<a href ="<?php echo $url?>"><?php echo $term->name;?></a>
+			<div class = "taxonomy-container">
+				<?php
+					foreach($terms as $term):
+					$url = get_term_link($term,'product_type');
 			
-		
-			<?php endforeach; ?>
+				?>
+				<a href ="<?php echo $url?>"><?php echo $term->name;?></a>
+				<?php endforeach; ?>
+			</div>
 
 
 
