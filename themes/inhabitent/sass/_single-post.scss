@@ -12,6 +12,13 @@
 	padding:12px 24px;
 	line-height:1;
 	margin-left: 73px;
+	text-transform:uppercase;
+	font-size:14px;
+	&:hover{
+		background-color:#248a83;
+		color:white;
+		border-color:#248a83;
+	}
 }
 
 .type-post {
@@ -75,6 +82,8 @@
 	margin-left:75px;
 }
 
+// ------Comments-------
+
 .comment-reply-title{
 	font-family:$font__accent;
 	text-transform:uppercase;
@@ -82,18 +91,73 @@
 	margin-left:75px;
 }
 
+.comments-title{
+	text-transform:uppercase;
+	font-family:$font__accent;
+	margin-left:75px;
+}
+
+.comment-body{
+	display:flex;
+}
+
+.comment-author{
+	font-family:$font__main;
+	font-weight:700;
+	font-style:normal;
+	font-size:16px;
+
+}
+
+
+.comment-content{
+	margin-left:24px;
+}
 .comment-form label{
 	font-size:17px;
 	font-family:$font__accent;
 	margin-bottom:1.5rem;
 	text-transform:uppercase;
-	margin-left:75px;
+	// margin-left:75px;
 }
 
+.comment-reply-link{
+	color:#248a83;
+	&:hover{
+		color:#248a83;
+	}
+
+}
+
+.comment-metadata{
+	a{
+		color:#248a83;
+	}
+}
+.comment-form-author, .comment-form-url, .comment-form-email	{
+	display:flex;
+	flex-direction:column;
+}
 #comment{
-	margin-left:75px;
+	width:740px;
 }
 
+.comment-form{
+	textarea{
+		background-color:#f4f4f4;
+	}
+}
+
+.comment-form{
+	input{
+		background-color: #f4f4f4;
+	}
+}
+
+.comment-form-comment{
+	display:flex;
+	flex-direction:column;
+}
 .form-submit input{
 	background-color:$background-entry-color;
 	box-shadow:none;
@@ -108,3 +172,8 @@
 	
 }
 
+.comment-author-avatar{
+	img{
+		border-radius:360px;
+	}
+}

@@ -133,6 +133,30 @@
 }
 
 
+
+.blog, .single-post{
+	.entry-header{
+		.entry-title{
+			text-transform:uppercase;
+			font-family:$font__accent;
+		}
+	}
+}
+
+.post-template-default.single.single-post.single-format-standard{
+	.social-icons-container{
+		transform: translate(0px,0px);
+	}
+}
+
+.post-template-default.single.single-post.single-format-standard{
+	.comment-form{
+		p{
+			margin-left:75px;
+		}
+	}
+}
+
 // ------Find Us-----
 
 .find-us-heading{
@@ -180,82 +204,6 @@
 		font-family:$font__accent;
 	}
 }
-
-// ------Home Blog Posts------
-
-
-
-
-
-
-// -----Shop Stuff Home----
-
-
-
-.block-wrapper-container{
-	display: flex;
-    width: 1120px;
-    margin: 0 auto;
-	justify-content:space-between;
-}
-
-.block-wrapper{
-	height:272px;
-	width:263.19px;
-	border: 1px solid #e1e1e1;
-	border-top-width: 5px;
-		&:hover{
-			border-color:#d99054;
-		}
-}
-
-.block-wrapper:hover{
-	border-top-width:5px;
-	
-
-}
-
-.shop-image{
-	height:70px;
-	width:70px;
-	
-
-}
-
-.logo-container{
-	display:flex;
-	justify-content:center;
-	margin-top:15px;
-}
-
-.logo-description{
-	text-align:center;
-	line-height:1.75;
-	font-family:$font__main;
-	margin-top: 25px;
-}
-
-.more-button-container{
-	transform: translate(65px,20px);
-}
-
-.more-button:hover{
-	background-color:#1B6661;
-}
-
-.more-button{
-	text-transform:uppercase;
-	font-family:$font__accent;
-	color:white;
-	background-color:#248a83;
-	padding:12px 24px;
-	transform: translate(65px,20px);
-	&:hover{
-		color:white;
-	}
-}
-
-
 
 // ------------------Shop--------------
 
