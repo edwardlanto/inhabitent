@@ -209,6 +209,10 @@ a {
 	overflow-x:hidden;
 }
 
+.menu-container{
+	display:flex;
+}
+
 @media screen and (min-width: 768px) {
 	.menu-toggle {
 		display: none;

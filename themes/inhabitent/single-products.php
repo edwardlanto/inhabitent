@@ -6,7 +6,7 @@
 */
 
 get_header(); ?>
-
+    <div class ="page-container">
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
         <p class = "product-price"><?php echo CFS()->get('price');?></p>
@@ -45,5 +45,6 @@ get_header(); ?>
 
         </main><!-- #main -->
     </div><!-- #primary -->
+</div>
 
 <?php get_footer(); ?>

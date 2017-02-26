@@ -119,7 +119,7 @@ add_action( 'pre_get_posts', 'organize' );
 
 function organize($query){
 
-    if ( $query->is_main_query() && is_post_type_archive('products')){
+    if ( $query->is_main_query()){
 		$query->set('orderby', 'title');
         $query->set('order', 'ASC');
 		$query->set('posts_per_page','20');
@@ -127,3 +127,5 @@ function organize($query){
 	
 }
 ?>
+
+

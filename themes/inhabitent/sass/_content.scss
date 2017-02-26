@@ -62,7 +62,6 @@
 .entry-header{
 	position:relative;
 	z-index:-999;
-	// margin-left:75px;
 	width:100%;
 
 }
@@ -106,7 +105,6 @@
 
 .blog, .container-single {
 	.entry-content{
-	margin-left:75px;
 	width: 770px;
 	}
 }
@@ -253,6 +251,7 @@
 	display:inline-block;
 	border: 1px solid #e1e1e1;
 	height:288px;
+	margin-bottom:1.5rem;
 }
 	
 .shop-archive-image{
@@ -294,6 +293,12 @@
 .post-type-archive-products{
 	.page-title{
 		margin-top:2.4rem;
+	}
+}
+
+.search-form{
+	fieldset{
+		border:none;
 	}
 }
 

@@ -643,6 +643,10 @@ a {
   width: 100%;
   overflow-x: hidden; }
 
+.menu-container {
+  display: -ms-flexbox;
+  display: flex; }
+
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none; }
@@ -1233,7 +1237,6 @@ div.footer-blocks {
   width: 100%; }
 
 .blog .entry-content, .container-single .entry-content {
-  margin-left: 75px;
   width: 770px; }
 
 .entry-content p {
@@ -1328,7 +1331,8 @@ div.footer-blocks {
 .product-container {
   display: inline-block;
   border: 1px solid #e1e1e1;
-  height: 288px; }
+  height: 288px;
+  margin-bottom: 1.5rem; }
 
 .shop-archive-image {
   background-color: #e1e1e1;
@@ -1363,6 +1367,9 @@ div.footer-blocks {
 
 .post-type-archive-products .page-title {
   margin-top: 2.4rem; }
+
+.search-form fieldset {
+  border: none; }
 
 .taxonomy-container {
   display: -ms-flexbox;
@@ -1463,7 +1470,6 @@ div.footer-blocks {
   border: 1px solid black;
   padding: 12px 24px;
   line-height: 1;
-  margin-left: 73px;
   text-transform: uppercase;
   font-size: 14px; }
   #inhab-button:hover {
@@ -1476,7 +1482,9 @@ div.footer-blocks {
 
 .container-single {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  max-width: 1120px;
+  margin: 0 auto; }
 
 .container-single #secondary {
   transform: translatex(-313px);
@@ -1485,8 +1493,7 @@ div.footer-blocks {
 .cat-links, .tags-links {
   font-family: "novecento", sans-serif;
   text-transform: uppercase;
-  font-size: 16px;
-  margin-left: 75px; }
+  font-size: 16px; }
 
 .cat-links a, .tags-links a {
   color: #248a83; }
@@ -1511,19 +1518,14 @@ div.footer-blocks {
   font-family: "novecento", sans-serif;
   font-size: 14px; }
 
-.social-icons-container {
-  margin-left: 75px; }
-
 .comment-reply-title {
   font-family: "novecento", sans-serif;
   text-transform: uppercase;
-  font-size: 28px;
-  margin-left: 75px; }
+  font-size: 28px; }
 
 .comments-title {
   text-transform: uppercase;
-  font-family: "novecento", sans-serif;
-  margin-left: 75px; }
+  font-family: "novecento", sans-serif; }
 
 .comment-body {
   display: -ms-flexbox;
@@ -1582,8 +1584,7 @@ div.footer-blocks {
   font-family: "novecento", sans-serif;
   text-shadow: none;
   border-radius: 0;
-  padding: 12px 24px;
-  margin-left: 75px; }
+  padding: 12px 24px; }
 
 .comment-author-avatar img {
   border-radius: 360px; }
@@ -1665,7 +1666,7 @@ object {
 
 .product-price {
   position: relative;
-  left: 655px;
+  left: 52%;
   top: 129px;
   font-size: 28.7px;
   font-family: "novecento", sans-serif;
@@ -1675,7 +1676,7 @@ object {
   color: #248a83; }
 
 .single-products .entry-content p {
-  width: 507px;
+  width: 580px;
   transform: translate(40px, -269px);
   line-height: 1.75; }
 

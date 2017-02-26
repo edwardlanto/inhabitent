@@ -11,7 +11,6 @@
 	border:1px solid black;
 	padding:12px 24px;
 	line-height:1;
-	margin-left: 73px;
 	text-transform:uppercase;
 	font-size:14px;
 	&:hover{
@@ -30,6 +29,8 @@
 
 .container-single{
 	display:flex;
+	max-width:1120px;
+	margin:0 auto;
 }
 
 .container-single{
@@ -43,7 +44,6 @@
 	font-family:$font__accent;
 	text-transform:uppercase;
 	font-size:16px;
-	margin-left:75px;
 }
 
 .cat-links, .tags-links{
@@ -79,7 +79,6 @@
 }
 
 .social-icons-container{
-	margin-left:75px;
 }
 
 // ------Comments-------
@@ -88,13 +87,11 @@
 	font-family:$font__accent;
 	text-transform:uppercase;
 	font-size:28px;
-	margin-left:75px;
 }
 
 .comments-title{
 	text-transform:uppercase;
 	font-family:$font__accent;
-	margin-left:75px;
 }
 
 .comment-body{
@@ -117,8 +114,7 @@
 	font-size:17px;
 	font-family:$font__accent;
 	margin-bottom:1.5rem;
-	text-transform:uppercase;
-	// margin-left:75px;
+	text-transform:uppercase
 }
 
 .comment-reply-link{
@@ -168,7 +164,6 @@
 	text-shadow:none;
 	border-radius:0;
 	padding:12px 24px;
-	margin-left:75px;
 	
 }
 
