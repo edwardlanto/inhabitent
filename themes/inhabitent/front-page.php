@@ -56,7 +56,7 @@
         <div class = "home-blog-post"><?php the_post_thumbnail( 'large' ); ?></div>
         <div><p class ="home-blog-text"><?php red_starter_posted_on(); ?>/<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p></div>
         <div><h3 class ="home-blog-title"><a><?php the_title(); ?></a></h3></div>
-        <a href="" id ="read-entry-home">Read Entry  -></a>
+        <a href="<?php the_permalink()?>" id ="read-entry-home">Read Entry  -></a>
     </div>
 
   <?php endforeach; 

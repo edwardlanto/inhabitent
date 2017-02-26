@@ -2,7 +2,7 @@
 
 
 #secondary{
-	width:100%;
+	width:325px;
 	border-left: 1px solid #e1e1e1;
 	padding-top:50px;
 
@@ -32,11 +32,14 @@
 }
 
 .widget-title {
-	color:#2f1339;
-	font-size:1.5rem;
-	text-align:center;
-	text-transform:uppercase;
-	font-family:$font__accent;
+	color: #2f1339;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-left: 58px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: novecento,sans-serif;
+    letter-spacing: 2px;
 }
 
 .widget ul{

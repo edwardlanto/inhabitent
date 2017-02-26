@@ -955,7 +955,7 @@ a {
   position: absolute; }
 
 #secondary {
-  width: 100%;
+  width: 325px;
   border-left: 1px solid #e1e1e1;
   padding-top: 50px; }
 
@@ -978,10 +978,13 @@ a {
 
 .widget-title {
   color: #2f1339;
+  font-style: normal;
   font-size: 1.5rem;
-  text-align: center;
+  margin-left: 58px;
+  text-align: left;
   text-transform: uppercase;
-  font-family: "novecento", sans-serif; }
+  font-family: novecento,sans-serif;
+  letter-spacing: 2px; }
 
 .widget ul {
   list-style-type: none;
@@ -1205,7 +1208,6 @@ div.footer-blocks {
 .entry-header {
   position: relative;
   z-index: -999;
-  margin-left: 75px;
   width: 100%; }
 
 .blog .entry-title, .single .entry-title {
@@ -1294,6 +1296,25 @@ div.footer-blocks {
   margin-left: 55px;
   font-family: "novecento", sans-serif; }
 
+.page-template-find-us .entry-header {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: "novecento", sans-serif; }
+
+.find-us-p {
+  font-family: "merriweather", serif; }
+
+.wpcf7-form input {
+  background-color: #f4f4f4; }
+
+.find-us-label textarea {
+  background-color: #f4f4f4;
+  width: 760px; }
+
+.page-template-find-us #submit-button:hover {
+  background-color: #1B6661; }
+
 .shop-items-container {
   width: 1120px;
   display: -ms-flexbox;
@@ -1311,11 +1332,18 @@ div.footer-blocks {
 
 .shop-archive-image {
   background-color: #e1e1e1;
-  max-width: 265px; }
+  height: 250px;
+  width: 255px;
+  overflow: hidden;
+  position: relative; }
 
 .shop-archive-image img {
-  height: 240px;
-  width: 265px; }
+  left: 50%;
+  min-width: 160%;
+  top: 50%;
+  transform: translate(-50%, -52%);
+  height: 100%;
+  position: absolute; }
 
 .price-text {
   font-size: 16px;
