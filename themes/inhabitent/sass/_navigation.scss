@@ -243,6 +243,10 @@ a {
 	margin-left:50px;
 }
 
+.main-navigation a{
+	display:inline-block;
+}
+
 @media screen and (min-width: 768px) {
 	.menu-toggle {
 		display: none;
