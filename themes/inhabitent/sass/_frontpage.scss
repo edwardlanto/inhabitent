@@ -124,9 +124,9 @@
 	color:#000;
 	margin-left:20px;
 		&:hover{
-			background-color:#248a83;
+			background-color:$background-entry-color;
 			color:white;
-			border-color:#248a83;
+			border-color:$background-entry-color;
 		}
 }
 
@@ -216,7 +216,7 @@
 	text-transform:uppercase;
 	font-family:$font__accent;
 	color:white;
-	background-color:#248a83;
+	background-color:$background-entry-color;
 	padding:12px 24px;
 	font-size:14px;
 	transform: translate(65px,20px);
@@ -385,7 +385,34 @@
     justify-content: center;
     align-items: center;
 	position:absolute;
+		&:hover{
+			background-color:$background-entry-color;
+			border-color:$background-entry-color;
+		}
 	
+
 }
 
+.home-read-button{
+	text-transform:uppercase;
+	font-family:$font__accent;
+		
+}
+
+.canoe-read{
+	transform: translate(-90px, -92px);
+}
+
+.beach-read{
+	transform: translate(-187px, 51px);
+}
+
+.mountain-read{
+	transform: translate(-41px,56px);
+
+}
+
+.star-read{
+	transform: translate(-38px,23px);
+}
 

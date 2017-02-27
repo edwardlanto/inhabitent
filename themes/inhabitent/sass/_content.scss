@@ -66,7 +66,7 @@
 
 }
 
-.blog, .single, .archive.tag{
+.blog, .single, .archive.tag, .archive.category{
 	.entry-title {
 	position:absolute;
 	z-index:999;
@@ -118,7 +118,7 @@
 }
 
 
-.blog , .single, .archive.tag{
+.blog , .single, .archive.tag, .archive.category{
 	.entry-meta{
 	position:absolute;
 	width:464px;
@@ -152,6 +152,17 @@
 #author, #email{
 	width:372px;
 }
+
+.tags-links{
+	margin-left:30px;
+}
+
+.comments-link{
+	a{
+		color:white;
+	}
+}
+
 
 .comment-form-url{
 	width:760px;
@@ -197,7 +208,7 @@
 	font-size:14.4px;
 }
 
-.archive.tag{
+.archive.tag,.archive.category{
 	.page-title{
 		text-align:left;
 	}
@@ -321,6 +332,7 @@
 	}
 }
 
+
 // ----Text for taxonomy links----
 
 .taxonomy-container{
@@ -441,7 +453,7 @@
 
 // -------Search--------
 
-.search-results{
+.search-results,.archive.category{
 	.page-title{
 		text-transform:uppercase;
 		font-family:$font__accent;
@@ -449,6 +461,8 @@
 		padding-top:3rem;
 		border-bottom: 1px solid #e1e1e1;
 		padding-bottom:1rem;
+		width:800px;
+		letter-spacing:2px;	
 	}
 }
 
@@ -522,7 +536,7 @@
 }
 // -----Category Journal------
 
-.archive.tag{
+.archive.tag, .category{
 	.primary-secondary-container{
 		display:flex;
 		max-width: 1120px;

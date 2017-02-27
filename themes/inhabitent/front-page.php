@@ -73,14 +73,14 @@
       <div class = "canoe-container">
         <div class = "canoe-large-pic adventure-pic">
         <h3 class ="adventure-text canoe-text"><a href ="#" class = "adventure-hover">Getting Back to Nature in a Canoe</a></h3>
-        <div class = "home-read-button-container">
+        <div class = "home-read-button-container canoe-read">
             <a class = "home-read-button">Read More</a>
         </div>
       </div>
       <div class ="beach-container">
           <div class = "beach-medium-pic adventure-pic">
           <h3 class ="adventure-text"><a class = "beach-text adventure-hover" href="#">A Night with Friends at the Beach</a></h3>
-          <div class = "home-read-button-container">
+          <div class = "home-read-button-container beach-read">
             <a class = "home-read-button">Read More</a>
           </div>
       </div>
@@ -88,7 +88,7 @@
       <div class ="mountain-container">
         <div class ="mountain-small-pic adventure-pic">
         <h3 class ="adventure-text mountain-text"><a href="#" class = "adventure-hover">Taking in the View at Big Mountain</a></h3>
-        <div class = "home-read-button-container">
+        <div class = "home-read-button-container mountain-read">
           <a class = "home-read-button">Read More</a>
         </div>
       </div>
@@ -96,7 +96,7 @@
       <div class ="star-container">
           <div class ="star-small-pic adventure-pic">
           <h3 class ="adventure-text star-text"><a href="#" class = "adventure-hover">Star-Gazing at the Night Sky</a></h3>
-          <div class = "home-read-button-container">
+          <div class = "home-read-button-container star-read">
             <a class = "home-read-button">Read More</a>
           </div>
       </div>

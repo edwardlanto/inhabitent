@@ -52,35 +52,27 @@
 
 
 @font-face {
-    font-family: 'merriweather';
-    src: url('../../fonts/merriweather-lightitalic-webfont.eot');
-    src: url('../../fonts/merriweather-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/merriweather-lightitalic-webfont.woff2') format('woff2'),
-         url('../../fonts/merriweather-lightitalic-webfont.woff') format('woff'),
-         url('../../fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-
-}
-// --------------------------------NOVECENTO--------------------
-
-@font-face {
-    font-family: 'novecento';
-    src: url('../../fonts/fontnovecentosanswide-demibold-webfont.eot');
-    src: url('../../fonts/fontnovecentosanswide-demibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/fontnovecentosanswide-demibold-webfont.woff2') format('woff2'),
-         url('../../fonts/fontnovecentosanswide-demibold-webfont.ttf') format('truetype'),
-         url('../../fonts/fontnovecentosanswide-demibold-webfont.svg#merriweatherbold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
     font-family: 'novecento';
     src: url('../../fonts/novecentosanswide-normal-webfont.eot');
     src: url('../../fonts/novecentosanswide-normal-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/entosanswide-normal-webfont.woff2') format('woff2'),
+         url('../../fonts/novecentosanswide-normal-webfont.woff') format('woff'),
+         url('../../fonts/novecentosanswide-normal-webfont.woff') format('woff2'),
          url('../../fonts/novecentosanswide-normal-webfont.ttf') format('truetype'),
          url('../../fonts/novecentosanswide-normal-webfont.svg#merriweatherlight') format('svg');
     font-weight: normal;
     font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'novecento ';
+    src: url('../../fonts/novecentosanswide-demibold-webfont.eot');
+    src: url('../../fonts/novecentosanswide-demibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/novecentosanswide-demibold-webfont.woff') format('woff'),
+         url('../../fonts/novecentosanswide-demibold-webfont.woff') format('woff2'),
+         url('../../fonts/novecentosanswide-demibold-webfont.ttf') format('truetype'),
+         url('../../fonts/novecentosanswide-demibold-webfont.svg#merriweatherlight') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
 }

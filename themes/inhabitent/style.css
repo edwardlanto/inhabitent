@@ -245,24 +245,17 @@ th {
   font-style: normal; }
 
 @font-face {
-  font-family: 'merriweather';
-  src: url("../../fonts/merriweather-lightitalic-webfont.eot");
-  src: url("../../fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../../fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
   font-family: 'novecento';
-  src: url("../../fonts/fontnovecentosanswide-demibold-webfont.eot");
-  src: url("../../fonts/fontnovecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/fontnovecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/fontnovecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/fontnovecentosanswide-demibold-webfont.svg#merriweatherbold") format("svg");
-  font-weight: bold;
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-normal-webfont.woff") format("woff2"), url("../../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-normal-webfont.svg#merriweatherlight") format("svg");
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'novecento';
-  src: url("../../fonts/novecentosanswide-normal-webfont.eot");
-  src: url("../../fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/entosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-normal-webfont.svg#merriweatherlight") format("svg");
-  font-weight: normal;
+  font-family: 'novecento ';
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-demibold-webfont.woff") format("woff2"), url("../../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-demibold-webfont.svg#merriweatherlight") format("svg");
+  font-weight: bold;
   font-style: normal; }
 
 /*--------------------------------------------------------------
@@ -961,6 +954,25 @@ a {
   -ms-flex-align: center;
       align-items: center;
   position: absolute; }
+  .home-read-button-container:hover {
+    background-color: #248a83;
+    border-color: #248a83; }
+
+.home-read-button {
+  text-transform: uppercase;
+  font-family: "novecento", sans-serif; }
+
+.canoe-read {
+  transform: translate(-90px, -92px); }
+
+.beach-read {
+  transform: translate(-187px, 51px); }
+
+.mountain-read {
+  transform: translate(-41px, 56px); }
+
+.star-read {
+  transform: translate(-38px, 23px); }
 
 #secondary {
   width: 325px;
@@ -1029,8 +1041,14 @@ a {
 .single-post.single .widget-title {
   width: 400px; }
 
-.blog .fa-phone, .blog .fa-envelope, .blog .fa-map-marker, .tag .fa-phone, .tag .fa-envelope, .tag .fa-map-marker, .search .fa-phone, .search .fa-envelope, .search .fa-map-marker {
-  font-size: 20px; }
+.blog .fa-phone, .blog .fa-envelope, .blog .fa-map-marker, .tag .fa-phone, .tag .fa-envelope, .tag .fa-map-marker, .search .fa-phone, .search .fa-envelope, .search .fa-map-marker, .archive.category .fa-phone, .archive.category .fa-envelope, .archive.category .fa-map-marker {
+  font-size: 17px; }
+
+.archive.category .widget-title {
+  width: 400px; }
+
+.single-post #business-hours-widget-4 p {
+  margin-left: 57px; }
 
 .front-hero-image {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -1227,7 +1245,7 @@ div.footer-blocks {
   z-index: -999;
   width: 100%; }
 
-.blog .entry-title, .single .entry-title, .archive.tag .entry-title {
+.blog .entry-title, .single .entry-title, .archive.tag .entry-title, .archive.category .entry-title {
   position: absolute;
   z-index: 999;
   top: 0;
@@ -1259,7 +1277,7 @@ div.footer-blocks {
   font-family: "merriweather", serif;
   font-size: 16px; }
 
-.blog .entry-meta, .single .entry-meta, .archive.tag .entry-meta {
+.blog .entry-meta, .single .entry-meta, .archive.tag .entry-meta, .archive.category .entry-meta {
   position: absolute;
   width: 464px;
   margin-left: 297px;
@@ -1279,6 +1297,12 @@ div.footer-blocks {
 
 #author, #email {
   width: 372px; }
+
+.tags-links {
+  margin-left: 30px; }
+
+.comments-link a {
+  color: white; }
 
 .comment-form-url {
   width: 760px; }
@@ -1312,7 +1336,7 @@ div.footer-blocks {
   padding: .75rem 1.5rem;
   font-size: 14.4px; }
 
-.archive.tag .page-title {
+.archive.tag .page-title, .archive.category .page-title {
   text-align: left; }
 
 .page-template-find-us .hfeed .site-content {
@@ -1465,13 +1489,15 @@ div.footer-blocks {
 .adventure-hover:hover {
   color: #f0e4d1; }
 
-.search-results .page-title {
+.search-results .page-title, .archive.category .page-title {
   text-transform: uppercase;
   font-family: "novecento", sans-serif;
   font-size: 38px;
   padding-top: 3rem;
   border-bottom: 1px solid #e1e1e1;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  width: 800px;
+  letter-spacing: 2px; }
 
 .search-results .page-header {
   border-bottom: 1px solid #e1e1e1;
@@ -1515,7 +1541,7 @@ div.footer-blocks {
 .search-results .page-header {
   border-bottom: none; }
 
-.archive.tag .primary-secondary-container {
+.archive.tag .primary-secondary-container, .category .primary-secondary-container {
   display: -ms-flexbox;
   display: flex;
   max-width: 1120px;
