@@ -16,6 +16,11 @@ get_header(); ?>
 					<a href ="<?php the_permalink();?>">
 						<?php the_title();?>
 					</a>
+						<p class ="search-excerpt">
+							<?php the_excerpt();?>
+						</p>
+						<a id ="inhab-button" href="<?php echo esc_url( get_permalink() ) ?>">Read More<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					
 				</span>
 				<?php endwhile; ?>
 

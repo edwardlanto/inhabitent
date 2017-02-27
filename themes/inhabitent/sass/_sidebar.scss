@@ -8,8 +8,15 @@
 
 }
 
+.blog{
+	#secondary{
+		transform: translatex(-74px);
+
+	}
+}
+
 .textwidget{
-	margin: 0 auto;
+	margin-left: 58px;
     width: 202px;
 	font-family:$font__main;
 }
@@ -79,3 +86,14 @@
 	margin-bottom:1rem;
 }
 
+.single-post.single{
+	.widget-title{
+		width:400px;
+	}
+}
+
+.blog, .tag, .search{
+	.fa-phone, .fa-envelope, .fa-map-marker{
+		font-size:20px;
+	}
+}

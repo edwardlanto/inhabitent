@@ -12,11 +12,11 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		
 		<main id="main" class="site-main" role="main">
-			<div class = "about-background-container">
+	
 				<div class = "about-background">
-					<?php my_styles_method(); ?>		
+		
 				</div> 
-			</div>
+	
 					
 					<h1 class = "about-text">About</h1>
 				

@@ -100,8 +100,21 @@
 
 .home-blog-title a{
 	color:#248a83;
-	width: 270px;
+	width: 320px;
 	font-size:23px;
+	text-transform:uppercase;
+		&:hover{
+			color:#2f1339;
+}
+
+.home{
+	.home-blog-title{
+		color:#248a83;
+		text-transform:uppercase;
+		letter-spacing:2px;
+		
+		}
+	}
 }
 #read-entry-home{
 	border: 1px solid #000;
@@ -135,6 +148,12 @@
 
 .home-content-heading{
 	margin-top:2.5rem;
+}
+
+.home{
+	.home-blog-title:hover{
+		color:#2f1339;
+	}
 }
 
 

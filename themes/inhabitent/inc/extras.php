@@ -4,7 +4,6 @@
  *
  * @package RED_Starter_Theme
  */
-
 /**
  * Adds custom classes to the array of body classes.
  *
@@ -16,12 +15,9 @@ function red_starter_body_classes( $classes ) {
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
 	}
-
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
-
-
 	//Changes from page of Logo and updated urldecode
 function custom_loginlogo() {
 echo '<style type="text/css">
@@ -32,21 +28,17 @@ width:300px !important;
 #login .button.button-primary{
 	background-color:#248A83;s
 	}
-
 </style>';
 }
 add_action('login_head', 'custom_loginlogo');
-
 function my_login_logo_url() {
     return home_url();
 }
 add_filter( 'login_headerurl', 'my_login_logo_url' );
-
 function my_login_logo_url_title() {
     return 'Inhabitent';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
-
 // ----Change Title Archive-----
 function modify_title($title) {
 	if(is_post_type_archive('products')) {
@@ -55,9 +47,7 @@ function modify_title($title) {
 	return $title;
 }
 add_filter('get_the_archive_title', 'modify_title');
-
 // ---Change Wear Title function----
-
 function modify_wear($wear) {
 	if(has_term('wear', 'product_type')) {
 		$wear = 'Wear';
@@ -65,10 +55,7 @@ function modify_wear($wear) {
 	return $wear;
 }
 add_filter('get_the_archive_title', 'modify_wear');
-
 // --Change eat title function--
-
-
 function modify_eat($eat) {
 	if(has_term('eat', 'product_type')) {
 		$eat = 'Eat';
@@ -76,9 +63,7 @@ function modify_eat($eat) {
 	return $eat;
 }
 add_filter('get_the_archive_title', 'modify_eat');
-
 // ----Change do title function---
-
 function modify_do($do) {
 	if(has_term('do', 'product_type')) {
 		$do = 'Do';
@@ -86,9 +71,7 @@ function modify_do($do) {
 	return $do;
 }
 add_filter('get_the_archive_title', 'modify_do');
-
 // --Change sleep title function---
-
 function modify_sleep($sleep) {
 	if(has_term('sleep', 'product_type') && is_tax( 'product_type','sleep')) {
 		$sleep = 'Sleep';
@@ -98,27 +81,27 @@ function modify_sleep($sleep) {
 add_filter('get_the_archive_title', 'modify_sleep');
 
 
-
-function my_styles_method() {
-   
-   if(!is_page_template( 'about.php' )){
+function inhabitent_about_css() {
+if (!is_page_template('page-templates/about.php')) {
+   return;
+}
+   $image = CFS()->get('about_header_image');
+   if(!$image) {
        return;
    }
-   $url = CFS()->get('about_header_image');
-   $custom_css = "
-   .about_background{
-       background-image:linear-gradient( to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url( {$url});
+   
+   $hero_css = ".about-background{
+           background:
+               linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+               url({$image}) no-repeat center bottom;
+           background-size: cover, cover;
    }";
-   wp_add_inline_style( 'red-starter-style', $custom_css );
+   wp_add_inline_style( 'red-starter-style', $hero_css );
 }
-add_action( 'wp_enqueue_scripts', 'my_styles_method' );
-
+add_action( 'wp_enqueue_scripts', 'inhabitent_about_css' );
 // ------pre_get_post-------
-
 add_action( 'pre_get_posts', 'organize' );
-
 function organize($query){
-
     if ( $query->is_main_query()){
 		$query->set('orderby', 'title');
         $query->set('order', 'ASC');
@@ -127,5 +110,3 @@ function organize($query){
 	
 }
 ?>
-
-
