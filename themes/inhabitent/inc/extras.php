@@ -91,4 +91,19 @@ function organize($query){
     }
 	
 }
-
+function update_hero_image() {
+	
+	if(!is_page_template('page-template/about.php')){
+	return;
+	}
+	$url = CFS()->get( 'about_header_image' );
+                //echo CFS()->get( 'about_header_image' );
+                // if(!$url){return;}			
+    $custom_styles = ".about-hero{
+		background-image: url($url);
+		width: 100px;
+		height:100px;
+	}";
+        wp_add_inline_style( 'red-starter-style', $custom_styles );
+}
+add_action( 'wp_enqueue_scripts', 'update_hero_image' );

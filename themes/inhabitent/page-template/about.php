@@ -20,9 +20,11 @@ get_header(); ?>
 					
 					<h1 class = "about-text">About</h1>
 				
+			<div class="about-hero"> </div>
 			
 		<h2 class ="about-content-header">Our Story</h2>
 		<?php echo CFS()->get( 'about_our_story' ); ?>
+		
 
 		<h2 class ="about-content-header">Our Team</h2>
 		<?php echo CFS()->get( 'about_our_team' ); ?>
