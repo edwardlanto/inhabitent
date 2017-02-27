@@ -6,7 +6,6 @@
 */
 
 get_header(); ?>
-this is a single page
 <div class="container-single">
 
     <div id="primary" class="content-area">
@@ -15,8 +14,6 @@ this is a single page
         <?php while ( have_posts() ) : the_post(); ?>
             <div class = "text-data-single-page">
             <?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-            <!--<?php the_post_navigation(); ?>-->
             </div>
         <div class ="social-icons-container">
             <button class ="facebook-button" type="button" value ="Like">

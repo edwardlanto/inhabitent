@@ -101,22 +101,13 @@
           </div>
       </div>
       </div>
-
-    </div>
+      <a href ="#" class ="more-adventures-button">More Adventures</a>
+      </div>
+      
   </section>
-    
-
-        
-
-
-
-        <?php while ( have_posts() ) : the_post(); ?>
-
-        
-
-        <?php endwhile; // End of the loop. ?>
-
-      </main><!-- #main -->
+    <?php while ( have_posts() ) : the_post(); ?>
+    <?php endwhile; // End of the loop. ?>
+    </main><!-- #main -->
     </div><!-- #primary -->
   </div>
 

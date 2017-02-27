@@ -456,17 +456,14 @@ textarea {
 .page-template-about .about-text {
   position: absolute;
   color: #fff;
-  font-size: 45px;
+  font-size: 48px;
   font-family: "novecento", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  top: 175px; }
 
-.about-background-container {
+.about-hero-container {
   width: 1280px;
   height: 587px; }
-
-.about-background {
-  height: 100%;
-  width: 100vw; }
 
 .about-content-header {
   color: #2f1339;
@@ -609,7 +606,8 @@ a {
   display: flex;
   width: 390px;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  margin-top: 10px; }
 
 .main-navigation {
   width: 100%;
@@ -620,7 +618,6 @@ a {
   height: 50px;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.85);
-  top: 32px;
   z-index: 5;
   -ms-flex-align: center;
       align-items: center;
@@ -633,6 +630,18 @@ a {
 .menu-container {
   display: -ms-flexbox;
   display: flex; }
+
+.fa-search {
+  margin-right: 40px; }
+
+.home .fa-search {
+  color: white; }
+
+.home .site-content {
+  padding-top: 0; }
+
+.header-logo {
+  margin-left: 50px; }
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -861,8 +870,8 @@ a {
   position: absolute; }
 
 .canoe-large-pic {
-  background: url("../../images/canoe-girl.jpg") no-repeat, center;
-  background-size: cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/canoe-girl.jpg") no-repeat, center;
+  background-size: cover,cover;
   height: 100vh;
   width: 126%;
   transform: translatex(-163px);
@@ -876,8 +885,8 @@ a {
   left: 100%; }
 
 .beach-medium-pic {
-  background: url("../../images/beach.jpg");
-  background-size: cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/beach.jpg");
+  background-size: cover,cover;
   height: 50%;
   width: 100%;
   border-bottom: 20px solid white; }
@@ -890,10 +899,10 @@ a {
   top: 50%; }
 
 .mountain-small-pic {
-  background: url("../../images/mountain.jpg");
-  background-size: cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/mountain.jpg");
+  background-size: cover,cover;
   width: 100%;
-  height: 50%;
+  height: 50vh;
   border-right: 10px solid white; }
 
 .star-container {
@@ -904,10 +913,10 @@ a {
   left: 150%; }
 
 .star-small-pic {
-  background: url("../../images/night-sky.jpg");
-  background-size: cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/night-sky.jpg");
+  background-size: cover,cover;
   width: 100%;
-  height: 50%;
+  height: 50vh;
   border-left: 10px solid white; }
 
 .adventure-text a {
@@ -963,7 +972,7 @@ a {
   font-family: "novecento", sans-serif; }
 
 .canoe-read {
-  transform: translate(-90px, -92px); }
+  transform: translate(-90px, -56px); }
 
 .beach-read {
   transform: translate(-187px, 51px); }
@@ -973,6 +982,13 @@ a {
 
 .star-read {
   transform: translate(-38px, 23px); }
+
+.home footer {
+  margin-top: 100px; }
+
+.more-adventures-button {
+  font-size: 10rem;
+  color: black; }
 
 #secondary {
   width: 325px;

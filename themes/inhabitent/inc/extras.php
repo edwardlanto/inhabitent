@@ -97,12 +97,18 @@ function update_hero_image() {
 	return;
 	}
 	$url = CFS()->get( 'about_header_image' );
-                //echo CFS()->get( 'about_header_image' );
-                // if(!$url){return;}			
+                			
     $custom_styles = ".about-hero{
-		background-image: url($url);
-		width: 100px;
-		height:100px;
+		background:
+        linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),url($url)no-repeat center bottom;;
+		width: 100vw;
+    	height: 100vh;
+    	background-size: cover,cover;
+   		position: relative;
+		display: flex;
+ 		justify-content: center;
+    	align-items: center;
+}
 	}";
         wp_add_inline_style( 'red-starter-style', $custom_styles );
 }

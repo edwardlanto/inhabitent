@@ -265,8 +265,8 @@
     
 }
 .canoe-large-pic{
-	background:url("../../images/canoe-girl.jpg")no-repeat,center;
-	background-size:cover;
+	background:linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),url("../../images/canoe-girl.jpg")no-repeat,center;
+	background-size:cover,cover;
 	height: 100vh;
     width: 126%;
     transform: translatex(-163px);
@@ -286,8 +286,8 @@
 
 
 .beach-medium-pic{
-	background:url("../../images/beach.jpg");
-	background-size:cover;
+	background:linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url("../../images/beach.jpg");
+	background-size:cover,cover;
 	height: 50%;
     width: 100%;
 	border-bottom: 20px solid white;
@@ -306,10 +306,10 @@
 }
 
 .mountain-small-pic{
-	background:url("../../images/mountain.jpg");
-	background-size:cover;
+	background:linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),url("../../images/mountain.jpg");
+	background-size:cover,cover;
 	width:100%;
-	height:50%;
+	height:50vh;
 	border-right:10px solid white;
 
 }
@@ -326,10 +326,10 @@
 }
 
 .star-small-pic{
-	background:url("../../images/night-sky.jpg");
-	background-size:cover;
+	background:linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),url("../../images/night-sky.jpg");
+	background-size:cover,cover;
 	width:100%;
-	height:50%;
+	height:50vh;
 	border-left:10px solid white;
 
 }
@@ -400,7 +400,8 @@
 }
 
 .canoe-read{
-	transform: translate(-90px, -92px);
+	transform: translate(-90px,-56px);
+
 }
 
 .beach-read{
@@ -416,3 +417,13 @@
 	transform: translate(-38px,23px);
 }
 
+.home{
+	footer{
+		margin-top:100px;
+	}
+}
+
+.more-adventures-button{
+	font-size:10rem;
+	color:black;
+}
