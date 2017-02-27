@@ -1,6 +1,5 @@
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-
-	<fieldset>
+<fieldset>
 		<a href="#" id="search-toggle" class="search-toggle" aria-hidden="true">
 			<i class="fa fa-search"></i>
 		</a>

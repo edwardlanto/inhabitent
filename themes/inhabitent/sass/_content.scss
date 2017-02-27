@@ -169,6 +169,11 @@
 	}
 }
 
+.tags-links, .cat-links{
+	a:hover{
+		color:#2f1339;
+	}
+}
 
 .comment-form-url{
 	width:760px;
@@ -455,6 +460,10 @@
 .taxonomy-container{
 	a{
 		color:#248a83;
+		&:hover{
+			color:#2f1339;
+		}
+			
 	}
 }
 

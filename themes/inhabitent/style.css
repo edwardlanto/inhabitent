@@ -564,7 +564,7 @@ a {
   width: 50px;
   z-index: 999; }
 
-.home .menu-item a:hover {
+.home #primary-menu li:hover {
   color: #f0e4d1; }
 
 .site-branding {
@@ -1323,6 +1323,9 @@ div.footer-blocks {
 .comments-link a {
   color: white; }
 
+.tags-links a:hover, .cat-links a:hover {
+  color: #2f1339; }
+
 .comment-form-url {
   width: 760px; }
 
@@ -1507,6 +1510,8 @@ div.footer-blocks {
 
 .taxonomy-container a {
   color: #248a83; }
+  .taxonomy-container a:hover {
+    color: #2f1339; }
 
 .shop-items-container {
   padding-top: 3rem;

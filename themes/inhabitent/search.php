@@ -20,7 +20,6 @@ get_header(); ?>
 							<?php the_excerpt();?>
 						</p>
 						<a id ="inhab-button" href="<?php echo esc_url( get_permalink() ) ?>">Read More<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-					
 				</span>
 				<?php endwhile; ?>
 

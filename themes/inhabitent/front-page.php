@@ -101,7 +101,6 @@
           </div>
       </div>
       </div>
-      <a href ="#" class ="more-adventures-button">More Adventures</a>
       </div>
       
   </section>

@@ -147,9 +147,9 @@ a {
 }
 
 .home{
-	.menu-item{
-		a:hover{
-		color:#f0e4d1;
+	#primary-menu{
+		li:hover{
+			color:#f0e4d1;
 		}
 	}
 }
