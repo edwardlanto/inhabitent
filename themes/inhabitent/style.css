@@ -1269,6 +1269,9 @@ div.footer-blocks {
   height: 100vh;
   width: 100%; }
 
+.blog .entry-title:hover {
+  color: #f0e4d1; }
+
 .blog .entry-content, .container-single .entry-content {
   width: 770px; }
 
@@ -1338,6 +1341,9 @@ div.footer-blocks {
 
 .archive.tag .page-title, .archive.category .page-title {
   text-align: left; }
+
+.blog .page-container {
+  padding-bottom: 3rem; }
 
 .page-template-find-us .hfeed .site-content {
   display: -ms-flexbox;
@@ -1438,10 +1444,14 @@ div.footer-blocks {
 .error404 .page-title {
   text-transform: uppercase;
   font-family: "novecento", sans-serif;
-  font-size: 38px; }
+  font-size: 38px;
+  letter-spacing: 2px; }
 
 .error-404 {
   margin-left: 75px; }
+
+.error-404 .widget-title {
+  margin-left: 0; }
 
 .error404 fieldset {
   border: none; }

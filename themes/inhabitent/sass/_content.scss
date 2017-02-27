@@ -103,7 +103,13 @@
 }
 // ------------Journal-----------
 
-
+.blog{
+	.entry-title:hover{
+		
+			color:#f0e4d1;
+		
+	}
+}
 
 .blog, .container-single {
 	.entry-content{
@@ -214,7 +220,11 @@
 	}
 }
 
-
+.blog{
+	.page-container{
+	padding-bottom:3rem;
+	}
+}	
 
 // ------Find us-----
 
@@ -358,11 +368,18 @@
 		text-transform:uppercase;
 		font-family:$font__accent;
 		font-size:38px;
+		letter-spacing:2px;
 	}
 }
 
 .error-404{
 	margin-left:75px;
+}
+
+.error-404{
+	.widget-title{
+		margin-left:0;
+	}
 }
 
 .error404{
