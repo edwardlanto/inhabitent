@@ -536,6 +536,19 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
+.sticky-header {
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  visibility: hidden; }
+
+.sticky-header-logo {
+  width: 50px; }
+
+.sticky-display {
+  visibility: visible; }
+
 .menu li a {
   font-family: "novecento", sans-serif;
   text-transform: uppercase;
@@ -645,6 +658,9 @@ a {
 
 .main-navigation a {
   display: inline-block; }
+
+.home .main-navigation {
+  padding-right: 50px; }
 
 @media screen and (min-width: 768px) {
   .menu-toggle {

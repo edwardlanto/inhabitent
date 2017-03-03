@@ -102,6 +102,27 @@ a {
 	display: block;
 }
 
+
+// --------Sticky Header--------
+
+.sticky-header{
+	height:50px;
+	position:fixed;
+	width:100%;
+	background-color:hsla(0,0%,100%,.85);
+	visibility:hidden;
+
+}
+
+.sticky-header-logo{
+	width:50px;
+}
+
+.sticky-display{
+	visibility:visible;
+}
+
+
 // ---------Header---------
 
 .menu {      
@@ -245,6 +266,12 @@ a {
 
 .main-navigation a{
 	display:inline-block;
+}
+
+.home{
+	.main-navigation{
+		padding-right:50px;
+	}
 }
 
 @media screen and (min-width: 768px) {

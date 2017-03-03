@@ -10,7 +10,10 @@
   get_header(); ?>
 
     <div id="primary" class="content-area">
-
+      <header class = "sticky-header">
+        <img src="<?php echo get_template_directory_uri();?>/images/logo-tent.svg" class = "sticky-header-logo"/>
+      
+      </header>
       <main id="main" class="site-main" role="main">
       <div class = "front-hero-image">
     <div class = "front-logo-image"></div>
