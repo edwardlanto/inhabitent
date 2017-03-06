@@ -549,6 +549,10 @@ a {
 .sticky-display {
   visibility: visible; }
 
+.home #primary-menu li:hover > a,
+.home #primary-menu li:focus > a {
+  color: #f0e4d1; }
+
 .menu li a {
   font-family: "novecento", sans-serif;
   text-transform: uppercase;
@@ -695,6 +699,12 @@ a {
   background-color: transparent;
   border: none;
   position: absolute; }
+
+.front-hero-image {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover,cover;
+  height: 100vh;
+  width: 100%; }
 
 .home #primary-menu li a {
   color: white; }
@@ -1085,12 +1095,6 @@ a {
 .single-post #business-hours-widget-4 p {
   margin-left: 57px; }
 
-.front-hero-image {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
-  background-size: cover,cover;
-  height: 100vh;
-  width: 100%; }
-
 div.footer-blocks {
   display: -ms-flexbox;
   display: flex;
@@ -1303,6 +1307,9 @@ div.footer-blocks {
   background-size: cover,cover;
   height: 100vh;
   width: 100%; }
+
+.blog .entry-header a:hover {
+  color: #f0e4d1; }
 
 .blog .entry-title:hover {
   color: #f0e4d1; }
@@ -1567,7 +1574,9 @@ div.footer-blocks {
   font-family: "novecento", sans-serif;
   font-size: 33px;
   letter-spacing: 2px;
-  font-weight: bold; }
+  font-weight: bold;
+  display: block;
+  padding-top: 4rem; }
   .search-results .search-product-title a:hover {
     color: #2f1339; }
 
@@ -1583,7 +1592,8 @@ div.footer-blocks {
 
 .search-results #inhab-button {
   font-weight: normal;
-  padding: 12px 12px; }
+  padding: 12px 12px;
+  width: 145px; }
 
 .search-results #secondary {
   transform: translatex(78px); }
@@ -1847,8 +1857,3 @@ object {
 .single-products .site-content {
   padding: 0;
   transform: translatey(-20px); }
-
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */

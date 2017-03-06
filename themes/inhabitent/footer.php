@@ -45,8 +45,7 @@
                     </div><!-- text-logo -->        
 					<div class="site-info-container">
                     	<p>Copyright &copy; 2016 Inhabitent</p>
-                	</div>    
-                    </div>    
+                	</div><!--site-info container-->
                 </div><!--footer-blocks -->
             </footer>
                 

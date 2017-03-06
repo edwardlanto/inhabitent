@@ -11,7 +11,7 @@
 
     <div id="primary" class="content-area">
       <header class = "sticky-header">
-        <img src="<?php echo get_template_directory_uri();?>/images/logo-tent.svg" class = "sticky-header-logo"/>
+        <img src="<?php echo get_template_directory_uri();?>/images/logo-tent.svg" class = "sticky-header-logo" alt="tent-logo"/>
       
       </header>
       <main id="main" class="site-main" role="main">
@@ -35,7 +35,7 @@
     ?>
       <div class = "block-wrapper">
         <div class ="logo-container">
-          <img src="<?php echo get_template_directory_uri();?>/images/product-type-icon/<?php echo $term->slug; ?>.svg" class = "shop-image">
+          <img src="<?php echo get_template_directory_uri();?>/images/product-type-icon/<?php echo $term->slug; ?>.svg" class = "shop-image" alt="type-logo">
         </div>
       <div class ="logo-description">
         <?php echo $term->description ?>
@@ -78,8 +78,9 @@
         <h3 class ="adventure-text canoe-text"><a href ="#" class = "adventure-hover">Getting Back to Nature in a Canoe</a></h3>
         <div class = "home-read-button-container canoe-read">
             <a class = "home-read-button">Read More</a>
-        </div>
+        </div><!--canoe-read-->
       </div>
+      
       <div class ="beach-container">
           <div class = "beach-medium-pic adventure-pic">
           <h3 class ="adventure-text"><a class = "beach-text adventure-hover" href="#">A Night with Friends at the Beach</a></h3>

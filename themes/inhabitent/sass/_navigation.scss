@@ -124,6 +124,17 @@ a {
 
 
 // ---------Header---------
+.home{
+	#primary-menu{
+		li{
+			
+			&:hover > a,
+			&:focus > a {
+				color: #f0e4d1;
+					}
+				}
+			}
+		}
 
 .menu {      
 	li a{

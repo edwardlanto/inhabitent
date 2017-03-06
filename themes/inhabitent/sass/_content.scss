@@ -104,6 +104,15 @@
 // ------------Journal-----------
 
 .blog{
+	.entry-header{
+		a:hover{
+			 color: #f0e4d1;
+
+		}
+	}
+}
+
+.blog{
 	.entry-title:hover{
 		
 			color:#f0e4d1;
@@ -522,6 +531,8 @@
 			font-size:33px;
 			letter-spacing:2px;
 			font-weight:bold;
+			display:block;
+			padding-top:4rem;
 			&:hover{
 				color:#2f1339;
 			}
@@ -546,6 +557,7 @@
 	#inhab-button{
 		font-weight:normal;
 		padding: 12px 12px;
+		width: 145px;
 	}
 }
 
@@ -560,6 +572,8 @@
 		border-bottom:none;
 	}
 }
+
+
 // -----Category Journal------
 
 .archive.tag, .category{
