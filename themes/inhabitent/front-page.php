@@ -11,8 +11,17 @@
 
     <div id="primary" class="content-area">
       <header class = "sticky-header">
-        <img src="<?php echo get_template_directory_uri();?>/images/logo-tent.svg" class = "sticky-header-logo" alt="tent-logo"/>
-      
+        <div class="sticky-logo-container">
+          <img src="<?php echo get_template_directory_uri();?>/images/logo-tent.svg" class = "sticky-header-logo" alt="tent-logo"/>
+        </div>
+        <div class= "sticky-header-nav">
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+        </div><!--Sticky Header Nav-->
+        <div class ="home-search-container">  
+        <?php get_search_form(); ?>
+        </div><!-- Home search container-->
+			
       </header>
       <main id="main" class="site-main" role="main">
       <div class = "front-hero-image">

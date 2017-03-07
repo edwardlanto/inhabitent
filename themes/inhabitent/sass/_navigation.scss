@@ -111,6 +111,8 @@ a {
 	width:100%;
 	background-color:hsla(0,0%,100%,.85);
 	visibility:hidden;
+	display:flex;
+	z-index:999;
 
 }
 
@@ -120,6 +122,29 @@ a {
 
 .sticky-display{
 	visibility:visible;
+	z-index: 999;
+}
+
+.sticky-header{
+	.sticky-header-nav{
+		#primary-menu{
+			li{ 
+				a{
+				color:$background-entry-color;
+				
+			
+				}
+			}
+		}
+	}
+}
+
+.sticky-header{
+	.sticky-header-nav{
+		#primary-menu{
+			list-style-type: none;
+		}
+	}
 }
 
 

@@ -103,11 +103,14 @@
 }
 // ------------Journal-----------
 
+
+
 .blog{
 	.entry-header{
-		a:hover{
+		h2{
+			&:hover > a{
 			 color: #f0e4d1;
-
+			}
 		}
 	}
 }

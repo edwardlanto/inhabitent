@@ -541,13 +541,23 @@ a {
   position: fixed;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.85);
-  visibility: hidden; }
+  visibility: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 999; }
 
 .sticky-header-logo {
   width: 50px; }
 
 .sticky-display {
-  visibility: visible; }
+  visibility: visible;
+  z-index: 999; }
+
+.sticky-header .sticky-header-nav #primary-menu li a {
+  color: #248a83; }
+
+.sticky-header .sticky-header-nav #primary-menu {
+  list-style-type: none; }
 
 .home #primary-menu li:hover > a,
 .home #primary-menu li:focus > a {
@@ -1308,7 +1318,7 @@ div.footer-blocks {
   height: 100vh;
   width: 100%; }
 
-.blog .entry-header a:hover {
+.blog .entry-header h2:hover > a {
   color: #f0e4d1; }
 
 .blog .entry-title:hover {
