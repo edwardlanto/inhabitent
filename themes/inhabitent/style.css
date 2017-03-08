@@ -1075,9 +1075,6 @@ a {
 .single-post #business-hours-widget-4 p {
   margin-left: 57px; }
 
-.single-adventure .entry-header img {
-  width: 100vw; }
-
 div.footer-blocks {
   display: -ms-flexbox;
   display: flex;
@@ -1593,11 +1590,34 @@ div.footer-blocks {
 .archive.tag .primary-secondary-container .entry-content {
   width: 770px; }
 
-.single-adventure .entry-header img {
+.single-adventure .image-wrapper img {
   width: 100vw; }
 
 .single-adventure .site-content {
   padding-top: 0; }
+
+.single-adventure-container {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.single-adventure-title {
+  font-family: "novecento", sans-serif;
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 3rem; }
+
+.single-adventure-author {
+  font-family: "novecento", sans-serif;
+  font-size: 20px; }
+
+.single-adventure-content {
+  line-height: 28px; }
+
+.single-adventure .social-icons-container {
+  margin-left: 231px;
+  margin-bottom: 5rem; }
 
 .entry-content h2 {
   font-size: 2.1rem;

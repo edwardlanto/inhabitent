@@ -6,27 +6,41 @@
  */
 
 get_header(); ?>
-
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
-
-        <?php while ( have_posts() ) : the_post(); ?>
-            <div class="journal-wrapper">
-                <?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-                </div> <!-- social-media-wrapper -->
-            </div> <!-- journal-wrapper -->
-
-            <?php
-                // If comments are open or we have at least one comment, load up the comment template.
-                if ( comments_open() || get_comments_number() ) :
-                    comments_template();
-                endif;
-            ?>
-
-        <?php endwhile; // End of the loop. ?>
-
-        </main><!-- #main -->
+            <?php while ( have_posts() ) : the_post(); ?>
+                <div class="image-wrapper">
+                    <?php the_post_thumbnail( 'full' ); ?>
+                    <div class="single-adventure-container">
+                        <div class ="single-adventure-title">
+                            <?php the_title(); ?>
+                        </div><!--single adventure- title-->
+                        <div class = "single-adventure-author">
+                            By <?php the_author(); ?>
+                        </div><!--single-adventure author-->
+                        <div class = "single-adventure-content">
+                            <?php the_content(); ?>    
+                        </div><!--single-advventure content-->
+                    </div><!--single-adventure-container-->
+                    </div> <!-- social-media-wrapper -->
+                </div> <!-- image-wrapper -->
+                <div class ="social-icons-container">
+                    <button class ="facebook-button" type="button" value ="Like">
+                        <i class="fa fa-facebook" aria-hidden="true">
+                            <span class = "button-text">Like</span>
+                        </i>
+                    </button>
+                    <button class ="pinterest-button" type="button" value ="Tweet">
+                        <i class="fa fa-twitter" aria-hidden="true">
+                            <span class = "button-text">Tweet</span>
+                        </i>
+                    </button>
+                    <button class ="twitter-button" type="button" value ="Pin">
+                        <i class="fa fa-pinterest" aria-hidden="true">
+                            <span class = "button-text">Pin</span>
+                        </i>
+                    </button>
+                <?php endwhile; // End of the loop. ?>
+            </main><!-- #main -->
     </div><!-- #primary -->
-
 <?php get_footer(); ?>

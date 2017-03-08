@@ -93,7 +93,7 @@
         </span>
       </a>
       <a href ="<?php the_permalink();?>"class = "home-read-button-container">Read More</a>
-      <?php the_post_thumbnail( 'large' ); ?>
+      <?php the_post_thumbnail( 'full' ); ?>
      </div>
 
 <?php endwhile; ?>   
