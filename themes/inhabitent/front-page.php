@@ -17,11 +17,11 @@
         <div class= "sticky-header-nav">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-        </div><!--Sticky Header Nav-->
+          
         <div class ="home-search-container">  
-        <?php get_search_form(); ?>
+          <?php get_search_form(); ?>
         </div><!-- Home search container-->
-			
+			</div><!--Sticky Header Nav-->
       </header>
       <main id="main" class="site-main" role="main">
       <div class = "front-hero-image">
@@ -76,48 +76,28 @@
 
   </div>
 
+  <?php 
+     $loop = new WP_Query( array( 
+        'post_type' => 'adventure',   /* edit this line */
+        'posts_per_page' => 4,
+        'order' => 'ASC' ) );
+?>
+<div class ="adventure-list">
+<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
 
-  <!--Latest Adventures-->
-  <h2 class = "home-content-heading">Latest Adventures</h2>
-  <section class = "adventure-wrapper">
-    <div class = "adventures-pic-container">
-      <div class = "canoe-container">
-        <div class = "canoe-large-pic adventure-pic">
-        <h3 class ="adventure-text canoe-text"><a href ="#" class = "adventure-hover">Getting Back to Nature in a Canoe</a></h3>
-        <div class = "home-read-button-container canoe-read">
-            <a class = "home-read-button">Read More</a>
-        </div><!--canoe-read-->
-      </div>
-      
-      <div class ="beach-container">
-          <div class = "beach-medium-pic adventure-pic">
-          <h3 class ="adventure-text"><a class = "beach-text adventure-hover" href="#">A Night with Friends at the Beach</a></h3>
-          <div class = "home-read-button-container beach-read">
-            <a class = "home-read-button">Read More</a>
-          </div>
-      </div>
-      </div>
-      <div class ="mountain-container">
-        <div class ="mountain-small-pic adventure-pic">
-        <h3 class ="adventure-text mountain-text"><a href="#" class = "adventure-hover">Taking in the View at Big Mountain</a></h3>
-        <div class = "home-read-button-container mountain-read">
-          <a class = "home-read-button">Read More</a>
-        </div>
-      </div>
-      </div>
-      <div class ="star-container">
-          <div class ="star-small-pic adventure-pic">
-          <h3 class ="adventure-text star-text"><a href="#" class = "adventure-hover">Star-Gazing at the Night Sky</a></h3>
-          <div class = "home-read-button-container star-read">
-            <a class = "home-read-button">Read More</a>
-          </div>
-      </div>
-      </div>
-      </div>
-      
-  </section>
+     <div class = "adventure-list-item">
+      <span class ="adventure-list-title"><?php the_title(); ?></span>
+      <?php the_post_thumbnail( 'large' ); ?>
+     </div>
+
+<?php endwhile; ?>   
+</div>
+
+
     <?php while ( have_posts() ) : the_post(); ?>
+    
+
     <?php endwhile; // End of the loop. ?>
     </main><!-- #main -->
     </div><!-- #primary -->

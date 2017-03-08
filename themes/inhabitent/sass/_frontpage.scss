@@ -238,15 +238,11 @@
 // --------------Front Page Adventure----------
 
 
-.page-template-front-page{
-	overflow-x:hidden;
-
-}
 
 // ---------Adventure Pictures--------
 .adventure-wrapper{
 	width:100%;
-	overflow-x:hidden;
+	// overflow-x:hidden;
 	height:100vh;
 	
 }
@@ -256,7 +252,7 @@
 	width:1120px;;
 	height:540px;
 	margin:0 auto;
-	overflow-x:hidden;
+	// overflow-x:hidden;
 	overflow-y:hidden;
 	position:relative;
 }

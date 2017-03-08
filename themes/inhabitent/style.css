@@ -536,6 +536,9 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
+.home .fa-search {
+  color: white; }
+
 .sticky-header {
   height: 50px;
   position: fixed;
@@ -551,13 +554,30 @@ a {
 
 .sticky-display {
   visibility: visible;
-  z-index: 999; }
+  z-index: 999;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  display: -ms-flexbox;
+  display: flex; }
+
+.sticky-header-nav #search-field {
+  display: none; }
 
 .sticky-header .sticky-header-nav #primary-menu li a {
   color: #248a83; }
 
 .sticky-header .sticky-header-nav #primary-menu {
   list-style-type: none; }
+
+.sticky-header .search-toggle .fa-search {
+  color: #248a83; }
+
+.stick-header input {
+  width: 0; }
+
+.sticky-header-nav {
+  display: -ms-flexbox;
+  display: flex; }
 
 .home #primary-menu li:hover > a,
 .home #primary-menu li:focus > a {
@@ -660,9 +680,6 @@ a {
 
 .fa-search {
   margin-right: 40px; }
-
-.home .fa-search {
-  color: white; }
 
 .home .site-content {
   padding-top: 0; }
@@ -879,19 +896,14 @@ a {
   .more-button:hover {
     color: white; }
 
-.page-template-front-page {
-  overflow-x: hidden; }
-
 .adventure-wrapper {
   width: 100%;
-  overflow-x: hidden;
   height: 100vh; }
 
 .adventures-pic-container {
   width: 1120px;
   height: 540px;
   margin: 0 auto;
-  overflow-x: hidden;
   overflow-y: hidden;
   position: relative; }
 
@@ -1317,6 +1329,45 @@ div.footer-blocks {
   background-size: cover,cover;
   height: 100vh;
   width: 100%; }
+
+.adventure-list {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  max-width: 1120px;
+  box-sizing: border-box; }
+
+.adventure-list-title {
+  position: absolute;
+  z-index: 999; }
+
+.adventure-list-item {
+  width: 50vw; }
+
+.adventure-list-item:nth-child(1) img {
+  width: 560px;
+  height: 540px;
+  border: 10px solid white;
+  object-fit: cover; }
+
+.adventure-list-item:nth-child(2) img {
+  width: 560px;
+  height: 280px;
+  border: 10px solid white; }
+
+.adventure-list-item:nth-child(3) img {
+  width: 280px;
+  height: 260px;
+  transform: translate(-560px, 280px);
+  border: 10px solid white; }
+
+.adventure-list-item:nth-child(4) img {
+  width: 280px;
+  height: 260px;
+  transform: translate(-560px, 280px);
+  border: 10px solid white; }
 
 .blog .entry-header h2:hover > a {
   color: #f0e4d1; }

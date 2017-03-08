@@ -101,6 +101,63 @@
 	width:100%;
 	
 }
+
+//Dynamic Adventure Images
+
+.adventure-list{
+	list-style:none;
+	display:flex;
+	padding:0;
+	margin:0;
+	max-width:1120px;
+	box-sizing:border-box;
+
+}
+
+.adventure-list-title{
+	position:absolute;
+	z-index:999;
+}
+
+.adventure-list-item{
+	width:50vw;
+}
+
+.adventure-list-item:nth-child(1) img{
+	width:560px;
+	height:540px;
+	border:10px solid white;
+	object-fit: cover;
+
+
+}
+
+.adventure-list-item:nth-child(2) img{
+	width:560px;
+	height:280px;
+	border:10px solid white;
+
+}
+
+.adventure-list-item:nth-child(3) img{
+	width:280px;
+	height:260px;
+	transform: translate(-560px,280px);
+	border:10px solid white;
+}
+
+.adventure-list-item:nth-child(4) img{
+	width:280px;
+	height:260px;
+	transform: translate(-560px,280px);
+	border:10px solid white;
+}
+
+
+
+
+
+// -------------------------
 // ------------Journal-----------
 
 
