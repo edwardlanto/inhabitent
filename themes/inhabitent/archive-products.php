@@ -31,9 +31,6 @@ get_header(); ?>
 				<a href ="<?php echo $url?>"><?php echo $term->name;?></a>
 				<?php endforeach; ?>
 			</div>
-
-
-
 			<?php /* Start the Loop */ ?>
 			<div class ="shop-items-container">
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -51,14 +48,10 @@ get_header(); ?>
 			<?php endwhile; ?>
 			</div><!--shop-items-container-->
 			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
+			<?php else : ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
 		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>
