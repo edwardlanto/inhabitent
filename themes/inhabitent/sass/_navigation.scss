@@ -224,7 +224,7 @@ a {
 
 }
 
-.home {
+.home,.single-adventure{
 	.header-logo{
 	background-image:url("../../images/logo-tent-white.svg");
 	background-repeat:no-repeat;
@@ -237,7 +237,7 @@ a {
 	}
 }
 
-.home{
+.home,.single-adventure{
 	#primary-menu{
 		li:hover{
 			color:#f0e4d1;

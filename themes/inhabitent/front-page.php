@@ -87,7 +87,12 @@
 
 
      <div class = "adventure-list-item">
-      <span class ="adventure-list-title"><?php the_title(); ?></span>
+      <a href ="<?php the_permalink();?>" class ="adventure-text-link">
+        <span class ="adventure-list-title" class="adventure-text">
+          <?php the_title(); ?>
+        </span>
+      </a>
+      <a href ="<?php the_permalink();?>"class = "home-read-button-container">Read More</a>
       <?php the_post_thumbnail( 'large' ); ?>
      </div>
 
