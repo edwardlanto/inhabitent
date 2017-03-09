@@ -1,3 +1,17 @@
+    (function dogSleep( $ ) {
+    $('#search-toggle').on('click', function() {
+        $('#search-field').animate( { width: 'toggle' }, 500 ).focus();
+    });
+
+    $('#search-field').on('blur', function() {
+        $('#search-field').animate( { width: 'toggle' }, 500 );
+    });
+
+    $('#search-field').animate( { width: 'toggle' }, 0 );
+})( jQuery ); 
+    
+    
+    
     (function( $ ){
         $(window).scroll(function(){
             event.preventDefault();
@@ -11,14 +25,4 @@
 })(jQuery);
 
 
-(function( $ ) {
-    $('#search-toggle').on('click', function() {
-        $('#search-field').animate( { width: 'toggle' }, 500 ).focus();
-    });
 
-    $('#search-field').on('blur', function() {
-        $('#search-field').animate( { width: 'toggle' }, 500 );
-    });
-
-    $('#search-field').animate( { width: 'toggle' }, 0 );
-})( jQuery ); 

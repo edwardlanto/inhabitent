@@ -256,10 +256,10 @@
 
 }
 
-.adventure-list-title{
-	position:absolute;
-	z-index:999;
-}
+
+// .home{
+// 	overflow-x:hidden;
+// }
 
 .adventure-list-item{
 	width:50vw;
@@ -299,7 +299,7 @@
 // ---------Adventure Text---------
 
 .adventure-text-link{
-	color:#fff;
+	color:red;
 	font-size:2.3rem;
 	font-weight:400;
 		&:hover{
@@ -308,57 +308,61 @@
 }
 
 
-.adventure-list-item:nth-child(1) .adventure-text-link{
-	width: 500px;
-    position: absolute;
+.adventure-list-item:nth-child(1) .adventure-list-title{
+	transform: translate(20px,-550px);
     font-size: 48px;
-    margin-left: 3rem;
+    margin-left: 2rem;
     margin-top: 4rem;
 }
 
 
-.adventure-list-item:nth-child(2) .adventure-text-link{
-    font-size:2.4rem;
-	position:absolute;
+.adventure-list-item:nth-child(2) .adventure-list-title{
+    transform: translate(0px,-300px);
+	font-size:2.4rem;
 	width:520px;
 	margin-left: 1.5rem;
     margin-top: 3.5rem;
 }
 
-.adventure-list-item:nth-child(3) .adventure-text-link{
+.adventure-list-item:nth-child(3) .adventure-list-title{
     font-size: 1.6rem;
-	position:absolute;
     left: 42rem;
-    top: 122rem;
+    top: 120rem;
     width: 11rem;
-	
+	transform: translate(-520px,60px);
+    width: 200px;
 }
 
-.adventure-list-item:nth-child(4) .adventure-text-link{
+.adventure-list-item:nth-child(4) .adventure-list-title{
+	transform:translate(-525px,60px);
 	font-size: 1.6rem;
-    position: absolute;
     left: 59rem;
     width: 200px;
-    top: 123rem;
+    top: 120rem;
+}
+
+.home-read-button-container{
+	font-family:$font__accent;
+	text-transform:uppercase;
+	font-size:14.4px;
 }
 
 .adventure-list-item:nth-child(1) .home-read-button-container{
-	transform:translate(3rem,14rem);
+	transform: translate(50px,-525px);
+
 }
 
 .adventure-list-item:nth-child(2) .home-read-button-container{
-	transform: translate(28px,187px);
+	transform: translate(30px,-270px);
 }
 
 .adventure-list-item:nth-child(3) .home-read-button-container{
-    transform: translate(-530px,435px);
-    z-index: 999;
+    transform: translate(-525px,75px);
 }
 
 
 .adventure-list-item:nth-child(4) .home-read-button-container{
-    transform: translate(-537px,435px);
-    z-index: 999;
+    transform: translate(-525px,115px);
 }
 
   

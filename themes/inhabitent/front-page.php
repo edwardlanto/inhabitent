@@ -77,13 +77,15 @@
     <div class ="adventure-list">
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
       <div class = "adventure-list-item">
+           <?php the_post_thumbnail( 'full' ); ?>
           <a href ="<?php the_permalink();?>" class ="adventure-text-link">
-            <span class ="adventure-list-title" class="adventure-text">
+            <div class ="adventure-list-title" class="adventure-text">
               <?php the_title(); ?>
-            </span>
+            </div>
           </a>
           <a href ="<?php the_permalink();?>"class = "home-read-button-container">Read More</a>
-            <?php the_post_thumbnail( 'full' ); ?>
+           
+            
       </div><!--adventure-list-item-->
       <?php endwhile; ?>   
     </div><!--adventure-list-->
