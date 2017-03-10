@@ -905,6 +905,9 @@ a {
   max-width: 1120px;
   box-sizing: border-box; }
 
+.home {
+  overflow-x: hidden; }
+
 .adventure-list-item {
   width: 50vw; }
 
@@ -912,7 +915,8 @@ a {
   width: 560px;
   height: 540px;
   border: 10px solid white;
-  object-fit: cover; }
+  object-fit: cover;
+  z-index: -1; }
 
 .adventure-list-item:nth-child(2) img {
   width: 560px;
@@ -981,7 +985,7 @@ a {
   transform: translate(-525px, 75px); }
 
 .adventure-list-item:nth-child(4) .home-read-button-container {
-  transform: translate(-525px, 115px); }
+  transform: translate(-525px, 80px); }
 
 .home-read-button-container {
   width: 132px;

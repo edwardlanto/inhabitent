@@ -257,12 +257,14 @@
 }
 
 
-// .home{
-// 	overflow-x:hidden;
-// }
+.home{
+	overflow-x:hidden;
+}
 
 .adventure-list-item{
 	width:50vw;
+	
+	
 }
 
 .adventure-list-item:nth-child(1) img{
@@ -270,6 +272,8 @@
 	height:540px;
 	border:10px solid white;
 	object-fit: cover;
+	z-index:-1;
+	
 
 
 }
@@ -278,6 +282,7 @@
 	width:560px;
 	height:280px;
 	border:10px solid white;
+
 
 }
 
@@ -313,6 +318,7 @@
     font-size: 48px;
     margin-left: 2rem;
     margin-top: 4rem;
+	
 }
 
 
@@ -362,7 +368,7 @@
 
 
 .adventure-list-item:nth-child(4) .home-read-button-container{
-    transform: translate(-525px,115px);
+    transform: translate(-525px,80px);
 }
 
   

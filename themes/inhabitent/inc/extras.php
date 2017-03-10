@@ -58,38 +58,15 @@ function modify_title($title) {
 }
 add_filter('get_the_archive_title', 'modify_title');
 // ---Change Wear Title function----
-function modify_wear($wear) {
-	if(has_term('wear', 'product_type')) {
-		$wear = 'Wear';
-	}
-	return $wear;
-}
-add_filter('get_the_archive_title', 'modify_wear');
-// --Change eat title function--
-function modify_eat($eat) {
-	if(has_term('eat', 'product_type')) {
-		$eat = 'Eat';
-	}
-	return $eat;
-}
-add_filter('get_the_archive_title', 'modify_eat');
-// ----Change do title function---
-function modify_do($do) {
-	if(has_term('do', 'product_type')) {
-		$do = 'Do';
-	}
-	return $do;
-}
-add_filter('get_the_archive_title', 'modify_do');
-// --Change sleep title function---
-function modify_sleep($sleep) {
-	if(has_term('sleep', 'product_type') && is_tax( 'product_type','sleep')) {
-		$sleep = 'Sleep';
-	}
-	return $sleep;
-}
-add_filter('get_the_archive_title', 'modify_sleep');
 
+add_filter('get_the_archive_title', 'modify_tax');
+
+	function modify_tax($title){
+		if(is_tax() ){
+			$title = single_term_title('', false);
+		}
+		return $title;
+	}
 
 // ------pre_get_post-------
 add_action( 'pre_get_posts', 'organize' );
