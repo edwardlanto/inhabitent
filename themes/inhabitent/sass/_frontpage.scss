@@ -273,8 +273,7 @@
 	border:10px solid white;
 	object-fit: cover;
 	z-index:-1;
-	background:linear-gradient(rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
-	background-size:cover;
+ 
 	
 
 
@@ -387,4 +386,17 @@
 			border-color:$background-entry-color;
 		}
 }
+
+.more-adventres-contaniner{
+	transform: translate(-1650px,555px);
+	a{
+		background-color:$background-entry-color;
+		display:block;
+		width:138px;
+		font-family:$font__accent;
+		text-transform:uppercase;
+	}
+}
+
+
 

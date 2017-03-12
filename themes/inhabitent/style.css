@@ -916,9 +916,7 @@ a {
   height: 540px;
   border: 10px solid white;
   object-fit: cover;
-  z-index: -1;
-  background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
-  background-size: cover; }
+  z-index: -1; }
 
 .adventure-list-item:nth-child(2) img {
   width: 560px;
@@ -1004,6 +1002,15 @@ a {
   .home-read-button-container:hover {
     background-color: #248a83;
     border-color: #248a83; }
+
+.more-adventres-contaniner {
+  transform: translate(-1650px, 555px); }
+  .more-adventres-contaniner a {
+    background-color: #248a83;
+    display: block;
+    width: 138px;
+    font-family: "novecento", sans-serif;
+    text-transform: uppercase; }
 
 #secondary {
   width: 325px;
