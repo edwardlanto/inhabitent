@@ -916,7 +916,9 @@ a {
   height: 540px;
   border: 10px solid white;
   object-fit: cover;
-  z-index: -1; }
+  z-index: -1;
+  background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+  background-size: cover; }
 
 .adventure-list-item:nth-child(2) img {
   width: 560px;
@@ -936,7 +938,7 @@ a {
   border: 10px solid white; }
 
 .adventure-text-link {
-  color: red;
+  color: white;
   font-size: 2.3rem;
   font-weight: 400; }
   .adventure-text-link:hover {
@@ -993,6 +995,7 @@ a {
   border: 1px solid white;
   display: -ms-flexbox;
   display: flex;
+  color: white;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;

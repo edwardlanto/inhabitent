@@ -273,6 +273,8 @@
 	border:10px solid white;
 	object-fit: cover;
 	z-index:-1;
+	background:linear-gradient(rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
+	background-size:cover;
 	
 
 
@@ -304,7 +306,7 @@
 // ---------Adventure Text---------
 
 .adventure-text-link{
-	color:red;
+	color:white;
 	font-size:2.3rem;
 	font-weight:400;
 		&:hover{
@@ -371,14 +373,12 @@
     transform: translate(-525px,80px);
 }
 
-  
-
-
 .home-read-button-container{
 	width:132px;
 	height:42px;
 	border:1px solid white;
 	display: flex;
+	color:white;
     justify-content: center;
     align-items: center;
 	position:absolute;
@@ -386,7 +386,5 @@
 			background-color:$background-entry-color;
 			border-color:$background-entry-color;
 		}
-	
-
 }
 
