@@ -105,8 +105,11 @@ function update_hero_image() {
 		display: flex;
  		justify-content: center;
     	align-items: center;
-}
 	}";
-        wp_add_inline_style( 'red-starter-style', $custom_styles );
 
+        wp_add_inline_style( 'red-starter-style', $custom_styles );
+}
 add_action( 'wp_enqueue_scripts', 'update_hero_image' );
+
+//Remove Whitespace from about
+

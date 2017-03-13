@@ -29,7 +29,7 @@ get_header(); ?>
 								<?php the_post_thumbnail( 'full' ) ?>
 							</div><!--adventure-archive-image-container-->
 							<div class="adventure-info-wrapper">
-								<h2>
+								<h2>	
 									<a href = "<?php the_permalink();?>" class ="archive-adventure-title">
 										<?php the_title(); ?>
 									</a>
