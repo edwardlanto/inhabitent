@@ -685,13 +685,30 @@
 	position: relative;
 
 }
+
+.adventure-archive-image-container{
+	max-height:550px;
+}
 .adventure-archive-image-container{
 	img{
 		width: 550px;
 		height:520px;
 		object-fit:cover;
+		box-sizing:border-box;
 	}
 }
+
+.adventure-archive-image-container::after{
+  display: block;
+  position: relative;
+  background-image: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% );
+  background-size:cover;
+  height: 520px;
+  width: 100%;
+  content: '';
+  top: -525px;
+}
+
 
 .adventure-info-wrapper{
 	h2{

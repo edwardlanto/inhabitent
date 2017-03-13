@@ -25,19 +25,19 @@ get_header(); ?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<li>
 						<div class="adventure-container">
-						<div class ="adventure-archive-image-container">
-					<?php the_post_thumbnail( 'full' ) ?>
-								</div><!--adventure-archive-image-container-->
+							<div class ="adventure-archive-image-container">
+								<?php the_post_thumbnail( 'full' ) ?>
+							</div><!--adventure-archive-image-container-->
 							<div class="adventure-info-wrapper">
-							<h2>
-								<a href = "<?php the_permalink();?>" class ="archive-adventure-title">
-								<?php the_title(); ?>
-								</a>
-							</h2>
+								<h2>
+									<a href = "<?php the_permalink();?>" class ="archive-adventure-title">
+										<?php the_title(); ?>
+									</a>
+								</h2>
 								<a href ="<?php the_permalink();?>"class = "home-read-button-container archive-read">Read More</a>
-							</div>
-							</div>
-						</li>
+							</div><!--adventure-info-container-->
+						</div><!--adventure-container-->
+					</li>
 				<?php endwhile; ?>
 				</ul>
 			</div>
