@@ -63,7 +63,7 @@
         <div class = "home-blog-post"><?php the_post_thumbnail( 'large' ); ?></div>
         <div><p class ="home-blog-text"><?php red_starter_posted_on(); ?>/<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p></div>
         <div><h3 class ="home-blog-title"><a href = "<?php the_permalink(); ?>  "><?php the_title(); ?></a></h3></div>
-        <a href="<?php the_permalink()?>" id ="read-entry-home">Read Entry  -></a>
+        <a href="<?php the_permalink()?>" class ="read-entry-home">Read Entry</a>
     </div><!--home-blog-post-container-->
     <?php endforeach; 
     wp_reset_postdata(); ?>
@@ -86,7 +86,7 @@
               <?php the_title(); ?>
             </div>
           </a>
-          <a href ="<?php the_permalink();?>"class = "home-read-button-container">Read More</a>
+          <a href ="<?php the_permalink();?>" class = "home-read-button-container">Read More</a>
       </div><!--adventure-list-item-->
       <?php endwhile; ?>
     </div><!--adventure-list-->

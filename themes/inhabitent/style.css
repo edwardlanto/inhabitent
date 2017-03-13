@@ -461,6 +461,9 @@ textarea {
   text-transform: uppercase;
   top: 175px; }
 
+.about-hero {
+  margin-bottom: 100px; }
+
 .about-hero-container {
   width: 1280px;
   height: 587px; }
@@ -471,7 +474,8 @@ textarea {
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
   font-family: "novecento", sans-serif;
-  text-align: center; }
+  text-align: center;
+  padding-top: 60px; }
 
 .page-template-about .hfeed .site-content .site-main p {
   text-align: left;
@@ -547,7 +551,8 @@ a {
   visibility: hidden;
   display: -ms-flexbox;
   display: flex;
-  z-index: 999; }
+  z-index: 999;
+  padding-left: 40px; }
 
 .sticky-header-logo {
   width: 50px; }
@@ -561,7 +566,7 @@ a {
   display: flex; }
 
 .sticky-header-nav #search-field {
-  width: 0%; }
+  display: none; }
 
 .sticky-header .sticky-header-nav #primary-menu li a {
   color: #248a83; }
@@ -801,15 +806,12 @@ a {
   display: inline-block;
   margin-right: 0;
   border: 1px solid #e1e1e1;
-  height: 414px; }
+  height: 418px; }
 
-.home-blog-title {
-  margin-top: 0;
+.home .home-blog-title {
   font-size: 1.8rem;
   font-family: "novecento", sans-serif;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  margin-left: 20px; }
+  margin: 0 5px 25px 20px; }
 
 .home-blog-title a {
   color: #248a83;
@@ -823,25 +825,17 @@ a {
     text-transform: uppercase;
     letter-spacing: 2px; }
 
-#read-entry-home {
+.home .read-entry-home {
   border: 1px solid #000;
   font-family: "novecento", sans-serif;
   text-transform: uppercase;
   padding: 10px 10px;
-  color: #000;
-  margin-left: 20px; }
-  #read-entry-home:hover {
+  color: black;
+  margin-left: 13px; }
+  .home .read-entry-home:hover {
     background-color: #248a83;
     color: white;
     border-color: #248a83; }
-
-#read-entry-home {
-  color: #000;
-  position: relative;
-  top: 20px;
-  right: 3px;
-  font-size: 14px;
-  font-family: "novecento", sans-serif; }
 
 .home-read-button {
   color: white; }

@@ -108,5 +108,5 @@ function update_hero_image() {
 }
 	}";
         wp_add_inline_style( 'red-starter-style', $custom_styles );
-}
+
 add_action( 'wp_enqueue_scripts', 'update_hero_image' );
