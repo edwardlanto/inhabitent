@@ -49,7 +49,7 @@ function my_login_logo_url_title() {
     return 'Inhabitent';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
-// ----Change Title Archive-----
+// ----Change Shop Title Archive-----
 function modify_title($title) {
 	if(is_post_type_archive('products')) {
 		$title = 'Shop Stuff';
@@ -57,7 +57,7 @@ function modify_title($title) {
 	return $title;
 }
 add_filter('get_the_archive_title', 'modify_title');
-// ---Change Wear Title function----
+// ---Change Taxonomy Title Function----
 
 add_filter('get_the_archive_title', 'modify_tax');
 
@@ -67,6 +67,16 @@ add_filter('get_the_archive_title', 'modify_tax');
 		}
 		return $title;
 	}
+
+// Change Adventure Archive
+
+	function adventure_change($title2){
+		if(is_post_type_archive('adventure')) {
+		$title2= "Latest Adventures";
+		}
+		return $title2;
+	}
+	add_filter('get_the_archive_title', 'adventure_change');
 
 // ------pre_get_post-------
 add_action( 'pre_get_posts', 'organize' );

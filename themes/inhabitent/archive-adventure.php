@@ -19,7 +19,12 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<div class="archive-grid-container">
 				<ul class ="archive-adventure-container">
-				<?php while ( have_posts() ) : the_post(); ?>
+				<?php $loop = new WP_Query( array( 
+        'post_type' => 'adventure',   /* edit this line */
+        'posts_per_page' => 4,
+        'order' => 'ASC' ) );
+      ?>
+				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<li>
 						<div class="adventure-container">
 						<div class ="adventure-archive-image-container">
@@ -44,5 +49,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -87,7 +87,7 @@
       </div><!--adventure-list-item-->
       <?php endwhile; ?>
       <div class = "more-adventres-contaniner">
-              
+            <a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>" class="more-adventures">More Adventures</a>
       </div>   
     </div><!--adventure-list-->
     <?php while ( have_posts() ) : the_post(); ?>
