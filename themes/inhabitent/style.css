@@ -754,6 +754,15 @@ a {
   height: 275px;
   width: 275px; }
 
+.latest-adventures {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3.75rem;
+  text-align: center;
+  font-family: "novecento", sans-serif;
+  text-transform: uppercase;
+  color: #2f1339; }
+
 .home-content-heading {
   font-size: 38px;
   font-weight: 400;
@@ -1003,14 +1012,21 @@ a {
     background-color: #248a83;
     border-color: #248a83; }
 
-.more-adventres-contaniner {
-  transform: translate(-1650px, 555px); }
-  .more-adventres-contaniner a {
+.more-adventures-container {
+  position: relative;
+  bottom: 180px;
+  left: 10px; }
+  .more-adventures-container a {
     background-color: #248a83;
     display: block;
-    width: 138px;
+    width: 270px;
     font-family: "novecento", sans-serif;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    text-align: center; }
+    .more-adventures-container a:hover {
+      background-color: #1B6661; }
 
 #secondary {
   width: 325px;
@@ -1426,15 +1442,18 @@ div.footer-blocks {
 .product-container {
   display: inline-block;
   border: 1px solid #e1e1e1;
-  height: 288px;
-  margin-bottom: 1.5rem; }
+  height: 305px;
+  margin-bottom: 1.5rem;
+  max-width: 260px;
+  white-space: nowrap; }
 
 .shop-archive-image {
   background-color: #e1e1e1;
   height: 250px;
   width: 255px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  width: 260px; }
 
 .shop-archive-image img {
   left: 50%;
@@ -1452,13 +1471,21 @@ div.footer-blocks {
 .product-title {
   font-size: 16px;
   color: #404040;
-  font-family: "merriweather", serif; }
+  font-family: "merriweather", serif;
+  overflow: hidden; }
+
+.product-title:after {
+  content: '............................';
+  display: inline;
+  overflow: hidden;
+  z-index: -999; }
 
 .home-blog-title {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  margin: 10px; }
 
 .post-type-archive-products .page-title {
   margin-top: 2.4rem; }
@@ -1526,11 +1553,8 @@ div.footer-blocks {
 
 .taxonomy-container {
   padding-bottom: 50px; }
-
-.taxonomy-container a {
-  color: #248a83; }
   .taxonomy-container a:hover {
-    color: #2f1339; }
+    color: red; }
 
 .shop-items-container {
   padding-top: 3rem;
@@ -1636,7 +1660,7 @@ div.footer-blocks {
   border-bottom: 1px dashed #c8c8c8;
   padding-bottom: 1.5rem;
   letter-spacing: 2px;
-  margin: 50px 4rem 50px 0; }
+  margin: 50px 4rem 50px 50px; }
 
 .archive-adventure-container li {
   margin-bottom: 1rem; }

@@ -50,6 +50,16 @@
 	width:275px;
 }
 
+.latest-adventures{
+	font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3.75rem;
+    text-align: center;
+	font-family:$font__accent;
+	text-transform:uppercase;
+	color: #2f1339;
+}
+
 .home-content-heading{
 	font-size: 38px;
     font-weight: 400;
@@ -273,11 +283,8 @@
 	border:10px solid white;
 	object-fit: cover;
 	z-index:-1;
- 
-	
-
-
 }
+
 
 .adventure-list-item:nth-child(2) img{
 	width:560px;
@@ -300,7 +307,6 @@
 	transform: translate(-560px,280px);
 	border:10px solid white;
 }
-
 
 // ---------Adventure Text---------
 
@@ -387,16 +393,25 @@
 		}
 }
 
-.more-adventres-contaniner{
-	transform: translate(-1650px,555px);
+.more-adventures-container{
+    position: relative;
+    bottom: 180px;
+    left: 10px;
 	a{
 		background-color:$background-entry-color;
 		display:block;
-		width:138px;
+		width:270px;
 		font-family:$font__accent;
 		text-transform:uppercase;
+		font-size:1.2rem;
+		padding:0.5rem 0;
+		text-align: center;
+			&:hover{
+				background-color:#1B6661;
+			}
 	}
 }
+
 
 
 

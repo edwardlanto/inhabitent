@@ -309,8 +309,10 @@
 .product-container{
 	display:inline-block;
 	border: 1px solid #e1e1e1;
-	height:288px;
+	height:305px;
 	margin-bottom:1.5rem;
+	max-width: 260px;
+	white-space: nowrap;
 }
 	
 .shop-archive-image{
@@ -319,6 +321,7 @@
 	width:255px;
 	overflow: hidden;
     position: relative;
+	width: 260px;
 }
 
 .shop-archive-image img{
@@ -341,12 +344,20 @@
 	font-size:16px;
 	color:#404040;
 	font-family:$font__main;
+	overflow: hidden;
+}
 
+.product-title:after{
+	content: '............................';
+    display: inline;
+    overflow: hidden;
+	z-index:-999;
 }
 
 .home-blog-title{
 	display: flex;
     justify-content: space-between;
+	margin: 10px;
 }
 
 .post-type-archive-products{
@@ -468,18 +479,12 @@
 
 .taxonomy-container{
 	padding-bottom:50px;
-
-}
-
-.taxonomy-container{
-	a{
-		color:#248a83;
-		&:hover{
-			color:#2f1339;
+		a:hover{
+			color:red;
 		}
-			
-	}
+
 }
+
 
 .shop-items-container{
 	padding-top:3rem;
@@ -648,7 +653,7 @@
 	border-bottom: 1px dashed #c8c8c8;
     padding-bottom: 1.5rem;
 	letter-spacing:2px;
-	margin: 50px 4rem 50px 0;
+	margin: 50px 4rem 50px 50px;
 		
 	}
 }

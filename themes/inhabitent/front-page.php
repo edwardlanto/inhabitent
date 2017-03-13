@@ -68,6 +68,7 @@
     <?php endforeach; 
     wp_reset_postdata(); ?>
 </div><!--page-container-->
+<h2 class ="latest-adventures">Latest Adventures</h2>
 <?php 
      $loop = new WP_Query( array( 
         'post_type' => 'adventure',   /* edit this line */
@@ -77,7 +78,9 @@
     <div class ="adventure-list">
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
       <div class = "adventure-list-item">
+        <div class ="gradient-container">
            <?php the_post_thumbnail( 'full' ); ?>
+        </div>
           <a href ="<?php the_permalink();?>" class ="adventure-text-link">
             <div class ="adventure-list-title" class="adventure-text">
               <?php the_title(); ?>
@@ -86,14 +89,11 @@
           <a href ="<?php the_permalink();?>"class = "home-read-button-container">Read More</a>
       </div><!--adventure-list-item-->
       <?php endwhile; ?>
-      <div class = "more-adventres-contaniner">
-            <a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>" class="more-adventures">More Adventures</a>
-      </div>   
     </div><!--adventure-list-->
-    <?php while ( have_posts() ) : the_post(); ?>
-    <?php endwhile; // End of the loop. ?>
+    <div class = "more-adventures-container">
+            <a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>" class="more-adventures">More Adventures</a>
+      </div><!--more-adventures-container-->
   </main><!-- #main -->
 </div><!-- #primary -->
   <!--</div>-->
-
   <?php get_footer(); ?>
