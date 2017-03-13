@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying archive pages.
- *
- * @package RED_Starter_Theme
- */
+* The template for displaying archive pages.
+*
+* @package RED_Starter_Theme
+*/
 
 get_header(); ?>
 <div class = "primary-secondary-container">
@@ -17,15 +17,26 @@ get_header(); ?>
 			?>
 			</header><!-- .page-header -->
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-                <div class ="archive-adventure-container">
-                        <?php the_post_thumbnail( 'full' ) ?>
-                    <a href = "<?php the_permalink();?>" class ="archive-adventure-title">
-                        <?php the_title(); ?>
-                    </a>
-                    <a href ="<?php the_permalink();?>"class = "home-read-button-container">Read More</a>
-                </div>
-			<?php endwhile; ?>
+			<div class="archive-grid-container">
+				<ul class ="archive-adventure-container">
+				<?php while ( have_posts() ) : the_post(); ?>
+					<li>
+						<div class="adventure-container">
+						<div class ="adventure-archive-image-container">
+					<?php the_post_thumbnail( 'full' ) ?>
+								</div><!--adventure-archive-image-container-->
+							<div class="adventure-info-wrapper">
+							<h2><a href = "<?php the_permalink();?>" class ="archive-adventure-title">
+								<?php the_title(); ?>
+							</a></h2>
+								<a href ="<?php the_permalink();?>"class = "home-read-button-container archive-read">Read More</a>
+							</div>
+							</div>
+						</li>
+					
+				<?php endwhile; ?>
+				</ul>
+			</div>
 			<?php the_posts_navigation(); ?>
 			<?php else : ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>

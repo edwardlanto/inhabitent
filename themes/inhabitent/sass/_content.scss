@@ -641,3 +641,41 @@
 	}
 }
 
+// -----Archive Adventures------
+
+
+.archive-grid-container{
+	display: flex;
+    justify-content: center;
+}
+.archive-adventure-container{
+	max-width: 1120px;;
+    display: flex;
+    flex-wrap: wrap;
+	padding:0;
+	margin:0;
+	justify-content:space-between;
+		li {
+		list-style-type: none;
+	}
+}
+.adventure-container {
+	position: relative;
+
+}
+.adventure-archive-image-container{
+	img{
+		width: 44vw;
+	}
+}
+
+.archive-adventure-title{
+	background-color: red;
+	font-size:48px;
+	letter-spacing:2px;
+}
+.adventure-info-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
