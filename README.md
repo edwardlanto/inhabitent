@@ -15,7 +15,7 @@ A WordPress starter theme for RED Academy students, forked from Underscores.
 ## Wordpress
 ## _Underscore
 
-#Personal Learnings
+# Personal Learnings
 
 * How to create  and echo custom field suites to give the client a dynamic experience and the ability to be able to change the content, without disrupting the theme.
 
