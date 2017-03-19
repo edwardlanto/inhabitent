@@ -14,9 +14,9 @@
 	text-transform:uppercase;
 	font-size:14px;
 	&:hover{
-		background-color:#248a83;
+		background-color:$background-entry-color;
 		color:white;
-		border-color:#248a83;
+		border-color:$background-entry-color;
 	}
 }
 
@@ -67,12 +67,12 @@
 
 .pinterest-button{
 	padding:12px 35px;
-	background-color:white;	
+	background-color:$color__background-body;
 	border:1px solid black;
 	border-radius:0;
 		&:hover{
 			background-color:$background-entry-color;
-			color:white;
+			color:$color__background-body;
 			box-shadow:none;
 		}
 }
@@ -130,14 +130,14 @@
 .comment-reply-link{
 	color:#248a83;
 	&:hover{
-		color:#248a83;
+		color:$background-entry-color;
 	}
 
 }
 
 .comment-metadata{
 	a{
-		color:#248a83;
+		color:$background-entry-color;
 	}
 }
 .comment-form-author, .comment-form-url, .comment-form-email	{
@@ -150,13 +150,13 @@
 
 .comment-form{
 	textarea{
-		background-color:#f4f4f4;
+		background-color:$form__color;
 	}
 }
 
 .comment-form{
 	input{
-		background-color: #f4f4f4;
+		background-color:$form__color;
 	}
 }
 

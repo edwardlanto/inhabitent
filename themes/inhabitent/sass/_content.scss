@@ -185,7 +185,7 @@
 
 .tags-links, .cat-links{
 	a:hover{
-		color:#2f1339;
+		color:$color__hover;
 	}
 }
 
@@ -221,10 +221,10 @@
 }
 
 #submit-button{
-	background-color:#248a83;
+	background-color:$background-entry-color;
 	border: none;
     border-radius: 0;
-	color:#fff;
+	color:$color__background-body;
 	box-shadow:none;
 	font-family:$font__accent;
 	text-shadow:none;
@@ -277,20 +277,20 @@
 
 .wpcf7-form{
 	input{
-		background-color:#f4f4f4;
+		background-color:$form__color;
 	}
 }
 
 .find-us-label{
 	textarea{
-		background-color:#f4f4f4;
+		background-color:$form__color;
 		width:760px;
 	}
 }
 
 .page-template-find-us{
 	#submit-button:hover{
-		background-color:#1B6661;
+		background-color:$color__dark-green-hover;
 		
 
 	}
@@ -316,7 +316,7 @@
 }
 	
 .shop-archive-image{
-	background-color: #e1e1e1;
+	background-color:$image__background-color;
 	height:250px;
 	width:255px;
 	overflow: hidden;
@@ -465,8 +465,6 @@
 
 // -----Taxonomy Product Type---
 
-
-
 .tax-product_type{
 	.taxonomy-description{
 		p{
@@ -493,7 +491,7 @@
 
 
 .adventure-hover:hover{
-	color:#f0e4d1;
+	color:$border__beige-color;
 }
 
 // -------Search--------
@@ -513,7 +511,7 @@
 
 .search-results{
 	.page-header{
-		border-bottom: 1px solid #e1e1e1;
+		border-bottom: 1px solid $image__background-color;
 		width: 735px;
 	}
 }
@@ -650,7 +648,7 @@
 
 .post-type-archive-adventure{
 	.page-title{
-	border-bottom: 1px dashed #c8c8c8;
+	border-bottom: 1px dashed $border__accent-color;
     padding-bottom: 1.5rem;
 	letter-spacing:2px;
 	margin: 50px 4rem 50px 50px;
@@ -661,7 +659,6 @@
 .archive-adventure-container{
 	li{
 		margin-bottom: 1rem;
-
 	}
 }
 
@@ -669,7 +666,8 @@
 	display: flex;
     justify-content: center;
 	margin-bottom: 9rem;
-}
+	}
+
 .archive-adventure-container{
 	max-width: 1120px;;
     display: flex;
@@ -723,9 +721,8 @@
 	letter-spacing:2px;
 	font-weight:400;
 		&:hover{
-			color:#f0e4d1;
-
-		}
+			color:$border__beige-col
+	}
 }
 .adventure-info-wrapper {
 	position: absolute;

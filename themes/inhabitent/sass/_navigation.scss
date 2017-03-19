@@ -207,7 +207,7 @@ a {
 }
 .menu {
 	li a:hover{
-		color: #2f1339;
+		color: $color__hover;
 
 	}
 }
@@ -241,7 +241,7 @@ a {
 .home,.single-adventure{
 	#primary-menu{
 		li:hover{
-			color:#f0e4d1;
+			color:$border__beige-color;
 		}
 	}
 }
@@ -303,7 +303,7 @@ a {
 	background-color: hsla(0,0%,100%,.85);
 	z-index:5;
 	align-items:center;
-	border-bottom: 1px solid #e1e1e1;
+	border-bottom: 1px solid $image__background-color;
 }
 
 .site-navigation{

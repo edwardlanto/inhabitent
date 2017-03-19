@@ -57,7 +57,7 @@
     text-align: center;
 	font-family:$font__accent;
 	text-transform:uppercase;
-	color: #2f1339;
+	color: $color__hover;
 }
 
 .home-content-heading{
@@ -66,7 +66,7 @@
     margin-bottom: 3rem;
     text-align: center;
 	font-family:$font__accent;
-	color:#2f1339;
+	color:$color__hover;
 	text-transform:uppercase;
 	font-weight:400;
 }
@@ -127,12 +127,12 @@
 	font-size:23px;
 	text-transform:uppercase;
 		&:hover{
-			color:#2f1339;
+			color:$color__hover;
 }
 
 .home{
 	.home-blog-title{
-		color:#248a83;
+		color:$background-entry-color;
 		text-transform:uppercase;
 		letter-spacing:2px;
 		
@@ -152,14 +152,14 @@
 		
 			&:hover{
 				background-color:$background-entry-color;
-				color:white;
+				color:$color__background-body;
 				border-color:$background-entry-color;
 		}
 	}
 }
 
 .home-read-button{
-	color:white;
+	color:$color__background-body;
 	
 	
 }
@@ -170,7 +170,7 @@
 
 .home{
 	.home-blog-title:hover{
-		color:#2f1339;
+		color:$color__hover;
 	}
 }
 
@@ -192,7 +192,7 @@
 	border: 1px solid #e1e1e1;
 	border-top-width: 5px;
 		&:hover{
-			border-color:#d99054;
+			border-color:$color__main-orange;
 		}
 }
 
@@ -227,19 +227,19 @@
 }
 
 .more-button:hover{
-	background-color:#1B6661;
+	background-color:$color__dark-green-hover
 }
 
 .more-button{
 	text-transform:uppercase;
 	font-family:$font__accent;
-	color:white;
+	color:$color__background-body;
 	background-color:$background-entry-color;
 	padding:12px 24px;
 	font-size:14px;
 	transform: translate(65px,20px);
 	&:hover{
-		color:white;
+		color:$color__background-body;
 	}
 }
 
@@ -257,9 +257,7 @@
 	margin:0;
 	max-width:1120px;
 	box-sizing:border-box;
-
 }
-
 
 .home{
 	overflow-x:hidden;
@@ -319,7 +317,6 @@
     font-size: 48px;
     margin-left: 2rem;
     margin-top: 4rem;
-	
 }
 
 

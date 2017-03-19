@@ -24,7 +24,7 @@
 	.entry-header{
 		.entry-title{
 			transform: translate(556px,-39px);
-			color:#d99054;
+			color:$color__main-orange;
 			font-family:$font__accent;
 			text-transform:uppercase;
 			background-color:transparent;
@@ -45,7 +45,7 @@
 .post-type-archive-products{
 	.site-main{
 		a{
-			color:#248a83;
+			color:$background-entry-color;
 		}
 	}
 }
