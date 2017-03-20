@@ -43,5 +43,8 @@
 
 * I learned how to target certain pages while keeping other undisrupted by using specificity and targeting the page and working my way down to the targeted element.
 
-* Creating custom post types to categorize products and using that custom post type in a 
+* Creating custom post types to categorize products and using that custom post type to loop through and echo out specific data
+
+![screen shot 2017-03-19 at 9 53 32 pm](https://cloud.githubusercontent.com/assets/20784807/24088998/8e21b476-0cee-11e7-9f17-43f0fbb84ea7.png)
+
 
