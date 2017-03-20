@@ -834,11 +834,11 @@ a {
   margin-left: 13px; }
   .home .read-entry-home:hover {
     background-color: #248a83;
-    color: white;
+    color: #fff;
     border-color: #248a83; }
 
 .home-read-button {
-  color: white; }
+  color: #fff; }
 
 .home-content-heading {
   margin-top: 2.5rem; }
@@ -891,13 +891,13 @@ a {
 .more-button {
   text-transform: uppercase;
   font-family: "novecento", sans-serif;
-  color: white;
+  color: #fff;
   background-color: #248a83;
   padding: 12px 24px;
   font-size: 14px;
   transform: translate(65px, 20px); }
   .more-button:hover {
-    color: white; }
+    color: #fff; }
 
 .adventure-list {
   list-style: none;
@@ -1028,7 +1028,7 @@ a {
   padding-top: 50px; }
 
 .blog #secondary {
-  transform: translatex(-74px); }
+  transform: translatex(-5px); }
 
 .textwidget {
   margin-left: 58px;
@@ -1128,19 +1128,19 @@ div.footer-blocks {
   font-size: 19px; }
 
 .orange-footer-text p a {
-  color: white;
+  color: #fff;
   font-family: "merriweather", serif; }
 
 .orange-footer-text p {
-  color: white;
+  color: #fff;
   font-family: "merriweather", serif; }
 
 .contact a {
-  color: white;
+  color: #fff;
   font-family: "merriweather", serif; }
 
 .date-footer {
-  color: white; }
+  color: #fff; }
 
 .date-bold {
   font-weight: bold; }
@@ -1161,7 +1161,7 @@ div.footer-blocks {
   text-align: center; }
 
 .site-info-container p {
-  color: white;
+  color: #fff;
   font-family: "novecento", sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
@@ -1223,6 +1223,74 @@ div.footer-blocks {
   clear: both;
   content: "";
   display: table; }
+
+.blog .entry-header h2:hover > a {
+  color: #f0e4d1; }
+
+.blog .entry-title:hover {
+  color: #f0e4d1; }
+
+.blog .entry-content, .container-single .entry-content, .date .entry-content {
+  width: 770px; }
+
+.entry-content p {
+  color: #404040;
+  font-family: "merriweather", serif;
+  font-size: 16px; }
+
+.blog .entry-meta, .single .entry-meta, .archive.tag .entry-meta, .archive.category .entry-meta, .date .entry-meta {
+  position: absolute;
+  width: 464px;
+  margin-left: 297px;
+  bottom: 6px;
+  background-color: #248a83;
+  color: #fff;
+  padding: 0.4rem;
+  text-transform: uppercase;
+  font-family: "novecento", sans-serif; }
+
+.blog .entry-header .entry-title, .single-post .entry-header .entry-title {
+  text-transform: uppercase;
+  font-family: "novecento", sans-serif; }
+
+.post-template-default.single.single-post.single-format-standard .social-icons-container {
+  transform: translate(0px, 0px); }
+
+#author, #email {
+  width: 372px; }
+
+.tags-links {
+  margin-left: 30px; }
+
+.comments-link a {
+  color: white; }
+
+.tags-links a:hover, .cat-links a:hover {
+  color: #2f1339; }
+
+.comment-form-url {
+  width: 760px; }
+
+.post-type-archive .page-title {
+  padding-top: 30px; }
+
+.archive.tag article {
+  margin-top: 6rem; }
+
+.archive.tag .primary-secondary-container .entry-content {
+  width: 770px; }
+
+.date.archive .page-title {
+  text-align: left;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 20px;
+  width: 90%; }
+
+.date.archive footer {
+  margin-top: 70px; }
+
+.date.archive #secondary {
+  margin-left: 30px; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -1287,7 +1355,7 @@ div.footer-blocks {
   z-index: -999;
   width: 100%; }
 
-.blog .entry-title, .single .entry-title, .archive.tag .entry-title, .archive.category .entry-title {
+.blog .entry-title, .single .entry-title, .archive.tag .entry-title, .archive.category .entry-title, .date .entry-title {
   position: absolute;
   z-index: 999;
   top: 0;
@@ -1317,7 +1385,7 @@ div.footer-blocks {
 .blog .entry-title:hover {
   color: #f0e4d1; }
 
-.blog .entry-content, .container-single .entry-content {
+.blog .entry-content, .container-single .entry-content, .date .entry-content {
   width: 770px; }
 
 .entry-content p {
@@ -1325,7 +1393,7 @@ div.footer-blocks {
   font-family: "merriweather", serif;
   font-size: 16px; }
 
-.blog .entry-meta, .single .entry-meta, .archive.tag .entry-meta, .archive.category .entry-meta {
+.blog .entry-meta, .single .entry-meta, .archive.tag .entry-meta, .archive.category .entry-meta, .date .entry-meta {
   position: absolute;
   width: 464px;
   margin-left: 297px;
@@ -1612,7 +1680,7 @@ div.footer-blocks {
 .search-results .page-header {
   border-bottom: none; }
 
-.archive.tag .primary-secondary-container, .category .primary-secondary-container {
+.archive.tag .primary-secondary-container, .category .primary-secondary-container, .date .primary-secondary-container {
   display: -ms-flexbox;
   display: flex;
   max-width: 1120px;
@@ -1620,6 +1688,18 @@ div.footer-blocks {
 
 .archive.tag .primary-secondary-container .entry-content {
   width: 770px; }
+
+.date.archive .page-title {
+  text-align: left;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 20px;
+  width: 90%; }
+
+.date.archive footer {
+  margin-top: 70px; }
+
+.date.archive #secondary {
+  margin-left: 30px; }
 
 .single-adventure .image-wrapper img {
   width: 100vw; }
@@ -1771,12 +1851,12 @@ div.footer-blocks {
 
 .pinterest-button {
   padding: 12px 35px;
-  background-color: white;
+  background-color: #fff;
   border: 1px solid black;
   border-radius: 0; }
   .pinterest-button:hover {
     background-color: #248a83;
-    color: white;
+    color: #fff;
     box-shadow: none; }
 
 .fa {
