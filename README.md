@@ -1,6 +1,6 @@
-# RED Starter
+# Inhabitent Website
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+### Inhabitent is a multipage blog/shopping website structured by Wordpress.
 
 ## Installation
 
@@ -42,4 +42,6 @@ A WordPress starter theme for RED Academy students, forked from Underscores.
 * I found that specificity was another big point here, and overriding the styles I was given, with a higher amount of specificity.
 
 * I learned how to target certain pages while keeping other undisrupted by using specificity and targeting the page and working my way down to the targeted element.
+
+* Creating custom post types to categorize products and using that custom post type in a 
 
