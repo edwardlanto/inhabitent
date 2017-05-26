@@ -1,8 +1,9 @@
-# Inhabitent Website
+# Inhabitent #
 
-### Inhabitent is a multipage blog/shopping website structured by Wordpress.
+### Project Summary ###
 
-## Installation
+  Multipage, customizable Wordpress website that utilizes custom post types, taxonomies, custom loops and a custom widgit sidebar. Includes complete 404 page, toggle search bar, and customized login logo.
+
 
 # Technologies Used 
 ## Wordpress
