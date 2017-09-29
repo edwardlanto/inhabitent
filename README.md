@@ -1,4 +1,4 @@
-DEMO : htttp://inhabitent.edwardlanto.com
+DEMO : www.inhabitent.edwardlanto.com
 
 
 ![screen shot 2017-03-19 at 9 53 32 pm](https://cloud.githubusercontent.com/assets/20784807/24088998/8e21b476-0cee-11e7-9f17-43f0fbb84ea7.png)
