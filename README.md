@@ -1,3 +1,6 @@
+DEMO : htttp://inhabitent.edwardlanto.com
+
+
 ![screen shot 2017-03-19 at 9 53 32 pm](https://cloud.githubusercontent.com/assets/20784807/24088998/8e21b476-0cee-11e7-9f17-43f0fbb84ea7.png)
 
 ![screen shot 2017-06-10 at 4 58 38 pm](https://user-images.githubusercontent.com/20784807/27007169-597eccf8-4dfe-11e7-8c3d-d0cd44024839.png)
