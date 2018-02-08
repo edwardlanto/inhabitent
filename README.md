@@ -1,8 +1,22 @@
-# Inhabitent Website
+DEMO : www.inhabitent.edwardlanto.com
 
-### Inhabitent is a multipage blog/shopping website structured by Wordpress.
 
-## Installation
+![screen shot 2017-03-19 at 9 53 32 pm](https://cloud.githubusercontent.com/assets/20784807/24088998/8e21b476-0cee-11e7-9f17-43f0fbb84ea7.png)
+
+![screen shot 2017-06-10 at 4 58 38 pm](https://user-images.githubusercontent.com/20784807/27007169-597eccf8-4dfe-11e7-8c3d-d0cd44024839.png)
+
+![screen shot 2017-06-10 at 4 58 49 pm](https://user-images.githubusercontent.com/20784807/27007171-6139f0bc-4dfe-11e7-9517-db5b44132d3f.png)
+
+![screen shot 2017-06-10 at 4 57 50 pm](https://user-images.githubusercontent.com/20784807/27007174-6a8874a4-4dfe-11e7-934c-95c0488e2181.png)
+
+![screen shot 2017-06-10 at 4 57 44 pm](https://user-images.githubusercontent.com/20784807/27007175-7831daa0-4dfe-11e7-8a45-4410b4471128.png)
+
+# Inhabitent #
+
+### Project Summary ###
+
+  Multipage, customizable Wordpress website that utilizes custom post types, taxonomies, custom loops and a custom widgit sidebar. Includes complete 404 page, toggle search bar, and customized login logo.
+
 
 # Technologies Used 
 ## Wordpress
@@ -43,5 +57,6 @@
 
 * I learned how to target certain pages while keeping other undisrupted by using specificity and targeting the page and working my way down to the targeted element.
 
-* Creating custom post types to categorize products and using that custom post type in a 
+* Creating custom post types to categorize products and using that custom post type to loop through and echo out specific data
+
 
