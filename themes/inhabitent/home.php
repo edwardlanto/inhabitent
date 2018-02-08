@@ -7,8 +7,6 @@
 
 get_header(); ?>
 	<div class="page-container container">
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
 				<?php if ( have_posts() ) : ?>
 				<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
@@ -24,4 +22,5 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 				<?php endif; ?>
 	</div><!-- page-container -->
-	<?php get_footer(); ?>
+</div>
+<?php get_footer(); ?>

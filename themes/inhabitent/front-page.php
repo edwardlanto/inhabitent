@@ -8,7 +8,6 @@
   */
 
   get_header(); ?>
-  <div id="primary" class="content-area">
     <header class = "sticky-header">
         <div class="sticky-logo-container">
           <img src="<?php echo get_template_directory_uri();?>/images/logo-tent.svg" class = "sticky-header-logo" alt="tent-logo"/>
@@ -23,7 +22,6 @@
             </div><!-- Home search container-->
 			  </div><!--Sticky Header Nav-->
     </header>
-    <main id="main" class="site-main" role="main">
       <div class = "front-hero-image">
         <div class = "front-logo-image"></div>
       </div><!--front-hero-image-->
@@ -68,29 +66,5 @@
     <?php endforeach; 
     wp_reset_postdata(); ?>
 </div><!--page-container-->
-<h2 class ="latest-adventures">Latest Adventures</h2>
-<?php 
-     $loop = new WP_Query( array( 
-        'post_type' => 'adventure',   /* edit this line */
-        'posts_per_page' => 4,
-        'order' => 'ASC' ) );
-      ?>
-    <div class ="adventure-list">
-      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-      <div class = "adventure-list-item">
-        <div class ="gradient-container">
-           <?php the_post_thumbnail( 'full' ); ?>
-        </div>
-          <a href ="<?php the_permalink();?>" class ="adventure-text-link">
-            <div class ="adventure-list-title adventure-text">
-              <?php the_title(); ?>
-            </div>
-          </a>
-          <a href ="<?php the_permalink();?>" class = "home-read-button-container">Read More</a>
-      </div><!--adventure-list-item-->
-      <?php endwhile; ?>
-    </div><!--adventure-list-->
-    <div class = "more-adventures-container">
-            <a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>" class="more-adventures">More Adventures</a>
-      </div><!--more-adventures-container-->
+</div>
   <?php get_footer(); ?>

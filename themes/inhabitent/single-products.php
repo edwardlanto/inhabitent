@@ -33,7 +33,7 @@ get_header(); ?>
                 </i>
             </button>
             
-
+</div>
         <?php endwhile; // End of the loop. ?>
         
 </div>

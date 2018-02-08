@@ -1,3 +1,5 @@
+footer{
+
 .footer-blocks {
   display: flex;
   justify-content: space-around;
@@ -30,7 +32,7 @@
   font-size: 19px;
 }
 
-.orange-footer-text p a, .contact a, .orange-footer-text p   {
+.orange-footer-text div a, .contact a, .orange-footer-text div, .orange-footer-text   {
   color: $color__background-body;
   font-family: $font__main;
 }
@@ -48,6 +50,7 @@
   padding-top: 3rem;
   width: 288px;
   margin-right: 28px;
+  margin-bottom:40px;
 }
 
 .icon {
@@ -55,17 +58,5 @@
   margin-right: 0.5rem;
 }
 
-.site-info-container {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
 
-.site-info-container p {
-  color: $color__background-body;
-  font-family: $font__accent;
-  text-transform: uppercase;
-  font-weight: lighter;
-  font-size: 14px;
 }

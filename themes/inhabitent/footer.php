@@ -6,21 +6,19 @@
  */
 
 ?>
-    </div> <!-- #content -->
-
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				 <div class="footer-blocks">
                     <div class="orange-footer-text col-lg-4 col-sm-12">
                         <h3>Contact Info</h3>
-                        <p>
+                        <div>
                             <i class="fa fa-envelope icon" aria-hidden="true"></i>
                             <a href="mailto:info@inhabitent.com">info@inhabitent.com</a>
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <i class="fa fa-phone icon" aria-hidden="true"></i>
                             <a href="tel:778-456-7891">778-456-7891</a>
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <span>
                                 <a href="#"><i class="fa fa-facebook-square icon" aria-hidden="true"></i></a>
                             </span>
@@ -30,7 +28,7 @@
                             <span>
                                 <a href="#"><i class="fa fa-google-plus-square icon" aria-hidden="true"></i></a>
                             </span>
-                        </p>
+                    </div>
                     </div><!--Contact  -->
                     <div class="orange-footer-text col-lg-4 col-sm-12">
                         <h3>Business Hours</h3>
@@ -48,6 +46,3 @@
                 
 
 		<?php wp_footer(); ?>
-
-	</body>
-</html>

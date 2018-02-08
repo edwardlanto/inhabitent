@@ -6,6 +6,10 @@
     }
   }
 
+  .updated{
+    display:none;
+  }
+
   .journal-btn,
   .entry-title a {
     color: $color__main-orange;
@@ -31,7 +35,7 @@
   .entry-title {
     text-transform: uppercase;
     font-family: $font__accent;
-    margin-top:30px;
+    margin-top: 30px;
   }
 
   #author,

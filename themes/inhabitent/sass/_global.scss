@@ -1,30 +1,37 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-
-/* Posts and pages */
-
-.site-content {
-  padding-top:50px;
+a{
+  color:#248a83
 }
+
+li{
+  list-style:none;
+}
+body{
+  padding-top:100px;
+}
+/* Posts and pages */
 
 .sticky {
   display: block;
 }
 
-fieldset{
-  border:none;
+fieldset {
+  border: none;
 }
 
-#secondary{
-  display:flex;
+#secondary {
+  display: flex;
 }
 
 /* Asides */
 
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title,
-.menu-toggle,.nav-previous, .nav-next {
+.menu-toggle,
+.nav-previous,
+.nav-next {
   display: none;
 }
 
@@ -43,34 +50,18 @@ fieldset{
   color: white;
 }
 
-.entry-header img {
-  width: 760.59px;
-}
-
-
 //Social Btns
 
 .facebook-button,
-.twitter-button {
-  padding: 12px 30px;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 0;
-  &:hover {
-    background-color: $background-entry-color;
-    color: white;
-    box-shadow: none;
-  }
-}
-
+.twitter-button,
 .pinterest-button {
-  padding: 12px 35px;
+  padding: 12px 20px;
   background-color: $color__background-body;
   border: 1px solid black;
   border-radius: 0;
   &:hover {
     background-color: $background-entry-color;
-    color: $color__background-body;
+    color: white;
     box-shadow: none;
   }
 }
@@ -83,21 +74,6 @@ fieldset{
 .button-text {
   font-family: $font__accent;
   font-size: 14px;
-}
-
-// ----Text for taxonomy links----
-
-.taxonomy-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  a {
-    padding: 0 2rem;
-    font-family: $font__accent;
-    text-transform: uppercase;
-    font-size: 19px;
-    color: #000;
-  }
 }
 
 // ---------404 Error Page-----
@@ -163,86 +139,3 @@ fieldset{
     width: 500px;
   }
 }
-
-
-// -------Search--------
-
-.search-results,
-.archive.category {
-  .page-title {
-    text-transform: uppercase;
-    font-family: $font__accent;
-    font-size: 38px;
-    padding-top: 3rem;
-    border-bottom: 1px solid #e1e1e1;
-    padding-bottom: 1rem;
-    width: 800px;
-    letter-spacing: 2px;
-  }
-}
-
-.search-results {
-  .page-header {
-    border-bottom: 1px solid $image__background-color;
-    width: 735px;
-  }
-}
-
-.search-results {
-  .site-content {
-    margin-left: 55.5px;
-    display: flex;
-  }
-}
-
-.search-results {
-  .search-product-title {
-    a {
-      color: #248a83;
-      text-transform: uppercase;
-      font-family: $font__accent;
-      font-size: 33px;
-      letter-spacing: 2px;
-      font-weight: bold;
-      display: block;
-      padding-top: 4rem;
-      &:hover {
-        color: #2f1339;
-      }
-    }
-  }
-}
-
-.search-product-title {
-  p {
-    color: black;
-    font-size: 16px;
-    width: 720px;
-    font-family: $font__accent;
-    font-weight: normal;
-    font-family: $font__main;
-    text-transform: none;
-    line-height: 1.75;
-  }
-}
-
-.search-results {
-  #inhab-button {
-    font-weight: normal;
-    padding: 12px 12px;
-    width: 145px;
-  }
-}
-
-.search-results {
-  #secondary {
-    transform: translatex(78px);
-  }
-}
-
-.search-results {
-  .page-header {
-    border-bottom: none;
-  }
-}
-

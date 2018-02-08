@@ -39,4 +39,3 @@
 					</span><!-- menu-container-->
 				</nav>
 			</header>
-		<div id="content" class="site-content">

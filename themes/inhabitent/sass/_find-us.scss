@@ -1,6 +1,10 @@
 // ------Find Us-----
 
 #post-30 {
+
+  iframe{
+    max-width:100%;
+  }
   margin: 0 auto;
   .find-us-heading {
     color: #2f1339;
@@ -10,6 +14,7 @@
 
   .find-us-p {
     line-height: 1.75rem;
+    font-family: $font__main;
   }
 
   #submit-button {
@@ -23,6 +28,9 @@
     text-transform: uppercase;
     padding: 0.75rem 1.5rem;
     font-size: 14.4px;
+    &:hover {
+      background-color: $color__dark-green-hover;
+    }
   }
 
   .hfeed .site-content .post-30 {
@@ -35,18 +43,29 @@
     letter-spacing: 2px;
     font-family: $font__accent;
   }
-
-  .find-us-p {
-    font-family: $font__main;
-  }
-
   .wpcf7-form {
     input {
       background-color: $form__color;
     }
   }
-
-  #submit-button:hover {
-    background-color: $color__dark-green-hover;
+  textarea {
+    padding-left: 3px;
+    width: 100%;
   }
+  
+  .find-us-label {
+    font-family: $font__accent;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #2f1339;
+  }
+
+  .find-us-input {
+    border: 1px solid #e1e1e1;
+    background-color: #f4f4f4;
+    color: #666;
+    font-family: "merriweather", serif;
+    width: 378px;
+  }
+  
 }

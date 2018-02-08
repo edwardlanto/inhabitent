@@ -1,0 +1,66 @@
+// -------Search--------
+
+.search-results {
+  .archive.category {
+    .page-title {
+      text-transform: uppercase;
+      font-family: $font__accent;
+      font-size: 38px;
+      padding-top: 3rem;
+      border-bottom: 1px solid #e1e1e1;
+      padding-bottom: 1rem;
+      width: 800px;
+      letter-spacing: 2px;
+    }
+  }
+  .page-header {
+    border-bottom: 1px solid $image__background-color;
+    width: 735px;
+  }
+
+  .site-content {
+    margin-left: 55.5px;
+    display: flex;
+  }
+
+  .search-product-title {
+    a {
+      color: #248a83;
+      text-transform: uppercase;
+      font-family: $font__accent;
+      font-size: 33px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      display: block;
+      padding-top: 4rem;
+      &:hover {
+        color: #2f1339;
+      }
+    }
+  }
+
+  p {
+    color: black;
+    font-size: 16px;
+    width: 720px;
+    font-family: $font__accent;
+    font-weight: normal;
+    font-family: $font__main;
+    text-transform: none;
+    line-height: 1.75;
+  }
+
+  #inhab-button {
+    font-weight: normal;
+    padding: 12px 12px;
+    width: 145px;
+  }
+
+  #secondary {
+    transform: translatex(78px);
+  }
+
+  .page-header {
+    border-bottom: none;
+  }
+}
