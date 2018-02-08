@@ -1,0 +1,55 @@
+// ----Single Adventure-----
+
+.single-adventure{
+
+.single-adventure {
+    .image-wrapper img {
+      width: 100vw;
+    }
+  }
+  
+  .single-adventure {
+    .site-content {
+      padding-top: 0;
+    }
+  }
+  
+  .single-adventure-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .single-adventure-title {
+    font-family: $font__accent;
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 3rem;
+  }
+  
+  .single-adventure-author {
+    font-family: $font__accent;
+    font-size: 20px;
+  }
+  
+  .single-adventure-content {
+    line-height: 28px;
+  }
+  
+
+    .social-icons-container {
+      margin-left: 231px;
+      max-width: 800px;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+  
+  
+  .menu-toggle{
+    display:none;
+  }
+  
+
+}
+  

@@ -4,6 +4,10 @@
 
 /* Posts and pages */
 
+.site-content {
+  padding-top: 100px;
+}
+
 .sticky {
   display: block;
 }
@@ -50,10 +54,6 @@
 
 // --------------My Edits------------
 
-.blog #page .site-content {
-  display: flex;
-}
-
 .site-content {
   padding-top: 50px;
 }
@@ -62,7 +62,6 @@
   z-index: -999;
   width: 100%;
 }
-
 
 .entry-title a {
   color: white;
@@ -117,12 +116,6 @@
   }
 }
 
-.blog {
-  .page-container {
-    padding-bottom: 3rem;
-  }
-}
-
 // ------Find us-----
 
 .page-template-find-us .hfeed .site-content {
@@ -131,13 +124,6 @@
 
 .page-template-find-us .hfeed .site-content .post-30 {
   width: 840px;
-}
-
-.page-template-find-us {
-  .site-content {
-    margin-left: 55px;
-    font-family: $font__accent;
-  }
 }
 
 .page-template-find-us {
@@ -197,8 +183,8 @@
 }
 
 .shop-archive-image img {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 .price-text {
@@ -245,14 +231,12 @@
   display: flex;
   width: 100%;
   justify-content: center;
-}
-
-.taxonomy-container {
   a {
     padding: 0 2rem;
     font-family: $font__accent;
     text-transform: uppercase;
     font-size: 19px;
+    color: #000;
   }
 }
 
@@ -269,12 +253,7 @@
 
 .error-404 {
   margin-left: 75px;
-}
-
-.error-404 {
-  .widget-title {
-    margin-left: 0;
-  }
+  margin-left: 0;
 }
 
 .error404 {
@@ -378,14 +357,8 @@
 
 .search-results {
   .site-content {
+    margin-left: 55.5px;
     display: flex;
-  }
-}
-
-.search-results {
-  .site-content {
-    margin-left: 55.5px;
-    margin-left: 55.5px;
   }
 }
 
@@ -450,54 +423,3 @@
     margin: 0 auto;
   }
 }
-
-// ----Single Adventure-----
-
-.single-adventure {
-  .image-wrapper img {
-    width: 100vw;
-  }
-}
-
-.single-adventure {
-  .site-content {
-    padding-top: 0;
-  }
-}
-
-.single-adventure-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.single-adventure-title {
-  font-family: $font__accent;
-  letter-spacing: 2px;
-  font-size: 40px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: 3rem;
-}
-
-.single-adventure-author {
-  font-family: $font__accent;
-  font-size: 20px;
-}
-
-.single-adventure-content {
-  line-height: 28px;
-}
-
-.single-adventure {
-  .social-icons-container {
-    margin-left: 231px;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 5rem;
-  }
-}
-
-.menu-toggle{
-  display:none;
-}
-

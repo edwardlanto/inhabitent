@@ -481,10 +481,6 @@ textarea {
 .about-hero {
   margin-bottom: 100px; }
 
-.about-hero-container {
-  width: 1280px;
-  height: 587px; }
-
 .about-content-header {
   color: #2f1339;
   font-size: 33.6px;
@@ -1119,9 +1115,6 @@ a {
   border-left: 1px solid #e1e1e1;
   padding-top: 50px; }
 
-.blog #secondary {
-  transform: translatex(-5px); }
-
 .textwidget {
   margin-left: 58px;
   width: 202px;
@@ -1327,81 +1320,63 @@ div.footer-blocks {
   content: "";
   display: table; }
 
-.blog .entry-header h2:hover > a {
+.blog h2:hover > a {
   color: #f0e4d1; }
+
+.blog .entry-header img {
+  width: 100%; }
 
 .blog .entry-title:hover {
   color: #f0e4d1; }
 
-.blog .entry-content,
-.container-single .entry-content,
-.date .entry-content {
+.blog .entry-content {
   width: 770px; }
 
-.entry-content p {
+.blog .entry-content p {
   color: #404040;
   font-family: "merriweather", serif;
   font-size: 16px; }
 
-.blog .entry-meta,
-.single .entry-meta,
-.archive.tag .entry-meta,
-.archive.category .entry-meta,
-.date .entry-meta {
-  position: absolute;
-  width: 464px;
-  margin-left: 297px;
-  bottom: 6px;
-  background-color: #248a83;
-  color: #fff;
-  padding: 0.4rem;
+.blog .entry-title {
   text-transform: uppercase;
   font-family: "novecento", sans-serif; }
 
-.blog .entry-header .entry-title,
-.single-post .entry-header .entry-title {
-  text-transform: uppercase;
-  font-family: "novecento", sans-serif; }
-
-.post-template-default.single.single-post.single-format-standard .social-icons-container {
-  transform: translate(0px, 0px); }
-
-#author,
-#email {
+.blog #author,
+.blog #email {
   width: 372px; }
 
-.tags-links {
+.blog .tags-links {
   margin-left: 30px; }
 
-.comments-link a {
+.blog .comments-link a {
   color: white; }
 
-.tags-links a:hover,
-.cat-links a:hover {
+.blog .tags-links a:hover,
+.blog .cat-links a:hover {
   color: #2f1339; }
 
-.comment-form-url {
+.blog .comment-form-url {
   width: 760px; }
 
-.post-type-archive .page-title {
+.blog .post-type-archive .page-title {
   padding-top: 30px; }
 
-.archive.tag article {
+.blog article {
   margin-top: 6rem; }
 
-.archive.tag .primary-secondary-container .entry-content {
+.blog .primary-secondary-container .entry-content {
   width: 770px; }
 
-.date.archive .page-title {
+.blog .date.archive .page-title {
   text-align: left;
   border-bottom: 1px solid #e1e1e1;
   padding-bottom: 20px;
   width: 90%; }
 
-.date.archive footer {
+.blog .date.archive footer {
   margin-top: 70px; }
 
-.date.archive #secondary {
+.blog .date.archive #secondary {
   margin-left: 30px; }
 
 /*--------------------------------------------------------------
@@ -1421,6 +1396,9 @@ div.footer-blocks {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.site-content {
+  padding-top: 100px; }
+
 .sticky {
   display: block; }
 
@@ -1454,10 +1432,6 @@ div.footer-blocks {
 
 .bypostauthor {
   display: block; }
-
-.blog #page .site-content {
-  display: -ms-flexbox;
-  display: flex; }
 
 .site-content {
   padding-top: 50px; }
@@ -1506,19 +1480,12 @@ div.footer-blocks {
 .archive.category .page-title {
   text-align: left; }
 
-.blog .page-container {
-  padding-bottom: 3rem; }
-
 .page-template-find-us .hfeed .site-content {
   display: -ms-flexbox;
   display: flex; }
 
 .page-template-find-us .hfeed .site-content .post-30 {
   width: 840px; }
-
-.page-template-find-us .site-content {
-  margin-left: 55px;
-  font-family: "novecento", sans-serif; }
 
 .page-template-find-us .entry-header {
   text-transform: uppercase;
@@ -1602,12 +1569,12 @@ div.footer-blocks {
   width: 100%;
   -ms-flex-pack: center;
       justify-content: center; }
-
-.taxonomy-container a {
-  padding: 0 2rem;
-  font-family: "novecento", sans-serif;
-  text-transform: uppercase;
-  font-size: 19px; }
+  .taxonomy-container a {
+    padding: 0 2rem;
+    font-family: "novecento", sans-serif;
+    text-transform: uppercase;
+    font-size: 19px;
+    color: #000; }
 
 .error404 .page-title {
   text-transform: uppercase;
@@ -1616,9 +1583,7 @@ div.footer-blocks {
   letter-spacing: 2px; }
 
 .error-404 {
-  margin-left: 75px; }
-
-.error-404 .widget-title {
+  margin-left: 75px;
   margin-left: 0; }
 
 .error404 fieldset {
@@ -1682,12 +1647,9 @@ div.footer-blocks {
   width: 735px; }
 
 .search-results .site-content {
+  margin-left: 55.5px;
   display: -ms-flexbox;
   display: flex; }
-
-.search-results .site-content {
-  margin-left: 55.5px;
-  margin-left: 55.5px; }
 
 .search-results .search-product-title a {
   color: #248a83;
@@ -1728,40 +1690,6 @@ div.footer-blocks {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto; }
-
-.single-adventure .image-wrapper img {
-  width: 100vw; }
-
-.single-adventure .site-content {
-  padding-top: 0; }
-
-.single-adventure-container {
-  max-width: 800px;
-  margin: 0 auto; }
-
-.single-adventure-title {
-  font-family: "novecento", sans-serif;
-  letter-spacing: 2px;
-  font-size: 40px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: 3rem; }
-
-.single-adventure-author {
-  font-family: "novecento", sans-serif;
-  font-size: 20px; }
-
-.single-adventure-content {
-  line-height: 28px; }
-
-.single-adventure .social-icons-container {
-  margin-left: 231px;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: 5rem; }
-
-.menu-toggle {
-  display: none; }
 
 .entry-content h2 {
   font-size: 2.1rem;
@@ -1965,23 +1893,20 @@ object {
 .gallery-caption {
   display: block; }
 
-.products-template-default article .entry-header img {
-  width: 537.59px;
-  height: 358.38px; }
-
-.products-template-default .entry-header .entry-meta {
+.single .entry-header .entry-meta {
   display: none; }
 
-.products-template-default .entry-header .entry-title {
-  transform: translate(556px, -39px);
+.single .entry-header .entry-title {
   color: #d99054;
   font-family: "novecento", sans-serif;
   text-transform: uppercase;
   background-color: transparent;
   font-size: 38.4px; }
 
-.post-type-archive-products .site-main a {
-  color: #248a83; }
+.single article .entry-header img {
+  width: 100%;
+  object-fit: cover;
+  height: 358.38px; }
 
 .single .entry-content {
   display: -ms-flexbox;
@@ -1990,8 +1915,7 @@ object {
       justify-content: flex-end; }
 
 .single .social-icons-container {
-  width: 400px;
-  transform: translate(578px, -318px); }
+  margin-bottom: 100px; }
 
 .single .nav-previous,
 .single .nav-next {

@@ -1,28 +1,24 @@
 // ------------Journal-----------
+.blog{
 
-.blog {
-  .entry-header {
     h2 {
       &:hover > a {
         color: #f0e4d1;
       }
-    }
-  }
+
 }
 
-.blog {
+.entry-header img{
+  width:100%;
+}
+
   .entry-title:hover {
     color: #f0e4d1;
   }
-}
 
-.blog,
-.container-single,
-.date {
   .entry-content {
     width: 770px;
   }
-}
 
 .entry-content p {
   color: #404040;
@@ -30,39 +26,13 @@
   font-size: 16px;
 }
 
-.blog,
-.single,
-.archive.tag,
-.archive.category,
-.date {
-  .entry-meta {
-    position: absolute;
-    width: 464px;
-    margin-left: 297px;
-    bottom: 6px;
-    background-color: $background-entry-color;
-    color: #fff;
-    padding: 0.4rem;
-    text-transform: uppercase;
-    font-family: $font__accent;
-  }
-}
 
-.blog,
-.single-post {
-  .entry-header {
     .entry-title {
       text-transform: uppercase;
       font-family: $font__accent;
     }
-  }
-}
 
-.post-template-default.single.single-post.single-format-standard {
-  .social-icons-container {
-    transform: translate(0px, 0px);
-  }
-}
+
 
 #author,
 #email {
@@ -96,19 +66,15 @@
   }
 }
 
-.archive.tag {
   article {
     margin-top: 6rem;
   }
-}
 
-.archive.tag {
   .primary-secondary-container {
     .entry-content {
       width: 770px;
     }
   }
-}
 
 .date.archive {
   .page-title {
@@ -129,4 +95,6 @@
   #secondary {
     margin-left: 30px;
   }
+}
+
 }

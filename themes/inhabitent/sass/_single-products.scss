@@ -1,28 +1,17 @@
 // -------Single Products-------
 
-.products-template-default {
-  article {
-    .entry-header {
-      img {
-        width: 537.59px;
-        height: 358.38px;
-      }
-    }
-  }
-}
 
-.products-template-default {
+.single{
   .entry-header {
     .entry-meta {
       display: none;
     }
-  }
+  
 }
 
-.products-template-default {
+
   .entry-header {
     .entry-title {
-      transform: translate(556px, -39px);
       color: $color__main-orange;
       font-family: $font__accent;
       text-transform: uppercase;
@@ -30,17 +19,16 @@
       font-size: 38.4px;
     }
   }
-}
 
-.post-type-archive-products {
-  .site-main {
-    a {
-      color: $background-entry-color;
+  article {
+    .entry-header {
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 358.38px;
+      }
     }
   }
-}
-
-.single{
   
   
     .entry-content {
@@ -50,8 +38,7 @@
 
   
       .social-icons-container {
-        width: 400px;
-        transform: translate(578px, -318px);
+        margin-bottom:100px;
       }
   
     .nav-previous,
