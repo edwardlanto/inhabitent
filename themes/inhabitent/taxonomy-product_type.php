@@ -46,7 +46,6 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

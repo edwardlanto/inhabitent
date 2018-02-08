@@ -93,7 +93,6 @@
     <div class = "more-adventures-container">
             <a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>" class="more-adventures">More Adventures</a>
       </div><!--more-adventures-container-->
-  </main><!-- #main -->
 </div><!-- #primary -->
   <!--</div>-->
   <?php get_footer(); ?>

@@ -43,7 +43,6 @@ get_header(); ?>
             <p>Want to join the discussion? Feel free to contribute!</p>
         <?php endwhile; // End of the loop. ?>
 
-        </main><!-- #main -->
     </div><!-- #primary -->
 
 <?php get_sidebar(); ?>

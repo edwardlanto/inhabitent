@@ -21,7 +21,6 @@ get_header(); ?>
 		
 	<h2 class ="about-content-header">Our Team</h2>
 	<?php echo CFS()->get( 'about_our_team' ); ?>
-	</main><!-- #main -->
 	</div><!-- #primary -->
 
 

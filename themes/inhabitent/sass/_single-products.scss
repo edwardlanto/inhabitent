@@ -40,42 +40,31 @@
   }
 }
 
-.single-products {
-  .entry-content {
-    p {
-      width: 580px;
-      transform: translate(40px, -269px);
-      line-height: 1.75;
+.single{
+  
+  
+    .entry-content {
+      display: flex;
+      justify-content: flex-end;
     }
-  }
-}
 
-.single-products {
-  .entry-content {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-.single {
-  .site-main {
-    .social-icons-container {
-      width: 400px;
-      transform: translate(578px, -318px);
+  
+      .social-icons-container {
+        width: 400px;
+        transform: translate(578px, -318px);
+      }
+  
+    .nav-previous,
+    .nav-next {
+      display: none;
     }
-  }
+  
+  
+    .site-content {
+      padding-top:100px;
+    }
+  
+  
+
 }
 
-.single {
-  .nav-previous,
-  .nav-next {
-    display: none;
-  }
-}
-
-.single-products {
-  .site-content {
-    padding: 0;
-    transform: translatey(-20px);
-  }
-}
