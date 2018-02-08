@@ -2,30 +2,13 @@
 # Navigation
 --------------------------------------------------------------*/
 
-/* Links */
 
-a {
-	color: $color__link;
-	text-decoration:none;
-
-	&:visited {
-		color: $color__link-visited;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
-	}
-	&:focus {
-		outline: thin dotted;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
-	}
-}
 
 /* Menus */
+
+.menu-toggle{
+	display:none;
+}
 
 .main-navigation {
 	clear: both;
@@ -81,25 +64,8 @@ a {
 		float: left;
 		position: relative;
 
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-	a {
-		display: block;
-		text-decoration: none;
 	}
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
-}
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
 }
 
 

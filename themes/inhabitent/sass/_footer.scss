@@ -1,16 +1,17 @@
-div.footer-blocks {
+.footer-blocks {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  height: 330px;
   width: 100%;
   background-image: url("../../images/dark-wood.png");
   background-size: cover;
   position: relative;
+  flex-wrap:wrap;
 }
 
-.contact {
-  margin-left: 1rem;
+.orange-footer-text{
+  @include mobile{
+    text-align:center;
+  }
 }
 
 .white-contact-text {
@@ -29,20 +30,11 @@ div.footer-blocks {
   font-size: 19px;
 }
 
-.orange-footer-text p a {
+.orange-footer-text p a, .contact a, .orange-footer-text p   {
   color: $color__background-body;
   font-family: $font__main;
 }
 
-.orange-footer-text p {
-  color: $color__background-body;
-  font-family: $font__main;
-}
-
-.contact a {
-  color: $color__background-body;
-  font-family: $font__main;
-}
 
 .date-footer {
   color: $color__background-body;

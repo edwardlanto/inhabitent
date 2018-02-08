@@ -10,7 +10,7 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				 <div class="footer-blocks">
-                    <div class="orange-footer-text">
+                    <div class="orange-footer-text col-lg-4 col-sm-12">
                         <h3>Contact Info</h3>
                         <p>
                             <i class="fa fa-envelope icon" aria-hidden="true"></i>
@@ -32,7 +32,7 @@
                             </span>
                         </p>
                     </div><!--Contact  -->
-                    <div class="orange-footer-text">
+                    <div class="orange-footer-text col-lg-4 col-sm-12">
                         <h3>Business Hours</h3>
                         <p><span class ="date-bold">Monday-Friday:</span> 9am to 5pm</p>
                         <p><span class ="date-bold">Saturday:</span> 10am to 2pm</p>
@@ -43,9 +43,6 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-text.svg" alt="Image of Inhabitent logo" />
                         </a>
                     </div><!-- text-logo -->        
-					<div class="site-info-container">
-                    	<p>Copyright &copy; 2016 Inhabitent</p>
-                	</div><!--site-info container-->
                 </div><!--footer-blocks -->
             </footer>
                 

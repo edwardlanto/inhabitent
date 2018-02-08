@@ -6,9 +6,9 @@
 */
 
 get_header(); ?>
-    <div class ="page-container container">
+    <div class ="page-container">
     <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
+        <main id="main" class="site-main container" role="main">
         <p class = "product-price"><?php echo CFS()->get('price');?></p>
         
         <?php while ( have_posts() ) : the_post(); ?>
@@ -33,16 +33,9 @@ get_header(); ?>
                 </i>
             </button>
             
-            <?php
-                // If comments are open or we have at least one comment, load up the comment template.
-                if ( comments_open() || get_comments_number() ) :
-                    comments_template();
-                endif;
-            ?>
 
         <?php endwhile; // End of the loop. ?>
         
-    </div><!-- #primary -->
 </div>
 
 <?php get_footer(); ?>

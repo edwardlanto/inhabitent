@@ -1,5 +1,7 @@
 // ---------Single Post Style--------
 
+.single-post{
+
 .entry-content h2 {
   font-size: 2.1rem;
   text-transform: uppercase;
@@ -31,44 +33,15 @@
   font-family: $font__accent;
   text-transform: uppercase;
   color: $background-entry-color;
+  margin-right:10px;
   font-size: 16px;
+    a{
+      color:#000;
+    }
 }
 
 
-.facebook-button,
-.twitter-button {
-  padding: 12px 30px;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 0;
-  &:hover {
-    background-color: $background-entry-color;
-    color: white;
-    box-shadow: none;
-  }
-}
 
-.pinterest-button {
-  padding: 12px 35px;
-  background-color: $color__background-body;
-  border: 1px solid black;
-  border-radius: 0;
-  &:hover {
-    background-color: $background-entry-color;
-    color: $color__background-body;
-    box-shadow: none;
-  }
-}
-
-.fa {
-  font-size: 13px;
-  text-transform: uppercase;
-}
-
-.button-text {
-  font-family: $font__accent;
-  font-size: 14px;
-}
 
 // ------Comments-------
 
@@ -122,9 +95,6 @@
   display: flex;
   flex-direction: column;
 }
-#comment {
-  width: 740px;
-}
 
 .comment-form {
   textarea {
@@ -132,11 +102,9 @@
   }
 }
 
-.comment-form {
   input {
     background-color: $form__color;
   }
-}
 
 .comment-form-comment {
   display: flex;
@@ -158,4 +126,6 @@
   img {
     border-radius: 360px;
   }
+}
+
 }

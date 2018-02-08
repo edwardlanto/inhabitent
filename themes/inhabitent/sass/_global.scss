@@ -5,13 +5,16 @@
 /* Posts and pages */
 
 .site-content {
-  padding-top: 100px;
+  padding-top:50px;
 }
 
 .sticky {
   display: block;
 }
 
+fieldset{
+  border:none;
+}
 
 #secondary{
   display:flex;
@@ -20,7 +23,8 @@
 /* Asides */
 
 .blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
+.archive .format-aside .entry-title,
+.menu-toggle,.nav-previous, .nav-next {
   display: none;
 }
 
@@ -29,11 +33,7 @@
 .comment-content a {
   word-wrap: break-word;
 }
-// --------------My Edits------------
 
-.site-content {
-  padding-top: 50px;
-}
 .entry-header {
   position: relative;
   width: 100%;
@@ -45,6 +45,44 @@
 
 .entry-header img {
   width: 760.59px;
+}
+
+
+//Social Btns
+
+.facebook-button,
+.twitter-button {
+  padding: 12px 30px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0;
+  &:hover {
+    background-color: $background-entry-color;
+    color: white;
+    box-shadow: none;
+  }
+}
+
+.pinterest-button {
+  padding: 12px 35px;
+  background-color: $color__background-body;
+  border: 1px solid black;
+  border-radius: 0;
+  &:hover {
+    background-color: $background-entry-color;
+    color: $color__background-body;
+    box-shadow: none;
+  }
+}
+
+.fa {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.button-text {
+  font-family: $font__accent;
+  font-size: 14px;
 }
 
 // ----Text for taxonomy links----
@@ -126,33 +164,6 @@
   }
 }
 
-// -----Taxonomy Product Type---
-
-.tax-product_type {
-  .taxonomy-description {
-    p {
-      text-align: center;
-      font-size: 19.2px;
-      padding-bottom: 25px;
-    }
-  }
-}
-
-.taxonomy-container {
-  padding-bottom: 50px;
-  a:hover {
-    color: red;
-  }
-}
-
-.shop-items-container {
-  padding-top: 3rem;
-  border-top: 1px dashed #c8c8c8;
-}
-
-.adventure-hover:hover {
-  color: $border__beige-color;
-}
 
 // -------Search--------
 
@@ -235,13 +246,3 @@
   }
 }
 
-// -----Category Journal------
-
-.archive.tag,
-.category,
-.date {
-  .primary-secondary-container {
-    display: flex;
-    margin: 0 auto;
-  }
-}

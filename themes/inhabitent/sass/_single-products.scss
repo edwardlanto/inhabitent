@@ -1,15 +1,11 @@
 // -------Single Products-------
 
 .single {
-  .entry-header {
-    .entry-meta,
-    .nav-previous,
-    .nav-next {
-      display: none;
-    }
+
+  .product-price{
+    font-size:30px;
   }
 
-  .entry-header {
     .entry-title {
       color: $color__main-orange;
       font-family: $font__accent;
@@ -17,17 +13,6 @@
       background-color: transparent;
       font-size: 38.4px;
     }
-  }
-
-  article {
-    .entry-header {
-      img {
-        width: 100%;
-        object-fit: cover;
-        height: 358.38px;
-      }
-    }
-  }
 
   .social-icons-container {
     margin-bottom: 100px;

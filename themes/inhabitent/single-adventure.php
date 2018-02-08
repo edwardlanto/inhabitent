@@ -41,5 +41,4 @@ get_header(); ?>
                         </i>
                     </button>
                 <?php endwhile; // End of the loop. ?>
-    </div><!-- #primary -->
 <?php get_footer(); ?>

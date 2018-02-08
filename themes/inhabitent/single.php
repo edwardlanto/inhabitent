@@ -6,7 +6,7 @@
 */
 
 get_header(); ?>
-<div class="  container">
+<div class="container">
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
@@ -32,7 +32,6 @@ get_header(); ?>
                 </i>
             </button>
         </div>
-        <!--<button href="#" id="close-comments">Close Comments</button>-->
          
             <?php
                 if ( comments_open() || get_comments_number() ) :
@@ -45,6 +44,5 @@ get_header(); ?>
 
     </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 </div>
 <?php get_footer(); ?>
