@@ -11,6 +11,20 @@
     }
   }
 }
+
+.home-blog-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+#front-hero-image {
+  background-image: url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover, cover;
+  height: 100vh;
+  width: 100%;
+}
+
 .front-hero-image {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)),
     #969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -77,7 +91,7 @@
 .inhabitents-front-post {
   display: flex;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 //---------Journal Home Dynamic Entries-------------
@@ -90,14 +104,14 @@
 }
 
 .home-blog-post img {
-  width:100%;
+  width: 100%;
   border-bottom: 5px solid #e1e1e1;
 }
 
 .home-blog-post-container {
   display: inline-block;
-  width:100%;
-  margin-bottom:20px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .home {
@@ -163,7 +177,7 @@
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 .block-wrapper {
@@ -178,8 +192,8 @@
   }
 }
 
-.more-button-container{
-  margin-top:15px;
+.more-button-container {
+  margin-top: 15px;
 }
 
 .block-wrapper:hover {
@@ -458,4 +472,3 @@
 .archive-read {
   margin: 4rem 0 0 2.5rem;
 }
-

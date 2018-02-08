@@ -12,28 +12,9 @@
   display: block;
 }
 
-.hentry {
-  margin: 0 0 $base__space-unit;
-}
 
-.updated:not(.published) {
-  display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-  display: inline;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: $base__space-unit 0 0;
-}
-
-.page-links {
-  clear: both;
-  margin: 0 0 $base__space-unit;
+#secondary{
+  display:flex;
 }
 
 /* Asides */
@@ -48,10 +29,6 @@
 .comment-content a {
   word-wrap: break-word;
 }
-.bypostauthor {
-  display: block;
-}
-
 // --------------My Edits------------
 
 .site-content {
@@ -59,7 +36,6 @@
 }
 .entry-header {
   position: relative;
-  z-index: -999;
   width: 100%;
 }
 
@@ -69,160 +45,6 @@
 
 .entry-header img {
   width: 760.59px;
-}
-
-// -----HOME---------
-
-#front-hero-image {
-  background-image: url(../../images/home-hero.jpg) no-repeat top;
-  background-size: cover, cover;
-  height: 100vh;
-  width: 100%;
-}
-
-// ------Find Us-----
-
-.find-us-heading {
-  color: #2f1339;
-  font-size: 2.1rem;
-  font-family: $font__accent;
-}
-
-.find-us-p {
-  line-height: 1.75rem;
-}
-
-.required {
-  color: #d99054;
-}
-
-#submit-button {
-  background-color: $background-entry-color;
-  border: none;
-  border-radius: 0;
-  color: $color__background-body;
-  box-shadow: none;
-  font-family: $font__accent;
-  text-shadow: none;
-  text-transform: uppercase;
-  padding: 0.75rem 1.5rem;
-  font-size: 14.4px;
-}
-
-.archive.tag,
-.archive.category {
-  .page-title {
-    text-align: left;
-  }
-}
-
-// ------Find us-----
-
-.page-template-find-us .hfeed .site-content {
-  display: flex;
-}
-
-.page-template-find-us .hfeed .site-content .post-30 {
-  width: 840px;
-}
-
-.page-template-find-us {
-  .entry-header {
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 2px;
-    font-family: $font__accent;
-  }
-}
-
-.find-us-p {
-  font-family: $font__main;
-}
-
-.wpcf7-form {
-  input {
-    background-color: $form__color;
-  }
-}
-
-.find-us-label {
-  textarea {
-    background-color: $form__color;
-    width: 760px;
-  }
-}
-
-.page-template-find-us {
-  #submit-button:hover {
-    background-color: $color__dark-green-hover;
-  }
-}
-// ------------------Shop--------------
-
-.shop-items-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-.product-container {
-  display: inline-block;
-  border: 1px solid #e1e1e1;
-  height: 305px;
-  margin-bottom: 1.5rem;
-  white-space: nowrap;
-}
-
-.shop-archive-image {
-  background-color: $image__background-color;
-  height: 250px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.shop-archive-image img {
-  width: 100%;
-  height: 100%;
-}
-
-.price-text {
-  font-size: 16px;
-  color: #404040;
-  font-family: $font__main;
-}
-
-.product-title {
-  font-size: 16px;
-  color: #404040;
-  font-family: $font__main;
-  overflow: hidden;
-}
-
-.product-title:after {
-  content: "............................";
-  display: inline;
-  overflow: hidden;
-  z-index: -999;
-}
-
-.home-blog-title {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-
-.post-type-archive-products {
-  .page-title {
-    margin-top: 2.4rem;
-  }
-}
-
-.search-form {
-  fieldset {
-    border: none;
-  }
 }
 
 // ----Text for taxonomy links----

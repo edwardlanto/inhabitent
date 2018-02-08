@@ -12,9 +12,6 @@
  */
 
 
-//  --------Sticky Header Function--------
-
-
 
 
 

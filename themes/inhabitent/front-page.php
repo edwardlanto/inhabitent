@@ -82,7 +82,7 @@
            <?php the_post_thumbnail( 'full' ); ?>
         </div>
           <a href ="<?php the_permalink();?>" class ="adventure-text-link">
-            <div class ="adventure-list-title" class="adventure-text">
+            <div class ="adventure-list-title adventure-text">
               <?php the_title(); ?>
             </div>
           </a>
@@ -93,6 +93,4 @@
     <div class = "more-adventures-container">
             <a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>" class="more-adventures">More Adventures</a>
       </div><!--more-adventures-container-->
-</div><!-- #primary -->
-  <!--</div>-->
   <?php get_footer(); ?>

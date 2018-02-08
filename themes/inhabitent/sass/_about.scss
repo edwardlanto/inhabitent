@@ -1,32 +1,33 @@
-// -------about------
+// -------About------
 
-.page-template-about .about-text {
-  position: absolute;
-  color: #fff;
-  font-size: 48px;
-  font-family: $font__accent;
-  text-transform: uppercase;
-  top: 175px;
-}
+.page-template-about {
+  .about-text {
+    position: absolute;
+    color: #fff;
+    font-size: 48px;
+    font-family: $font__accent;
+    text-transform: uppercase;
+    top: 175px;
+  }
 
-.about-hero {
-  margin-bottom: 100px;
-}
-  
-.about-content-header {
-  color: #2f1339;
-  font-size: 33.6px;
-  font-size: 2.1rem;
-  margin-bottom: 1.5rem;
-  font-family: $font__accent;
-  text-align: center;
-  padding-top: 60px;
-}
+  .about-hero {
+    margin-bottom: 20px;
+  }
 
-.page-template-about .hfeed .site-content .site-main p {
-  text-align: left;
-  width: 740px;
-  margin: 0 auto;
-  line-height: 1.75rem;
-  margin-bottom: 20px;
+  .about-content-header {
+    color: #2f1339;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+    font-family: $font__accent;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .hfeed .site-content .site-main p {
+    text-align: left;
+    margin: 0 auto;
+    line-height: 1.75rem;
+    margin-bottom: 20px;
+  }
 }

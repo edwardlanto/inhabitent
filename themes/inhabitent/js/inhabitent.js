@@ -22,4 +22,6 @@
       $(".sticky-header").removeClass("sticky-display");
     }
   });
+
+  $('#post-30').addClass('container')
 })(jQuery);

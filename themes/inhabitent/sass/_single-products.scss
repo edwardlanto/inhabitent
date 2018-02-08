@@ -1,14 +1,13 @@
 // -------Single Products-------
 
-
-.single{
+.single {
   .entry-header {
-    .entry-meta {
+    .entry-meta,
+    .nav-previous,
+    .nav-next {
       display: none;
     }
-  
-}
-
+  }
 
   .entry-header {
     .entry-title {
@@ -29,29 +28,8 @@
       }
     }
   }
-  
-  
-    .entry-content {
-      display: flex;
-      justify-content: flex-end;
-    }
 
-  
-      .social-icons-container {
-        margin-bottom:100px;
-      }
-  
-    .nav-previous,
-    .nav-next {
-      display: none;
-    }
-  
-  
-    .site-content {
-      padding-top:100px;
-    }
-  
-  
-
+  .social-icons-container {
+    margin-bottom: 100px;
+  }
 }
-

@@ -26,31 +26,14 @@
   }
 }
 
-.container-single {
-  display: flex;
-  margin: 0 auto;
-}
-
-.container-single {
-  #secondary {
-    transform: translatex(-313px);
-    padding-right: 75px;
-  }
-}
-
 .cat-links,
 .tags-links {
   font-family: $font__accent;
   text-transform: uppercase;
+  color: $background-entry-color;
   font-size: 16px;
 }
 
-.cat-links,
-.tags-links {
-  a {
-    color: $background-entry-color;
-  }
-}
 
 .facebook-button,
 .twitter-button {
@@ -85,9 +68,6 @@
 .button-text {
   font-family: $font__accent;
   font-size: 14px;
-}
-
-.social-icons-container {
 }
 
 // ------Comments-------

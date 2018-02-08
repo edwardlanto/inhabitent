@@ -24,10 +24,5 @@
     "type": "git",
     "url": "git+https://github.com/redacademy/redstarter.git"
   },
-  "author": "mandiwise",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/redacademy/redstarter/issues"
-  },
   "homepage": "https://github.com/redacademy/redstarter#readme"
 }

@@ -6,7 +6,7 @@
 */
 
 get_header(); ?>
-<div class="container-single">
+<div class="  container">
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
@@ -18,17 +18,17 @@ get_header(); ?>
         <div class ="social-icons-container">
             <button class ="facebook-button" type="button" value ="Like">
                 <i class="fa fa-facebook" aria-hidden="true">
-                    <span class = "button-text">Like</span>
+                    <span class = "button-text social-button">Like</span>
                 </i>
             </button>
             <button class ="pinterest-button" type="button" value ="Tweet">
                 <i class="fa fa-twitter" aria-hidden="true">
-                    <span class = "button-text">Tweet</span>
+                    <span class = "button-text social-button">Tweet</span>
                 </i>
             </button>
             <button class ="twitter-button" type="button" value ="Pin">
                 <i class="fa fa-pinterest" aria-hidden="true">
-                    <span class = "button-text">Pin</span>
+                    <span class = "button-text social-button">Pin</span>
                 </i>
             </button>
         </div>

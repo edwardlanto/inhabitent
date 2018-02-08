@@ -1,0 +1,63 @@
+// ------------------Shop--------------
+
+.shop-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  
+  .product-container {
+    display: inline-block;
+    border: 1px solid #e1e1e1;
+    height: 305px;
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
+  }
+  
+  .shop-archive-image {
+    background-color: $image__background-color;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .shop-archive-image img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .price-text {
+    font-size: 16px;
+    color: #404040;
+    font-family: $font__main;
+  }
+  
+  .product-title {
+    font-size: 16px;
+    color: #404040;
+    font-family: $font__main;
+    overflow: hidden;
+  }
+  
+  .product-title:after {
+    content: "............................";
+    display: inline;
+    overflow: hidden;
+    z-index: -999;
+  }
+  
+  
+  
+  .post-type-archive-products {
+    .page-title {
+      margin-top: 2.4rem;
+    }
+  }
+  
+  .search-form {
+    fieldset {
+      border: none;
+    }
+  }
