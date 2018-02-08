@@ -33,15 +33,15 @@
                         </p>
                     </div><!--Contact  -->
                     <div class="orange-footer-text">
-                            <h3>Business Hours</h3>
-                            <p><span class ="date-bold">Monday-Friday:</span> 9am to 5pm</p>
-                            <p><span class ="date-bold">Saturday:</span> 10am to 2pm</p>
-                            <p><span class ="date-bold">Sunday:</span> Closed</p>        
-                    </div><!--business-hour-->
+                        <h3>Business Hours</h3>
+                        <p><span class ="date-bold">Monday-Friday:</span> 9am to 5pm</p>
+                        <p><span class ="date-bold">Saturday:</span> 10am to 2pm</p>
+                        <p><span class ="date-bold">Sunday:</span> Closed</p>        
+                    </div><!--orange-footer-text-->
                     <div class="text-logo">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-text.svg" alt="Image of Inhabitent logo" />
-                            </a>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-text.svg" alt="Image of Inhabitent logo" />
+                        </a>
                     </div><!-- text-logo -->        
 					<div class="site-info-container">
                     	<p>Copyright &copy; 2016 Inhabitent</p>

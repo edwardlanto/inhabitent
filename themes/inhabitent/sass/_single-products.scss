@@ -1,99 +1,81 @@
 // -------Single Products-------
 
-.products-template-default{
-	article{
-		.entry-header{
-			img{
-				width:537.59px;
-				height:358.38px;
-				}
-			}
-		}
-	}
-
-.products-template-default{
-	.entry-header{
-		.entry-meta{
-			display:none;
-		}
-	}
+.products-template-default {
+  article {
+    .entry-header {
+      img {
+        width: 537.59px;
+        height: 358.38px;
+      }
+    }
+  }
 }
 
-.products-template-default{
-	.entry-header{
-		.entry-title{
-			transform: translate(556px,-39px);
-			color:$color__main-orange;
-			font-family:$font__accent;
-			text-transform:uppercase;
-			background-color:transparent;
-			font-size:38.4px;
-		}
-	}
+.products-template-default {
+  .entry-header {
+    .entry-meta {
+      display: none;
+    }
+  }
 }
 
-.product-price{
-	position: relative;
-    left:52%;
-    top: 129px;
-	font-size:28.7px;
-	font-family:$font__accent;
-	width:40px;
+.products-template-default {
+  .entry-header {
+    .entry-title {
+      transform: translate(556px, -39px);
+      color: $color__main-orange;
+      font-family: $font__accent;
+      text-transform: uppercase;
+      background-color: transparent;
+      font-size: 38.4px;
+    }
+  }
 }
 
-.post-type-archive-products{
-	.site-main{
-		a{
-			color:$background-entry-color;
-		}
-	}
+.post-type-archive-products {
+  .site-main {
+    a {
+      color: $background-entry-color;
+    }
+  }
 }
 
-.single-products{
-	.entry-content{
-		p{
-			width: 580px;
-    		transform: translate(40px,-269px);
-			line-height:1.75;
-		}
-	}
+.single-products {
+  .entry-content {
+    p {
+      width: 580px;
+      transform: translate(40px, -269px);
+      line-height: 1.75;
+    }
+  }
 }
 
-.single-products{
-	.entry-content{
-	display: flex;
+.single-products {
+  .entry-content {
+    display: flex;
     justify-content: flex-end;
-
-	}
+  }
 }
 
-.single{
-	.site-main{
-		.social-icons-container{
-			width:400px;
-			transform:translate(578px,-318px);
-			
-		}		
-	}
+.single {
+  .site-main {
+    .social-icons-container {
+      width: 400px;
+      transform: translate(578px, -318px);
+    }
+  }
 }
 
-.single{
-	.nav-previous, .nav-next{
-	display:none;
-	}
+.single {
+  .nav-previous,
+  .nav-next {
+    display: none;
+  }
 }
 
-.single{
-	article{
-		width:1120px;
-	}
+.single-products {
+  .site-content {
+    padding: 0;
+    transform: translatey(-20px);
+  }
 }
-
-.single-products{
-	.site-content{
-		padding:0;
-		transform: translatey(-20px);
-	}
-}
-
-

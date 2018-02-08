@@ -1,184 +1,181 @@
 // ---------Single Post Style--------
 
-.entry-content h2{
-	font-size:2.1rem;
-	text-transform:uppercase;
+.entry-content h2 {
+  font-size: 2.1rem;
+  text-transform: uppercase;
 }
 // --------------------------
-#inhab-button{
-	font-family:$font__accent;
-	color:black;
-	border:1px solid black;
-	padding:12px 24px;
-	line-height:1;
-	text-transform:uppercase;
-	font-size:14px;
-	&:hover{
-		background-color:$background-entry-color;
-		color:white;
-		border-color:$background-entry-color;
-	}
+#inhab-button {
+  font-family: $font__accent;
+  color: black;
+  border: 1px solid black;
+  padding: 12px 24px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 14px;
+  &:hover {
+    background-color: $background-entry-color;
+    color: white;
+    border-color: $background-entry-color;
+  }
 }
 
 .type-post {
-	.entry-header{
-		margin-top:60px;
-	}
+  .entry-header {
+    margin-top: 60px;
+  }
 }
 
-
-.container-single{
-	display:flex;
-	max-width:1120px;
-	margin:0 auto;
+.container-single {
+  display: flex;
+  margin: 0 auto;
 }
 
-.container-single{
-	#secondary{
-	transform: translatex(-313px);
-	padding-right: 75px;
-	}
+.container-single {
+  #secondary {
+    transform: translatex(-313px);
+    padding-right: 75px;
+  }
 }
 
-.cat-links, .tags-links{
-	font-family:$font__accent;
-	text-transform:uppercase;
-	font-size:16px;
+.cat-links,
+.tags-links {
+  font-family: $font__accent;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
-.cat-links, .tags-links{
-	a{
-		color:$background-entry-color;
-	}
+.cat-links,
+.tags-links {
+  a {
+    color: $background-entry-color;
+  }
 }
 
-.facebook-button, .twitter-button{
-	padding: 12px 30px;
-	background-color:white;	
-	border:1px solid black;
-	border-radius:0;
-		&:hover{
-			background-color:$background-entry-color;
-			color:white;
-			box-shadow:none;
-		}
-
+.facebook-button,
+.twitter-button {
+  padding: 12px 30px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0;
+  &:hover {
+    background-color: $background-entry-color;
+    color: white;
+    box-shadow: none;
+  }
 }
 
-.pinterest-button{
-	padding:12px 35px;
-	background-color:$color__background-body;
-	border:1px solid black;
-	border-radius:0;
-		&:hover{
-			background-color:$background-entry-color;
-			color:$color__background-body;
-			box-shadow:none;
-		}
+.pinterest-button {
+  padding: 12px 35px;
+  background-color: $color__background-body;
+  border: 1px solid black;
+  border-radius: 0;
+  &:hover {
+    background-color: $background-entry-color;
+    color: $color__background-body;
+    box-shadow: none;
+  }
 }
 
-.fa{
-	font-size:13px;
-	text-transform:uppercase;
-	
+.fa {
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
-.button-text{
-	font-family:$font__accent;
-	font-size:14px;
+.button-text {
+  font-family: $font__accent;
+  font-size: 14px;
 }
 
-.social-icons-container{
+.social-icons-container {
 }
 
 // ------Comments-------
 
-.comment-reply-title{
-	font-family:$font__accent;
-	text-transform:uppercase;
-	font-size:28px;
+.comment-reply-title {
+  font-family: $font__accent;
+  text-transform: uppercase;
+  font-size: 28px;
 }
 
-.comments-title{
-	text-transform:uppercase;
-	font-family:$font__accent;
+.comments-title {
+  text-transform: uppercase;
+  font-family: $font__accent;
 }
 
-.comment-body{
-	display:flex;
+.comment-body {
+  display: flex;
 }
 
-.comment-author{
-	font-family:$font__main;
-	font-weight:700;
-	font-style:normal;
-	font-size:16px;
-
+.comment-author {
+  font-family: $font__main;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
 }
 
-
-.comment-content{
-	margin-left:24px;
+.comment-content {
+  margin-left: 24px;
 }
-.comment-form label{
-	font-size:17px;
-	font-family:$font__accent;
-	margin-bottom:1.5rem;
-	text-transform:uppercase
-}
-
-.comment-reply-link{
-	color:#248a83;
-	&:hover{
-		color:$background-entry-color;
-	}
-
+.comment-form label {
+  font-size: 17px;
+  font-family: $font__accent;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 
-.comment-metadata{
-	a{
-		color:$background-entry-color;
-	}
-}
-.comment-form-author, .comment-form-url, .comment-form-email	{
-	display:flex;
-	flex-direction:column;
-}
-#comment{
-	width:740px;
+.comment-reply-link {
+  color: #248a83;
+  &:hover {
+    color: $background-entry-color;
+  }
 }
 
-.comment-form{
-	textarea{
-		background-color:$form__color;
-	}
+.comment-metadata {
+  a {
+    color: $background-entry-color;
+  }
+}
+.comment-form-author,
+.comment-form-url,
+.comment-form-email {
+  display: flex;
+  flex-direction: column;
+}
+#comment {
+  width: 740px;
 }
 
-.comment-form{
-	input{
-		background-color:$form__color;
-	}
+.comment-form {
+  textarea {
+    background-color: $form__color;
+  }
 }
 
-.comment-form-comment{
-	display:flex;
-	flex-direction:column;
-}
-.form-submit input{
-	background-color:$background-entry-color;
-	box-shadow:none;
-	border-color:$background-entry-color;
-	color:#fff;
-	text-transform:uppercase;
-	font-family:$font__accent;
-	text-shadow:none;
-	border-radius:0;
-	padding:12px 24px;
-	
+.comment-form {
+  input {
+    background-color: $form__color;
+  }
 }
 
-.comment-author-avatar{
-	img{
-		border-radius:360px;
-	}
+.comment-form-comment {
+  display: flex;
+  flex-direction: column;
+}
+.form-submit input {
+  background-color: $background-entry-color;
+  box-shadow: none;
+  border-color: $background-entry-color;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: $font__accent;
+  text-shadow: none;
+  border-radius: 0;
+  padding: 12px 24px;
+}
+
+.comment-author-avatar {
+  img {
+    border-radius: 360px;
+  }
 }

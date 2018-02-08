@@ -28,7 +28,7 @@
         <div class = "front-logo-image"></div>
       </div><!--front-hero-image-->
       <h2 class = "home-content-heading">Shop Stuff</h2>
-      <div class = "page-container">
+      <div class = "page-container container">
         <?php $terms = get_terms( array(
           'taxonomy'=>'product_type',
           'orderby'=>'name',
@@ -38,7 +38,7 @@
       <?php
       foreach($terms as $term):
       $url = get_term_link($term,'product_type');?>
-      <div class = "block-wrapper">
+      <div class = "block-wrapper col-lg-3 col-md-6 col-sm-12">
         <div class ="logo-container">
           <img src="<?php echo get_template_directory_uri();?>/images/product-type-icon/<?php echo $term->slug; ?>.svg" class = "shop-image" alt="type-logo">
         </div><!--logo-container-->
@@ -59,7 +59,7 @@
     $myposts = get_posts( $args );
     foreach( $myposts as $post ) :
       setup_postdata($post); ?>
-    <div class = "home-blog-post-container">
+    <div class = "home-blog-post-container col-lg-4">
         <div class = "home-blog-post"><?php the_post_thumbnail( 'large' ); ?></div>
         <div><p class ="home-blog-text"><?php red_starter_posted_on(); ?>/<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p></div>
         <div><h3 class ="home-blog-title"><a href = "<?php the_permalink(); ?>  "><?php the_title(); ?></a></h3></div>

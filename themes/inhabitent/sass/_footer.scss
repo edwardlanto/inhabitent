@@ -1,82 +1,79 @@
-div.footer-blocks{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height:330px;
-    width:100%;
-    background-image:url("../../images/dark-wood.png");
-    background-size:cover;
-    position:relative;
+div.footer-blocks {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 330px;
+  width: 100%;
+  background-image: url("../../images/dark-wood.png");
+  background-size: cover;
+  position: relative;
 }
 
-.contact{
-    margin-left:1rem;
+.contact {
+  margin-left: 1rem;
 }
 
-
-.white-contact-text{
-    display:block;
-    color:white;
-    font-family:$font__main;
+.white-contact-text {
+  display: block;
+  color: white;
+  font-family: $font__main;
 }
 
-.orange-footer-text h3{
-    letter-spacing:2px;
-    padding-top: 2.5rem;
-    color:$color__main-orange;
-    line-height:1.75rem;
-    text-transform:uppercase;
-    font-family:$font__accent;
-    font-size:19px;
-
+.orange-footer-text h3 {
+  letter-spacing: 2px;
+  padding-top: 2.5rem;
+  color: $color__main-orange;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  font-family: $font__accent;
+  font-size: 19px;
 }
 
-.orange-footer-text p a{
-    color:$color__background-body;
-    font-family:$font__main;
+.orange-footer-text p a {
+  color: $color__background-body;
+  font-family: $font__main;
 }
 
-.orange-footer-text p{
-    color:$color__background-body;
-    font-family:$font__main;
+.orange-footer-text p {
+  color: $color__background-body;
+  font-family: $font__main;
 }
 
-.contact a{
-    color:$color__background-body;
-    font-family:$font__main;
-    }
-
-.date-footer{
-    color:$color__background-body;
+.contact a {
+  color: $color__background-body;
+  font-family: $font__main;
 }
 
-.date-bold{
-    font-weight:bold;
+.date-footer {
+  color: $color__background-body;
 }
 
-.text-logo img{
-    padding-top:3rem;
-    width:288px;
-    margin-right:28px;
+.date-bold {
+  font-weight: bold;
 }
 
-.icon{
-    color:white;
-    margin-right:0.5rem;
+.text-logo img {
+  padding-top: 3rem;
+  width: 288px;
+  margin-right: 28px;
 }
 
-.site-info-container{
-    position:absolute;
-    bottom:0;
-    width:100%;
-    text-align:center;
-  
+.icon {
+  color: white;
+  margin-right: 0.5rem;
 }
 
-.site-info-container p{
-    color:$color__background-body;
-    font-family:$font__accent;
-    text-transform:uppercase;
-    font-weight:lighter;
-    font-size:14px;
+.site-info-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.site-info-container p {
+  color: $color__background-body;
+  font-family: $font__accent;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 14px;
 }

@@ -20,10 +20,10 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<div class ="shop-items-container">
+			<div class ="shop-items-container container">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-		<div class = "product-container">
+		<div class = "product-container col-lg-3 col-md-6">
 						<div class = "shop-archive-image">
 							<a href ="<?php the_permalink();?>"><?php the_post_thumbnail( 'medium' ); ?></a>
 						</div><!--shop-archive-image-->
